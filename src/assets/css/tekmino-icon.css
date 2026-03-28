@@ -1,0 +1,380 @@
+@font-face {
+	font-family: "tekmino-icon";
+	src: url("../fonts/tekmino-icon.eot?1dj9vk");
+	src:
+		url("../fonts/tekmino-icon.eot?1dj9vk#iefix") format("embedded-opentype"),
+		url("../fonts/tekmino-icon.ttf?1dj9vk") format("truetype"),
+		url("../fonts/tekmino-icon.woff?1dj9vk") format("woff"),
+		url("../fonts/tekmino-icon.svg?1dj9vk#tekmino-icon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="tji-"],
+[class*=" tji-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "tekmino-icon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.tji-heart:before {
+	content: "\e972";
+}
+.tji-eyes-open:before {
+	content: "\e973";
+}
+.tji-cart:before {
+	content: "\e974";
+}
+.tji-quote-2:before {
+	content: "\e96f";
+}
+.tji-arrow-bold-left:before {
+	content: "\e970";
+}
+.tji-arrow-bold-right:before {
+	content: "\e971";
+}
+.tji-download:before {
+	content: "\e96e";
+}
+.tji-server:before {
+	content: "\e96d";
+}
+.tji-star:before {
+	content: "\e96c";
+}
+.tji-security:before {
+	content: "\e96b";
+}
+.tji-speed-meter:before {
+	content: "\e96a";
+}
+.tji-trust:before {
+	content: "\e969";
+}
+.tji-cloud-2:before {
+	content: "\e968";
+}
+.tji-chart-2:before {
+	content: "\e967";
+}
+.tji-envelop-2:before {
+	content: "\e966";
+}
+.tji-percent:before {
+	content: "\e965";
+}
+.tji-subtitle-5:before {
+	content: "\e964";
+}
+.tji-subtitle-4:before {
+	content: "\e963";
+}
+.tji-subtitle-3:before {
+	content: "\e962";
+}
+.tji-arrow-up-5:before {
+	content: "\e906";
+}
+.tji-arrow-down-5:before {
+	content: "\e907";
+}
+.tji-arrow-left-5:before {
+	content: "\e908";
+}
+.tji-arrow-right-5:before {
+	content: "\e909";
+}
+.tji-arrow-long-up:before {
+	content: "\e90a";
+}
+.tji-arrow-long-down:before {
+	content: "\e90b";
+}
+.tji-arrow-long-left:before {
+	content: "\e90c";
+}
+.tji-arrow-long-right:before {
+	content: "\e90d";
+}
+.tji-arrow-up-4:before {
+	content: "\e90e";
+}
+.tji-arrow-down-4:before {
+	content: "\e90f";
+}
+.tji-arrow-left-4:before {
+	content: "\e910";
+}
+.tji-arrow-right-4:before {
+	content: "\e911";
+}
+.tji-arrow-up-3:before {
+	content: "\e912";
+}
+.tji-arrow-down-3:before {
+	content: "\e913";
+}
+.tji-arrow-left-3:before {
+	content: "\e914";
+}
+.tji-arrow-right-3:before {
+	content: "\e915";
+}
+.tji-arrow-up-2:before {
+	content: "\e916";
+}
+.tji-arrow-down-2:before {
+	content: "\e917";
+}
+.tji-arrow-left-2:before {
+	content: "\e918";
+}
+.tji-arrow-right-2:before {
+	content: "\e919";
+}
+.tji-arrow-up:before {
+	content: "\e91a";
+}
+.tji-arrow-down:before {
+	content: "\e91b";
+}
+.tji-arrow-left:before {
+	content: "\e91c";
+}
+.tji-arrow-right:before {
+	content: "\e91d";
+}
+.tji-plus:before {
+	content: "\e91f";
+}
+.tji-minus:before {
+	content: "\e920";
+}
+.tji-subtitle:before {
+	content: "\e921";
+}
+.tji-subtitle-2:before {
+	content: "\e922";
+}
+.tji-growth:before {
+	content: "\e923";
+}
+.tji-hand:before {
+	content: "\e924";
+}
+.tji-trophy:before {
+	content: "\e925";
+}
+.tji-team:before {
+	content: "\e926";
+}
+.tji-marquee:before {
+	content: "\e927";
+}
+.tji-marquee-2:before {
+	content: "\e928";
+}
+.tji-plane:before {
+	content: "\e929";
+}
+.tji-bell:before {
+	content: "\e92a";
+}
+.tji-bell-2:before {
+	content: "\e92b";
+}
+.tji-play:before {
+	content: "\e92c";
+}
+.tji-quote:before {
+	content: "\e92e";
+}
+.tji-home:before {
+	content: "\e92d";
+}
+.tji-user:before {
+	content: "\e900";
+}
+.tji-budget:before {
+	content: "\e901";
+}
+.tji-location-2:before {
+	content: "\e902";
+}
+.tji-chart:before {
+	content: "\e903";
+}
+.tji-calendar:before {
+	content: "\e904";
+}
+.tji-comment:before {
+	content: "\e905";
+}
+.tji-window:before {
+	content: "\e92f";
+}
+.tji-computer:before {
+	content: "\e930";
+}
+.tji-development:before {
+	content: "\e931";
+}
+.tji-network:before {
+	content: "\e932";
+}
+.tji-consulting:before {
+	content: "\e933";
+}
+.tji-cybersecurity:before {
+	content: "\e934";
+}
+.tji-cloud:before {
+	content: "\e935";
+}
+.tji-hand-2:before {
+	content: "\e936";
+}
+.tji-idea:before {
+	content: "\e937";
+}
+.tji-rocket:before {
+	content: "\e938";
+}
+.tji-search:before {
+	content: "\e939";
+}
+.tji-globe:before {
+	content: "\e93a";
+}
+.tji-gear:before {
+	content: "\e93b";
+}
+.tji-shield:before {
+	content: "\e93c";
+}
+.tji-spark:before {
+	content: "\e93d";
+}
+.tji-thumbs-up:before {
+	content: "\e93e";
+}
+.tji-x-mark:before {
+	content: "\e93f";
+}
+.tji-award:before {
+	content: "\e940";
+}
+.tji-check:before {
+	content: "\e941";
+}
+.tji-check-2:before {
+	content: "\e91e";
+}
+.tji-check-3:before {
+	content: "\e943";
+}
+.tji-check-4:before {
+	content: "\e942";
+}
+.tji-clock:before {
+	content: "\e944";
+}
+.tji-clock-2:before {
+	content: "\e945";
+}
+.tji-location:before {
+	content: "\e946";
+}
+.tji-phone:before {
+	content: "\e947";
+}
+.tji-phone-2:before {
+	content: "\e948";
+}
+.tji-phone-3:before {
+	content: "\e949";
+}
+.tji-envelop:before {
+	content: "\e94a";
+}
+.tji-chat:before {
+	content: "\e94b";
+}
+.tji-share:before {
+	content: "\e94c";
+}
+.tji-facebook:before {
+	content: "\e94d";
+}
+.tji-messenger:before {
+	content: "\e94e";
+}
+.tji-instagram:before {
+	content: "\e94f";
+}
+.tji-whatsapp:before {
+	content: "\e950";
+}
+.tji-linkedin:before {
+	content: "\e951";
+}
+.tji-x-twitter:before {
+	content: "\e952";
+}
+.tji-telegram:before {
+	content: "\e953";
+}
+.tji-pinterest:before {
+	content: "\e954";
+}
+.tji-signal:before {
+	content: "\e955";
+}
+.tji-tiktok:before {
+	content: "\e956";
+}
+.tji-threads:before {
+	content: "\e957";
+}
+.tji-dribble:before {
+	content: "\e958";
+}
+.tji-apple:before {
+	content: "\e959";
+}
+.tji-google:before {
+	content: "\e95a";
+}
+.tji-youtube:before {
+	content: "\e95b";
+}
+.tji-vimeo:before {
+	content: "\e95c";
+}
+.tji-github:before {
+	content: "\e95d";
+}
+.tji-discord:before {
+	content: "\e95e";
+}
+.tji-tumblr:before {
+	content: "\e95f";
+}
+.tji-spotify:before {
+	content: "\e960";
+}
+.tji-twitch:before {
+	content: "\e961";
+}
