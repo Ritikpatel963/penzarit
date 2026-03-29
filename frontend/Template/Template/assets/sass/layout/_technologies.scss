@@ -1,0 +1,101 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Technologies CSS
+----------------------------------------*/
+.tech {
+	&-item {
+		background-color: var(--tj-color-theme-bg);
+		border: 1px solid var(--tj-color-border-1);
+		padding: 30px 30px 25px 30px;
+		display: inline-flex;
+		gap: 15px;
+		border-radius: 10px;
+		max-width: 320px;
+		width: 100%;
+		@media #{$md, $sm, $xs} {
+			max-width: 300px;
+			padding: 20px 20px 15px 20px;
+		}
+	}
+	&-icon {
+		max-width: 56px;
+		width: 100%;
+		height: 56px;
+		border-radius: 4px;
+		flex: 0 0 auto;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+		@media #{$md, $sm, $xs} {
+			max-width: 50px;
+		}
+	}
+	&-content {
+		.title {
+			margin-top: 8px;
+			margin-bottom: 18px;
+			@media #{$md, $sm, $xs} {
+				margin-top: 6px;
+				margin-bottom: 10px;
+			}
+		}
+		.desc {
+			margin-bottom: 0;
+		}
+	}
+}
+.technologies-item-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	position: relative;
+	z-index: 1;
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		background: linear-gradient(
+			to right,
+			rgba(5, 5, 5, 1) 0%,
+			rgba(5, 5, 5, 0) 100%
+		);
+		top: 0;
+		inset-inline-start: 0;
+		width: 260px;
+		height: 100%;
+		z-index: 1;
+		pointer-events: none;
+		@media #{$md} {
+			width: 200px;
+		}
+		@media #{$sm} {
+			width: 100px;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	&::after {
+		top: auto;
+		inset-inline-start: auto;
+		inset-inline-end: 0;
+		transform: scaleX(-1);
+	}
+	.scroll-slider {
+		gap: 15px;
+		.scroll-wrapper {
+			gap: 15px;
+		}
+	}
+}
+[dir="rtl"] {
+	.tech-item {
+		flex-direction: row-reverse;
+	}
+	.tech-content {
+		text-align: end;
+	}
+}
+/* !END: Technologies CSS */

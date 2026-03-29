@@ -1,0 +1,95 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Choose CSS
+----------------------------------------*/
+.tj-choose-section {
+  .sec-heading {
+    .desc {
+      max-width: 250px;
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+  &.h9-choose {
+    .sec-heading {
+      .desc {
+        max-width: 425px;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.choose-box {
+  background-color: var(--tj-color-theme-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  .choose-inner {
+    border: 1px solid var(--tj-color-border-1);
+    @include transition(all 0.3s ease-in-out 0s);
+    height: 100%;
+    padding: 35px 28px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    @media #{$xl, $lg, $md} {
+      padding: 38px 20px;
+    }
+    @media #{$sm, $xs} {
+      padding: 30px 15px;
+    }
+  }
+  .choose-icon {
+    color: var(--tj-color-theme-primary);
+    font-size: 40px;
+    line-height: 1;
+    width: 80px;
+    height: 80px;
+    background-color: var(--tj-color-theme-dark);
+    border: 1px solid var(--tj-color-border-1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    @include transition(all 0.3s ease-in-out 0s);
+    i {
+      line-height: 1;
+      display: inline-flex;
+    }
+    @media #{$lg} {
+      margin-bottom: 35px;
+    }
+    @media #{$md, $sm, $xs} {
+      margin-bottom: 20px;
+    }
+  }
+  .title {
+    margin-bottom: 18px;
+    @media #{$xl} {
+      font-size: 22px;
+    }
+    @media #{$sm, $xs} {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  .desc {
+    margin-bottom: 0;
+  }
+  &:hover {
+    .choose-inner {
+      border-color: var(--tj-color-theme-primary);
+    }
+    .choose-icon {
+      background-color: var(--tj-color-theme-primary);
+      border-color: var(--tj-color-theme-primary);
+      color: var(--tj-color-theme-dark);
+      transform: rotateY(360deg);
+    }
+  }
+}
+/* !END: Choose CSS */

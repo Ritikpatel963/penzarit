@@ -1,0 +1,130 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Pricing CSS
+----------------------------------------*/
+
+.tj-pricing-section-2 {
+	position: relative;
+	z-index: 0;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 10%;
+		inset-inline-start: -25%;
+		width: 740px;
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+		background: var(--tj-color-theme-primary);
+		-webkit-filter: blur(90px);
+		filter: blur(90px);
+		opacity: 0.25;
+		z-index: -1;
+		pointer-events: none;
+	}
+	.sec-heading {
+		.desc {
+			margin-top: 18px;
+			margin-bottom: 0;
+			@media #{$md,$sm,$xs} {
+				margin-top: 12px;
+			}
+		}
+	}
+	.price_switcher {
+		&.style-2 {
+			position: relative;
+			margin-top: 27px;
+			@media #{$md,$sm,$xs} {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.pricing {
+	&_items_wrap_3 {
+		max-width: 800px;
+		margin-inline-start: auto;
+		flex-direction: column;
+		.pricing {
+			&_item {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				gap: 30px 30px;
+				overflow: hidden;
+				padding: 43px 40px 50px;
+
+				.pricing_btn {
+					width: 100%;
+					max-width: 272px;
+					@media #{$sm,$xs} {
+						max-width: 100%;
+					}
+					.btn-text {
+						& > span {
+							gap: 5px;
+						}
+						i {
+							margin-bottom: -2px;
+						}
+					}
+				}
+				&.recommend {
+					background-color: var(--tj-color-theme-bg);
+				}
+				@media #{$sm} {
+					padding: 35px 15px 42px;
+					gap: 0 24px;
+				}
+				@media #{$xs} {
+					flex-wrap: wrap;
+					padding: 35px 20px 42px;
+				}
+			}
+			&_header {
+				width: calc(50% - 30px);
+				@media #{$sm} {
+					width: calc(50% - 24px);
+				}
+				@media #{$xs} {
+					width: 100%;
+				}
+			}
+			&_features {
+				margin-top: 0;
+				width: 50%;
+				padding-inline-start: 50px;
+				position: relative;
+				z-index: 0;
+				gap: 14px;
+				&::before {
+					content: "";
+					width: 1px;
+					height: 500%;
+					position: absolute;
+					top: -200%;
+					inset-inline-start: 0;
+					background-color: var(--tj-color-border-1);
+					z-index: 1;
+				}
+				@media #{$lg} {
+					padding-inline-start: 30px;
+				}
+				@media #{$sm} {
+					padding-inline-start: 24px;
+				}
+				@media #{$xs} {
+					padding-inline-start: 0;
+					width: 100%;
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* !END: Pricing CSS */

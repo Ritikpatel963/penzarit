@@ -1,0 +1,153 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Video CSS
+----------------------------------------*/
+.tj-video-section {
+	margin-bottom: -312px;
+	@media #{$lg} {
+		margin-bottom: -240px;
+	}
+	@media #{$md, $sm, $xs} {
+		margin-bottom: -210px;
+	}
+}
+.video-content-area {
+	position: relative;
+	height: 597px;
+	z-index: 2;
+	overflow: hidden;
+	border-radius: 16px;
+	.video-bg {
+		position: absolute;
+		top: 0;
+		inset-inline-start: 0;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 140%;
+			object-fit: cover;
+		}
+	}
+	.video-wrap {
+		position: absolute;
+		inset-inline-start: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+	}
+	.video-btn {
+		border-radius: 50%;
+		.video-icon {
+			width: 120px;
+			height: 120px;
+			@media #{$lg} {
+				width: 100px;
+				height: 100px;
+			}
+			@media #{$md,$sm,$xs} {
+				width: 80px;
+				height: 80px;
+				font-size: 24px;
+			}
+		}
+		&:hover {
+			.video-icon {
+				transform: scale(0.9);
+			}
+		}
+	}
+	@media #{$lg} {
+		height: 450px;
+	}
+	@media #{$md} {
+		height: 400px;
+	}
+	@media #{$sm, $xs} {
+		height: 320px;
+		border-radius: 12px;
+	}
+}
+.video-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	.video-icon {
+		color: var(--tj-color-theme-dark);
+		background: var(--tj-color-theme-primary);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		font-size: 29px;
+		line-height: 1;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		i {
+			margin-inline-start: 2px;
+		}
+	}
+	.video-text {
+		color: var(--tj-color-text-body);
+		font-size: 16px;
+		font-family: var(--tj-ff-heading);
+		font-weight: var(--tj-fw-medium);
+		letter-spacing: -0.03em;
+	}
+	&:hover {
+		color: var(--tj-color-common-white);
+	}
+}
+
+@keyframes video_pulse {
+	from {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	to {
+		transform: translate(-50%, -50%) scale(0.9);
+	}
+}
+
+.video_btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgba(250, 251, 251, 0.08);
+	backdrop-filter: blur(40px);
+	font-size: 20px;
+	line-height: 1;
+	color: var(--tj-color-common-white);
+	z-index: 1;
+
+	i,
+	svg {
+		display: inline-flex;
+		line-height: 1;
+	}
+	svg {
+		max-width: 20px;
+		height: auto;
+	}
+
+	@media #{$lg} {
+		width: 90px;
+		height: 90px;
+	}
+	@media #{$md} {
+		width: 80px;
+		height: 80px;
+	}
+	@media #{$sm, $xs} {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+/* !END: Video CSS */

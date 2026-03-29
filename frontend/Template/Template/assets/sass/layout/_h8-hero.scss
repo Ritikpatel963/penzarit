@@ -1,0 +1,236 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Home 8 Hero CSS
+----------------------------------------*/
+.tj-h8-banner {
+	&-section {
+		padding-top: 220px;
+		padding-bottom: 60px;
+		position: relative;
+		overflow: hidden;
+		z-index: 2;
+		@media #{$xl, $lg} {
+			padding-top: 190px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding-top: 160px;
+		}
+	}
+	&-content {
+		margin-top: 30px;
+		margin-bottom: 150px;
+		@media #{$xl, $lg, $md, $sm, $xs} {
+			margin-top: 0;
+		}
+		@media #{$md, $sm, $xs} {
+			max-width: 660px;
+			margin-bottom: 60px;
+		}
+	}
+	&-title {
+		font-size: 80px;
+		line-height: 1;
+		margin-bottom: 30px;
+		@media #{$lg, $md} {
+			font-size: 66px;
+		}
+		@media #{$sm} {
+			font-size: 55px;
+		}
+		@media #{$xs} {
+			font-size: 45px;
+		}
+		span {
+			display: inline-flex;
+			width: 75px;
+			height: 75px;
+			margin-inline-start: -10px;
+			transform: translateY(5px);
+			@media #{$lg, $md} {
+				width: 66px;
+				height: 66px;
+			}
+			@media #{$md} {
+				margin-inline-start: 0;
+			}
+			@media #{$sm} {
+				width: 55px;
+				height: 55px;
+			}
+			@media #{$xs} {
+				width: 40px;
+				height: 40px;
+				margin-inline-start: -5px;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	&-subscribe {
+		.subscribe-form.cta-form {
+			@media #{$md, $sm, $xs} {
+				max-width: 575px;
+			}
+			input[type="email"] {
+				background-color: var(--tj-color-grey-4);
+				-webkit-backdrop-filter: blur(40px);
+				backdrop-filter: blur(40px);
+				color: var(--tj-color-white-2);
+			}
+			[type="submit"],
+			input[type="submit"] {
+				.btn-icon {
+					&::before {
+						@media #{$xs} {
+							background-color: var(--tj-color-theme-primary);
+						}
+					}
+					i {
+						transform: rotate(-45deg);
+						@media #{$xs} {
+							color: var(--tj-color-theme-dark);
+						}
+					}
+				}
+				&:hover {
+					.btn-icon {
+						i {
+							animation: none;
+							transform: rotate(0deg);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-img-area {
+		position: relative;
+		.customers-box {
+			position: absolute;
+			top: 35px;
+			inset-inline-start: 0;
+			max-width: 240px;
+			background-color: rgba(250, 251, 251, 0.08);
+			border: 1px solid rgba(250, 251, 251, 0.08);
+			-webkit-backdrop-filter: blur(20px);
+			backdrop-filter: blur(20px);
+			border-radius: 6px;
+			padding: 25px 25px 24px 25px;
+			align-items: center;
+			@media #{$lg} {
+				top: 15px;
+			}
+			@media #{$md, $sm} {
+				top: 0;
+			}
+			@media #{$xs} {
+				position: unset;
+				animation: none;
+			}
+		}
+		.customers ul li img {
+			width: 56px;
+			height: 56px;
+		}
+		.customers-text {
+			margin-top: 13px;
+			margin-bottom: 12px;
+		}
+		.rating-area {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.banner-img {
+			text-align: center;
+			margin: 0 auto;
+			max-width: 570px;
+		}
+		.banner-shape-img {
+			position: absolute;
+			inset-inline-start: auto;
+			inset-inline-end: -50px;
+			bottom: 0;
+			border-radius: 6px;
+			overflow: hidden;
+			img {
+				border-radius: 6px;
+			}
+			@media #{$xxl, $xl, $lg, $md, $sm} {
+				inset-inline-end: 0;
+			}
+			@media #{$xl, $lg} {
+				bottom: -50px;
+			}
+			@media #{$xs} {
+				position: unset;
+				animation: none;
+			}
+		}
+	}
+	&-shape {
+		@media #{$xs, $sm} {
+			display: none;
+		}
+		.shape-2,
+		.shape-1 {
+			position: absolute;
+			inset-inline-start: 0;
+			top: 0;
+			inset-inline-end: auto;
+			z-index: -1;
+		}
+		.shape-2 {
+			inset-inline-start: auto;
+			inset-inline-end: 0;
+		}
+	}
+}
+.banner-scroll {
+	&.h8-scroll {
+		position: unset;
+		.scroll-down {
+			color: var(--tj-color-text-body);
+			line-height: 1;
+			font-weight: var(--tj-fw-medium);
+			display: inline-flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 10px;
+			.text {
+				writing-mode: unset;
+				transform: unset;
+			}
+			.icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 36px;
+				height: 36px;
+				font-size: 22px;
+				color: var(--tj-color-theme-dark);
+				background-color: rgba(250, 251, 251, 0.08);
+				background-color: var(--tj-color-theme-primary);
+				border-radius: 50%;
+				overflow: hidden;
+				text-shadow: 0 -30px 0 var(--tj-color-theme-dark);
+			}
+			&:hover {
+				transform: unset;
+				.icon {
+					background-color: var(--tj-color-theme-primary);
+					color: var(--tj-color-theme-dark);
+					i {
+						transform: translateY(30px);
+						transition: all 0.3s ease-in-out;
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Home 8 Hero CSS */

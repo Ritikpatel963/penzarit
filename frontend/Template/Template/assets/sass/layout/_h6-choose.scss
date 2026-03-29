@@ -1,0 +1,31 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Choose CSS
+----------------------------------------*/
+
+.h6-choose-box {
+	.choose-inner {
+		border-radius: 10px;
+	}
+	&:hover {
+		.choose-inner {
+			border-color: var(--tj-color-theme-primary);
+			background-color: var(--tj-color-theme-primary);
+		}
+
+		.choose-icon {
+			background-color: var(--tj-color-theme-dark);
+			border-color: var(--tj-color-theme-primary);
+			color: var(--tj-color-theme-primary);
+			transform: rotateY(360deg);
+		}
+		.title {
+			color: var(--tj-color-theme-dark);
+		}
+		.desc {
+			color: var(--tj-color-theme-dark);
+		}
+	}
+}
+/* !END: Choose CSS */

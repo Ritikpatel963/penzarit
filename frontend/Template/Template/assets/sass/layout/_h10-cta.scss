@@ -1,0 +1,82 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: CTA CSS
+----------------------------------------*/
+.h10-cta-section {
+	.bg-img {
+		opacity: 0.24;
+		mix-blend-mode: hard-light;
+	}
+	.cta {
+		&-area {
+			padding: 68px 60px;
+			@media #{$xl} {
+				padding: 50px 40px;
+			}
+			@media #{$lg} {
+				padding: 40px 30px;
+			}
+			@media #{$md, $sm, $xs} {
+				padding: 30px 20px;
+				border-radius: 12px;
+			}
+		}
+		&-content {
+			max-width: 650px;
+			.title {
+				@media #{$xs} {
+					font-size: 38px;
+				}
+			}
+			@media #{$xl,$md} {
+				max-width: 550px;
+			}
+			@media #{$lg} {
+				max-width: 480px;
+			}
+			@media #{$sm} {
+				max-width: 450px;
+			}
+			@media #{$xs} {
+				max-width: 345px;
+			}
+		}
+		&-right {
+			max-width: max-content;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			.tj-text-btn {
+				&.style-2 {
+					color: var(--tj-color-theme-dark);
+					&::before {
+						background-color: var(--tj-color-theme-dark);
+						transform: scaleX(1);
+						transform-origin: left;
+					}
+					&:hover {
+						&::before {
+							transform: scaleX(0);
+							transform-origin: right;
+						}
+					}
+				}
+			}
+			.tj-primary-btn {
+				&.style-2 {
+					background-color: var(--tj-color-theme-dark);
+				}
+			}
+			@media #{$md,$sm,$xs} {
+				max-width: 100%;
+				margin-top: 20px;
+			}
+			@media #{$xs} {
+				flex-wrap: wrap;
+				gap: 15px;
+			}
+		}
+	}
+}
+/* !END: CTA CSS */

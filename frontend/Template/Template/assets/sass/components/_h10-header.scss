@@ -1,0 +1,22 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-area {
+  &.header-10 {
+    .tj-primary-btn {
+      padding: 10px 28px;
+      .btn-text span {
+        text-shadow: 0 30px 0 var(--tj-color-theme-bg);
+      }
+      &.signup-btn {
+        .btn-text span {
+          text-shadow: 0 30px 0 var(--tj-color-heading-primary);
+        }
+      }
+    }
+  }
+}
+
+/* !END: Theme Header CSS */

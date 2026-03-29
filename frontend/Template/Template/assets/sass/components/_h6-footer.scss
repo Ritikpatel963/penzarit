@@ -1,0 +1,12 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+
+.footer-6 {
+	.tj-copyright-area::before {
+		display: none;
+	}
+}
+/* !END: Theme Footer CSS */

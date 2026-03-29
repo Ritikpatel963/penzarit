@@ -1,0 +1,93 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.h6-testimonial-section {
+	.sec-heading {
+		max-width: 500px;
+		.testimonial-quote {
+			width: 80px;
+			height: 80px;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 51px;
+			color: var(--tj-color-theme-dark);
+			background-color: var(--tj-color-theme-primary);
+			border-radius: 50%;
+			margin-bottom: 25px;
+			@media #{$sm,$xs} {
+				width: 70px;
+				height: 70px;
+				font-size: 45px;
+				margin-bottom: 20px;
+			}
+		}
+		.sec-title {
+			margin-bottom: 18px;
+			font-size: var(--tj-fs-h1);
+			line-height: 1.027;
+
+			@media #{$xl} {
+				font-size: 60px;
+			}
+			@media #{$lg} {
+				font-size: 50px;
+			}
+			@media #{$md, $sm, $xs} {
+				font-size: 45px;
+			}
+			@media #{ $sm, $xs} {
+				margin-bottom: 14px;
+			}
+		}
+		.desc {
+			margin-bottom: 28px;
+			@media #{ $sm, $xs} {
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+
+.testimonial-wrapper-5 {
+	max-width: 645px;
+	margin-inline-start: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	@media #{$md} {
+		max-width: 100%;
+		gap: 30px;
+	}
+	@media #{$sm,$xs} {
+		max-width: 100%;
+		gap: 20px;
+	}
+	.testimonial_header {
+		justify-content: inherit;
+		align-items: center;
+		gap: 4px;
+		margin-bottom: 24px;
+	}
+	.star-ratings {
+		margin-top: 0;
+	}
+	.testimonial_item_3 {
+		width: 100%;
+		padding: 46px 30px 30px;
+		.author_avatar_wrapper {
+			margin-top: 22px;
+			margin-bottom: 0;
+			padding-top: 30px;
+			border-top: 1px solid var(--tj-color-border-1);
+			gap: 12px;
+		}
+		@media #{$sm,$xs} {
+			padding: 36px 20px 30px;
+		}
+	}
+}
+
+/* !END: Testimonial CSS */

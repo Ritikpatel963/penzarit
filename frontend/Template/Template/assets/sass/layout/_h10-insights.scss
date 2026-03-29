@@ -1,0 +1,197 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: insights CSS
+----------------------------------------*/
+.h10-insights {
+	.sec-heading {
+		max-width: 420px;
+		width: 100%;
+		margin-bottom: 0;
+
+		@media #{$md, $sm, $xs} {
+			max-width: 100%;
+		}
+		.desc {
+			max-width: 410px;
+			margin-top: 15px;
+			@media #{$md, $sm, $xs} {
+				max-width: 100%;
+				margin-bottom: 0;
+			}
+		}
+		.btn-wrap {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 15px;
+			margin-top: 24px;
+		}
+	}
+	.tj-primary-btn {
+		padding: 13px 30px;
+		.btn-text {
+			span {
+				text-shadow: 0 30px 0 var(--tj-color-theme-dark);
+			}
+		}
+		&.compare-btn {
+			background-color: var(--tj-color-theme-dark);
+			border: 1px solid var(--tj-color-theme-primary);
+			.btn-text {
+				color: var(--tj-color-common-white);
+				span {
+					text-shadow: 0 30px 0 var(--tj-color-common-white);
+				}
+			}
+		}
+	}
+	.insights {
+		&-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 30px;
+			@media #{$md} {
+			}
+		}
+		&-box {
+			background-color: var(--tj-color-theme-bg);
+			border: 1px solid var(--tj-color-border-1);
+			border-radius: 12px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: calc(33% - 15px);
+			gap: 60px;
+			flex: 1;
+			padding: 45px 30px;
+			@media #{$md, $sm, $xs} {
+				gap: 30px;
+				padding: 30px 30px;
+				width: 100%;
+				flex: auto;
+			}
+			@media #{$sm, $xs} {
+				padding: 30px 20px;
+			}
+			.title {
+				margin-bottom: 15px;
+				&:hover {
+					a {
+						color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+			.desc {
+				margin-bottom: 0;
+			}
+			.pricing_header {
+				width: 100%;
+				border-bottom: 1px solid var(--tj-color-border-1);
+			}
+			.package_price {
+				display: flex;
+				font-size: 64px;
+				color: var(--tj-color-theme-primary);
+				font-family: var(--tj-ff-heading);
+				font-weight: var(--tj-fw-sbold);
+				line-height: 0.8;
+				margin: 30px 0;
+				.currency {
+					font-size: 24px;
+				}
+				.period {
+					font-size: 16px;
+					font-weight: var(--tj-fw-regular);
+					color: var(--tj-color-text-body);
+					margin-top: auto;
+				}
+
+				@media #{$md, $sm, $xs} {
+					font-size: 50px;
+				}
+			}
+			.pricing_features {
+				width: 100%;
+				margin: 25px auto 0 auto;
+				@media #{$md, $sm, $xs} {
+					br {
+						display: none;
+					}
+				}
+			}
+			.pricing_tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin: 45px 0 5px 0;
+				span {
+					display: inline-flex;
+					color: var(--tj-color-heading-primary);
+					line-height: 1;
+					letter-spacing: -0.02em;
+					font-weight: var(--tj-fw-medium);
+					padding: 5px 8px;
+					background-color: var(--tj-color-theme-dark);
+					border: 1px solid var(--tj-color-border-1);
+					border-radius: 100px;
+				}
+
+				@media #{$md, $sm, $xs} {
+					margin-top: 30px;
+				}
+			}
+			&:first-child {
+				width: 100%;
+				flex-direction: row;
+				flex: 0 0 auto;
+				gap: 30px;
+				padding: 60px;
+				@media #{$md, $sm, $xs} {
+					flex-direction: column;
+					padding: 30px;
+				}
+				@media #{$sm, $xs} {
+					padding: 30px 20px;
+				}
+				.insights-content,
+				.insights-price {
+					max-width: 420px;
+					width: 100%;
+					@media #{$md, $sm, $xs} {
+						max-width: 100%;
+					}
+				}
+				.insights-content {
+					flex-direction: column;
+					justify-content: space-between;
+					@media #{$md, $sm, $xs} {
+						padding: 0;
+					}
+				}
+				.insights-price {
+					background-color: var(--tj-color-theme-dark);
+					border: 1px solid var(--tj-color-border-1);
+					border-radius: 10px;
+					display: flex;
+					flex-wrap: wrap;
+					text-align: center;
+					padding: 45px 30px;
+					@media #{$md, $sm, $xs} {
+						text-align: start;
+					}
+				}
+				.package_desc {
+					margin-bottom: 5px;
+				}
+				.package_price {
+					justify-content: center;
+					@media #{$md, $sm, $xs} {
+						justify-content: start;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* !END: insights CSS */

@@ -1,0 +1,65 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: CTA CSS
+----------------------------------------*/
+.h9-cta {
+	&-section {
+		background-color: var(--tj-color-theme-primary);
+		.bg-img {
+			opacity: 1;
+			mix-blend-mode: difference;
+		}
+		.sec-heading {
+			max-width: 675px;
+			padding-top: 70px;
+			padding-bottom: 84px;
+			@media #{$sm, $xs} {
+				padding-bottom: 30px;
+			}
+			.sec-title {
+				margin-bottom: 26px;
+				color: var(--tj-color-theme-dark);
+				@media #{$sm, $xs} {
+					font-size: 34px;
+				}
+			}
+		}
+		.cta-baner {
+			position: relative;
+			max-width: 595px;
+			width: 100%;
+			text-align: end;
+			margin-inline-end: -40px;
+			@media #{$md} {
+				max-width: 350px;
+			}
+			@media #{$sm, $xs} {
+				text-align: center;
+				margin-inline-end: 0;
+			}
+			.image-2 {
+				position: absolute;
+				inset-inline-start: 0;
+				bottom: 0;
+				z-index: -1;
+				@media #{$lg, $md, $sm, $xs} {
+					max-width: 220px;
+				}
+			}
+		}
+		.cta-area {
+			@media #{$xxl,$xl,$lg,$md} {
+				padding-inline-start: 0;
+			}
+		}
+	}
+	&-btn-area {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+}
+
+/* !END: CTA CSS */

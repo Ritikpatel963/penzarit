@@ -1,0 +1,102 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Video CSS
+----------------------------------------*/
+.h8-video {
+	&.tj-video-section {
+		margin-bottom: 0;
+		@media #{$lg} {
+			margin-bottom: 0;
+		}
+		@media #{$md, $sm, $xs} {
+			margin-bottom: 0;
+		}
+	}
+	.sec-heading {
+		margin-bottom: 20px;
+	}
+	&-content {
+		&-wrap {
+			position: relative;
+			z-index: 2;
+			height: 100%;
+			max-width: 1350px;
+			width: 100%;
+			padding: 0 15px;
+			padding-bottom: 60px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: end;
+			align-items: end;
+			@media #{$md, $sm, $xs} {
+				padding-bottom: 15px;
+			}
+		}
+		position: relative;
+		z-index: 3;
+		background-color: var(--tj-color-theme-dark);
+		max-width: 485px;
+		border-radius: 12px;
+		padding: 40px 40px 50px 40px;
+		@media #{$sm, $xs} {
+			padding: 30px 25px 40px 25px;
+		}
+	}
+	.video-content-area {
+		height: 810px;
+		.video-bg img {
+			@media #{$sm, $xs} {
+				object-position: 75%;
+			}
+		}
+		.video-wrap {
+			position: relative;
+			inset-inline-start: unset;
+			top: unset;
+			transform: unset;
+			z-index: 1;
+			display: inline-flex;
+		}
+		.video-btn {
+			.video-icon {
+				font-size: 16px;
+				width: 66px;
+				height: 66px;
+				@media #{$lg} {
+					width: 60px;
+					height: 60px;
+				}
+				@media #{$md,$sm,$xs} {
+					width: 50px;
+					height: 50px;
+				}
+			}
+			&:hover {
+				.video-icon {
+					transform: scale(0.9);
+				}
+			}
+		}
+		.video-text {
+			color: var(--tj-color-text-body);
+			font-size: 16px;
+			font-family: var(--tj-ff-heading);
+			font-weight: var(--tj-fw-medium);
+			letter-spacing: -0.03em;
+			margin-inline-start: 10px;
+		}
+		@media #{$lg, $xl} {
+			height: 600px;
+		}
+		@media #{$md} {
+			height: 500px;
+		}
+		@media #{$sm, $xs} {
+			height: 420px;
+			border-radius: 12px;
+		}
+	}
+}
+
+/* !END: Video CSS */

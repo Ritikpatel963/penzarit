@@ -1,0 +1,89 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-area {
+	&.header-9 {
+		&.header-absolute {
+			top: 30px;
+			padding: 0 30px;
+			@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+				top: 15px;
+				padding: 0 15px;
+			}
+			.header-bottom {
+				border-bottom: 0;
+				@media #{$md, $sm, $xs} {
+					padding: 0;
+				}
+			}
+			.site_logo {
+				padding: 20px 0;
+				@media #{$md, $sm, $xs} {
+					padding: 15px 0;
+				}
+			}
+			.mainmenu {
+				> ul {
+					column-gap: 0;
+					> li {
+						> a {
+							padding: 9px;
+							padding-inline-start: 16px;
+							padding-inline-end: 16px;
+							color: var(--tj-color-heading-primary);
+							background-color: var(--tj-color-grey-4);
+							border-radius: 21px;
+							border: 0;
+							&:hover {
+								color: var(--tj-color-theme-primary);
+								border-color: var(--tj-color-theme-primary);
+							}
+							@media #{$lg} {
+								padding: 6px;
+								padding-inline-start: 11px;
+								padding-inline-end: 11px;
+							}
+						}
+						&.current-menu-ancestor {
+							> a {
+								color: var(--tj-color-theme-primary);
+								border-color: var(--tj-color-theme-primary);
+							}
+						}
+						&.menu-item-has-children,
+						&.has-dropdown {
+							> a {
+								padding-inline-end: 31px;
+								@media #{$lg} {
+									padding-inline-end: 26px;
+								}
+								&::after {
+									top: 40%;
+									inset-inline-end: 13px;
+								}
+								@media #{$lg} {
+									&::after {
+										top: 36%;
+										inset-inline-end: 10px;
+									}
+								}
+							}
+						}
+						.sub-menu {
+							> li {
+								> a {
+									padding-top: 10px;
+									padding-bottom: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* !END: Theme Header CSS */

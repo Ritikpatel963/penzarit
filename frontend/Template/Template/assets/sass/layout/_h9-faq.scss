@@ -1,0 +1,32 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.h9-faq {
+	&.h6-faq-section {
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+	&-shape-1,
+	&-shape-2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: -1;
+		@media #{$md, $sm, $xs} {
+			display: none;
+		}
+	}
+	&-shape-1 {
+		inset-inline-start: 0;
+	}
+	&-shape-2 {
+		inset-inline-start: auto;
+		inset-inline-end: 0;
+	}
+}
+
+/* !END: Client CSS */

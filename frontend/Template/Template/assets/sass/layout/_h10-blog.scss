@@ -1,0 +1,22 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Blog CSS
+----------------------------------------*/
+.h10-blog-item {
+	&.blog-item {
+		.blog-thumb {
+			height: 362px;
+			@media #{$lg, $md, $sm, $xs} {
+				height: 300px;
+			}
+		}
+		.blog-date {
+			top: inherit;
+			inset-inline-start: inherit;
+			bottom: 15px;
+			inset-inline-end: 15px;
+		}
+	}
+}
+/* !END: Blog CSS */

@@ -1,0 +1,51 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: CTA CSS
+----------------------------------------*/
+.h4-cta-section {
+	background-color: var(--tj-color-theme-bg);
+	position: relative;
+	z-index: 1;
+	border-radius: 16px;
+	overflow: hidden;
+	.sec-heading-centered {
+		max-width: 640px;
+		margin-bottom: 0;
+	}
+	.sec-title {
+		span {
+			color: var(--tj-color-theme-primary);
+		}
+	}
+	.desc {
+		max-width: 430px;
+		margin: 15px auto 25px;
+	}
+	.cta {
+		&-area {
+			background: transparent;
+			border-radius: 0;
+			padding: 100px 20px;
+			@media #{$md, $sm, $xs} {
+				padding: 60px 20px;
+			}
+		}
+	}
+	.subscribe-form.cta-form {
+		[type="submit"] {
+			.btn-icon {
+				@media #{$xs} {
+					i {
+						color: var(--tj-color-theme-dark);
+					}
+					&::before {
+						background-color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* !END: CTA CSS */

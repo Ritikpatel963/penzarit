@@ -1,0 +1,127 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Integration CSS
+----------------------------------------*/
+.integration-section-wrap {
+	position: relative;
+	background-color: var(--tj-color-theme-bg);
+	border-radius: 16px;
+	padding-top: 120px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		width: 305px;
+		height: 305px;
+		border-radius: 50%;
+		opacity: 1;
+		position: absolute;
+		inset-inline-start: 50%;
+		transform: translateX(-50%);
+		bottom: -227px;
+		background-color: var(--tj-color-theme-primary);
+		filter: blur(70px);
+		opacity: 0.6;
+	}
+
+	.bg-img {
+		opacity: 0.12;
+		mix-blend-mode: luminosity;
+	}
+
+	.sec-heading {
+		.sec_heading_wrap {
+			max-width: 550px;
+			width: 100%;
+		}
+
+		.sec_content_wrap {
+			max-width: 355px;
+			width: 100%;
+
+			.tj-text-btn {
+				color: var(--tj-color-heading-primary);
+				margin-top: 23px;
+				&:hover {
+					color: var(--tj-color-theme-primary);
+				}
+			}
+		}
+	}
+
+	@media #{$lg} {
+		padding-top: 100px;
+		padding-bottom: 5px;
+	}
+	@media #{$md, $sm, $xs} {
+		padding-top: 70px;
+		padding-bottom: 5px;
+		border-radius: 12px;
+	}
+	@media #{$xs} {
+		&::before {
+			width: 280px;
+			height: 280px;
+			bottom: -245px;
+		}
+	}
+}
+
+.throwable_wrapper {
+	pointer-events: none;
+}
+.throwable_items_wrap {
+	position: relative;
+	overflow: hidden;
+	height: 445px;
+	pointer-events: none;
+
+	> * {
+		position: absolute;
+		display: inline-block;
+		margin-bottom: 0;
+		inset-inline-start: 0;
+		top: 0;
+		user-select: none;
+		pointer-events: auto;
+		transition: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.integration_item {
+	width: 220px;
+	height: 76px;
+	padding: 13px 30px;
+	border: 1px solid var(--tj-color-border-1);
+	border-radius: 85.5px;
+	background-color: var(--tj-color-theme-dark);
+	display: inline-flex;
+	justify-content: start;
+	align-items: center;
+	gap: 15px;
+	transform: translate(-50%, -50%) rotate(0rad);
+
+	img,
+	svg {
+		pointer-events: none;
+		max-width: 100%;
+		max-height: 100%;
+		transform: rotate(0) !important;
+	}
+
+	@media #{$sm} {
+		width: 190px;
+		height: 65px;
+		padding: 10px 25px;
+	}
+	@media #{$xs} {
+		width: 140px;
+		height: 55px;
+		padding: 10px 20px;
+	}
+}
+/* !END: Integration CSS */

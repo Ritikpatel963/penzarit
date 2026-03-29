@@ -1,0 +1,142 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.h5-testimonial-section {
+	background-color: var(--tj-color-theme-bg);
+	border-radius: 16px;
+	.testimonial-btn {
+		text-align: center;
+		margin-top: -30px;
+	}
+}
+.testimonial-wrapper-4 {
+	height: 810px;
+	display: flex;
+	gap: 30px;
+	mask-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgb(0, 0, 0) 20%,
+		rgb(0, 0, 0) 80%,
+		rgba(0, 0, 0, 0) 100%
+	);
+
+	@media #{$md,$sm,$xs} {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.testimonial_item_3 {
+		background-color: var(--tj-color-theme-dark);
+		position: relative;
+		width: 100%;
+		padding: 40px 30px 45px;
+		.author_avatar_wrapper {
+			display: block;
+			.author_info {
+				margin-top: 8px;
+			}
+		}
+		@media #{$lg,$md,$sm,$xs} {
+			padding-bottom: 86px;
+		}
+	}
+	.scroll-slider {
+		width: 33.33%;
+		flex-direction: column;
+		flex: 1;
+		--gap: 30px;
+		@media #{$md,$sm} {
+			width: 50%;
+			--gap: 20px;
+			&:last-child {
+				display: none;
+			}
+		}
+		@media #{$xs} {
+			width: 100%;
+			--gap: 20px;
+			&:not(:first-child) {
+				display: none;
+			}
+		}
+		&:nth-child(2) {
+			.scroll-wrapper {
+				animation-delay: 2s;
+				animation-duration: 20s;
+			}
+		}
+	}
+	.scroll-wrapper {
+		animation: vrt-scroll 30s linear infinite;
+		flex-direction: column;
+	}
+
+	[dir="rtl"] {
+		.scroll-wrapper {
+			animation-delay: 2s;
+			animation-duration: 20s;
+			.testimonial_item_3 {
+				direction: ltr;
+			}
+		}
+	}
+	.star-ratings {
+		@media #{$lg,$md,$sm,$xs} {
+			position: absolute;
+			bottom: 45px;
+			inset-inline-start: 32px;
+		}
+	}
+}
+
+.author_avatar_wrapper {
+	.author_avatar {
+		width: 72px;
+		height: 72px;
+		border-radius: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.author_info {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		.name {
+			margin: 0;
+		}
+		.designation {
+			color: var(--tj-color-theme-dark-3);
+			font-size: 14px;
+			line-height: 1.3;
+			display: flex;
+			margin-top: 5px;
+		}
+	}
+}
+
+@keyframes vrt-scroll {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(calc(-100% - var(--gap)));
+	}
+}
+
+@keyframes vrt-scroll-rtl {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(calc(100% + var(--gap)));
+	}
+}
+/* !END: Testimonial CSS */

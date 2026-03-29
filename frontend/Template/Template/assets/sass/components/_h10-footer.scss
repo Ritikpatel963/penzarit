@@ -1,0 +1,39 @@
+@use "../utilities" as *;
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+.footer-10 {
+	&.tj-footer-section {
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+
+	.subscription_widget {
+		max-width: 390px;
+		@media #{$xl, $lg} {
+			max-width: 350px;
+		}
+	}
+	.tj-copyright-area {
+		&::before {
+			display: none;
+		}
+	}
+
+	.footer_widget_wrapper {
+		.footer-widget {
+			@media #{$lg, $md} {
+				max-width: calc(50% - 15px);
+				width: 100%;
+			}
+			@media #{$sm, $xs} {
+				max-width: 100%;
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}
+}
+/* !END: Theme Footer CSS */

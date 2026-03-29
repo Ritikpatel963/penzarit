@@ -1,0 +1,73 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Faq CSS
+----------------------------------------*/
+.h6-faq-section {
+	position: relative;
+	z-index: 0;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 20%;
+		width: 461px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		background: var(--tj-color-theme-primary);
+		filter: blur(90px);
+		opacity: 0.25;
+		z-index: -1;
+		pointer-events: none;
+	}
+	&::before {
+		inset-inline-start: -250px;
+	}
+	&::after {
+		inset-inline-end: -250px;
+	}
+}
+.tj_accordion_5 {
+	max-width: 966px;
+	width: 100%;
+	margin: auto;
+	.accordion {
+		&_title {
+			font-weight: var(--tj-fw-regular);
+			&::after {
+				color: var(--tj-color-common-white);
+				background-color: var(--tj-color-theme-dark);
+			}
+		}
+		&_item {
+			&:has(.accordion_title:not(.collapsed)) {
+				background-color: transparent;
+				border-color: var(--tj-color-theme-primary);
+				.accordion {
+					&_title {
+						color: var(--tj-color-common-white);
+						&::after {
+							color: var(--tj-color-theme-dark);
+						}
+					}
+				}
+			}
+		}
+		&_title {
+			&:not(.collapsed) {
+				&::after {
+				}
+			}
+		}
+	}
+	@media #{$xxl} {
+		max-width: 860px;
+	}
+	@media #{$xl} {
+		max-width: 800px;
+	}
+	@media #{$lg} {
+		max-width: 650px;
+	}
+}
+/* !END: Faq CSS */

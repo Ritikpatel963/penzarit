@@ -1,0 +1,49 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.h8-testimonial {
+	&.testimonial-wrapper-5 {
+		max-width: 100%;
+		margin-inline-start: 0;
+		display: block;
+		.testimonial_header {
+			justify-content: inherit;
+			align-items: center;
+			gap: 4px;
+			margin-bottom: 24px;
+		}
+		.star-ratings {
+			margin-top: 0;
+		}
+		.testimonial_item_3 {
+			width: 100%;
+			padding: 46px 30px 30px;
+			overflow: hidden;
+			@media #{$sm,$xs} {
+				padding: 36px 20px 30px;
+			}
+			.author_avatar_wrapper {
+				margin-top: 22px;
+				margin-bottom: 0;
+				padding-top: 30px;
+				border-top: 0;
+				gap: 12px;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					inset-inline-end: -100px;
+					inset-inline-start: -100px;
+					width: calc(100% + 200px);
+					height: 1px;
+					background-color: var(--tj-color-border-1);
+				}
+			}
+		}
+	}
+}
+
+/* !END: Testimonial CSS */

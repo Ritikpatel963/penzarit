@@ -1,0 +1,197 @@
+@use "../utilities" as *;
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+.footer-9 {
+	&.tj-footer-section {
+		padding-top: 100px;
+		margin-top: 30px;
+		&::after,
+		&::before {
+			display: none;
+		}
+		@media #{$xxl, $xl, $lg} {
+			margin-top: 15px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding-top: 70px;
+			margin-top: 15px;
+		}
+	}
+	.h9-footer-logo {
+		padding: 0 30px;
+		padding-top: 50px;
+	}
+	.h9-footer-wrapper {
+		border: 1px solid var(--tj-color-border-1);
+	}
+	.footer_widget_wrapper,
+	.footer_bottom_content {
+		padding: 0 30px;
+		@media #{ $sm, $xs} {
+			padding: 0 15px;
+		}
+	}
+	.footer_widget_wrapper {
+		gap: 0;
+		align-items: stretch;
+		flex-wrap: nowrap;
+		@media #{$lg, $md, $sm, $xs} {
+			flex-wrap: wrap;
+		}
+		@media #{ $sm, $xs} {
+			gap: 30px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.footer-widget {
+			padding: 50px 60px;
+			border-inline-start: 1px solid var(--tj-color-border-1);
+			@media #{$xl, $lg, $md} {
+				padding: 50px 0;
+				padding-inline-start: 30px;
+			}
+			&:nth-child(3),
+			&:nth-child(4) {
+				@media #{$lg, $md} {
+					padding-top: 0;
+				}
+			}
+			&:nth-child(3) {
+				@media #{$lg, $md} {
+					border-inline-start: 0;
+					padding-inline-start: 0;
+				}
+			}
+			&:first-child {
+				padding-inline-start: 0;
+				border-inline-start: 0;
+			}
+			&:last-child {
+				padding-inline-end: 0;
+			}
+			@media #{$lg, $md} {
+				max-width: calc(50% - 15px);
+				width: 100%;
+			}
+			@media #{$sm, $xs} {
+				max-width: 100%;
+				width: 100%;
+				margin-top: 0;
+				border: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	.footer_bottom_area {
+		border-top: 1px solid var(--tj-color-border-1);
+		padding: 30px 0;
+	}
+	.subscription_widget {
+		@media #{$xl, $lg} {
+			max-width: 350px;
+		}
+
+		.subscribe_form {
+			@media #{$sm, $xs} {
+				max-width: 450px;
+			}
+			form {
+				position: relative;
+				z-index: 1;
+				input[type="email"] {
+					min-height: 72px;
+					padding: 22px 70px 22px 20px;
+					background-color: var(--tj-color-grey-4);
+				}
+
+				button[type="submit"],
+				input[type="submit"] {
+					position: absolute;
+					inset-inline-end: 5px;
+					top: 5px;
+					width: 62px;
+					height: 62px;
+					background-color: var(--tj-color-theme-primary);
+					border-radius: 8px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 24px;
+					line-height: 1;
+					color: var(--tj-color-theme-dark);
+					transition: all 0.3s ease-in-out 0s;
+
+					i,
+					svg {
+						display: inline-flex;
+						line-height: 1;
+					}
+					svg {
+						max-width: 24px;
+						height: auto;
+					}
+
+					&:hover {
+						i,
+						svg {
+							animation: bellShake 1s linear infinite;
+						}
+					}
+				}
+			}
+			input[type="checkbox"] {
+				position: relative;
+				margin-inline-end: 8px;
+				width: 18px;
+				height: 18px;
+				border: 1px solid var(--tj-color-theme-dark-3);
+				border-radius: 3px;
+				appearance: none;
+				cursor: pointer;
+
+				&::before {
+					content: "\e941";
+					font-size: 19px;
+					line-height: 1;
+					font-family: "tekmino-icon" !important;
+					color: var(--tj-color-common-white);
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					line-height: 16px;
+					transform: scale(0.5);
+					margin-inline-start: -1px;
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+				}
+				&:checked {
+					background-color: var(--tj-color-theme-primary);
+					border-color: var(--tj-color-theme-primary);
+					&::before {
+						color: var(--tj-color-theme-dark);
+						transform: scale(1);
+						opacity: 1;
+					}
+				}
+			}
+			label {
+				font-size: 16px;
+				color: var(--tj-color-text-body);
+				margin-top: 18px;
+				display: inline-flex;
+				align-items: center;
+				a {
+					color: var(--tj-color-text-body);
+					font-weight: var(--tj-fw-sbold);
+					margin-inline-start: 4px;
+					&:hover {
+						color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Theme Footer CSS */

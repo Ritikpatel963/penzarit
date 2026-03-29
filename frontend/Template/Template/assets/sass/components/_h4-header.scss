@@ -1,0 +1,63 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-area {
+	&.header-4 {
+		&.header-absolute {
+			top: 30px;
+			padding: 0 30px;
+			@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+				top: 15px;
+				padding: 0 15px;
+			}
+			.header-bottom {
+				@media #{$md, $sm, $xs} {
+					padding: 0;
+				}
+			}
+		}
+		.site_logo {
+			padding: 20px 0;
+			@media #{$md, $sm, $xs} {
+				padding: 15px 0;
+			}
+		}
+		.mainmenu {
+			background-color: var(--tj-color-theme-dark);
+			border-radius: 50px;
+			padding: 0 30px;
+			border: 1px solid var(--tj-color-border-1);
+			@media #{$lg} {
+				padding: 0 20px;
+			}
+			ul {
+				> li {
+					> a {
+						padding-top: 16px;
+						padding-bottom: 16px;
+					}
+					&.menu-item-has-children,
+					&.has-dropdown {
+						> a {
+							&::after {
+								top: 20px;
+							}
+						}
+					}
+					.sub-menu {
+						> li {
+							> a {
+								padding-top: 10px;
+								padding-bottom: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* !END: Theme Header CSS */

@@ -1,0 +1,148 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Choose CSS
+----------------------------------------*/
+.h8-footer-cta {
+	position: relative;
+	z-index: 1;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: -180px;
+		inset-inline-end: -180px;
+		width: 395px;
+		height: 395px;
+		border-radius: 50%;
+		background: var(--tj-color-theme-primary);
+		-webkit-filter: blur(200px);
+		filter: blur(200px);
+		opacity: 0.5;
+		z-index: -1;
+		pointer-events: none;
+	}
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 40px;
+		@media #{ $lg} {
+			gap: 20px;
+		}
+		@media #{$md, $xs, $sm} {
+			flex-direction: column-reverse;
+			gap: 0;
+		}
+	}
+	&-left {
+		max-width: calc(54% - 15px);
+		width: 100%;
+		flex: 1;
+		position: relative;
+		display: flex;
+		justify-content: end;
+		align-self: end;
+		@media #{$md, $sm, $xs} {
+			max-width: 100%;
+			flex: auto;
+			margin-top: -30px;
+		}
+	}
+	&-right {
+		max-width: 575px;
+		width: 100%;
+		flex: 1;
+		@media #{$xl, $lg, $md} {
+			max-width: 515px;
+		}
+		@media #{$md, $sm, $xs} {
+			flex: auto;
+		}
+		@media #{$sm, $xs} {
+			max-width: 100%;
+		}
+		.sec-heading {
+			margin-bottom: 18px;
+		}
+		.desc {
+			margin: 20px 0 24px 0;
+		}
+	}
+}
+.h8-cta-counter {
+	position: absolute;
+	inset-inline-start: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	@media #{ $sm, $xs} {
+		top: 70%;
+	}
+	&.h8-about {
+		.countup-item {
+			max-width: 235px;
+			padding: 24px 25px 29px 25px;
+			@media #{$lg, $md, $xs, $sm} {
+				max-width: 190px;
+				padding: 18px 18px 23px 18px;
+			}
+			@media #{$md} {
+				max-width: 200px;
+			}
+		}
+		.inline-content {
+			font-size: 80px;
+			@media #{$xl, $lg, $sm, $xs, $md} {
+				font-size: 60px;
+			}
+			@media #{$xs} {
+				font-size: 45px;
+			}
+		}
+		.count-text {
+			line-height: 26px;
+			@media #{$lg, $md, $sm, $xs} {
+				line-height: 22px;
+			}
+		}
+	}
+}
+.h8-cta-contact {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	@media #{$xs} {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.faq-contact-item {
+	&.style-2 {
+		background-color: var(--tj-color-theme-dark);
+		.desc {
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+		.faq-contact-number {
+			margin-bottom: 0;
+			@media #{$lg, $xs} {
+				font-size: 18px;
+			}
+			a {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.icon {
+				color: var(--tj-color-theme-primary);
+				font-size: 24px;
+				display: inline-flex;
+			}
+			&:hover {
+				a {
+					color: var(--tj-color-theme-primary);
+				}
+			}
+		}
+	}
+}
+/* !END: Choose CSS */

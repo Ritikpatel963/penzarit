@@ -1,0 +1,59 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Choose CSS
+----------------------------------------*/
+.h8-choose-box {
+	overflow: hidden;
+	.choose-box {
+		border: 1px solid var(--tj-color-border-1);
+		@include transition(all 0.3s ease-in-out 0s);
+		padding: 35px 30px;
+		border-radius: 10px;
+		position: relative;
+		z-index: 1;
+		@media #{$xl, $lg, $md} {
+			padding: 35px 20px;
+		}
+		@media #{$sm, $xs} {
+			padding: 30px 15px;
+		}
+	}
+	.choose-number {
+		position: absolute;
+		top: 30px;
+		inset-inline-end: 30px;
+		font-family: var(--tj-ff-heading);
+		font-size: 18px;
+		font-weight: 600;
+		color: rgba(246, 247, 247, 0.2);
+		@include transition(all 0.3s ease-in-out 0s);
+	}
+	.chosse-btn {
+		padding-top: 22px;
+		margin-top: 22px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			inset-inline-end: -100px;
+			inset-inline-start: -100px;
+			width: calc(100% + 200px);
+			height: 1px;
+			background-color: var(--tj-color-border-1);
+		}
+	}
+	&:hover {
+		.choose-icon {
+			background-color: var(--tj-color-theme-primary);
+			border-color: var(--tj-color-theme-primary);
+			color: var(--tj-color-theme-dark);
+			transform: rotateY(360deg);
+		}
+		.choose-number {
+			color: var(--tj-color-theme-primary);
+		}
+	}
+}
+/* !END: Choose CSS */

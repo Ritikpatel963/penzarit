@@ -1,0 +1,157 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.h4-testimonial-section {
+	.sec-heading {
+		max-width: 570px;
+		margin-bottom: 62px;
+		position: relative;
+		z-index: 2;
+		@media #{$md,$sm} {
+			margin-bottom: 50px;
+		}
+		@media #{$xs} {
+			margin-bottom: 40px;
+		}
+	}
+}
+.testimonial {
+	&-wrapper-3 {
+		margin-bottom: 30px;
+		background-color: var(--tj-color-theme-bg);
+		border-radius: 16px;
+		padding: 105px 60px 60px;
+		position: relative;
+
+		@media #{$md,$sm} {
+			padding: 80px 40px 50px;
+		}
+		@media #{$xs} {
+			padding: 65px 20px 40px;
+		}
+		.quote-icon {
+			font-size: 70px;
+			width: 130px;
+			height: 130px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: var(--tj-color-theme-dark);
+			color: var(--tj-color-theme-primary);
+			border-radius: 100%;
+			position: absolute;
+			top: -65px;
+			inset-inline-start: 50%;
+			transform: translateX(-50%);
+			i {
+				transform: scale(-1);
+				margin-top: 20px;
+			}
+			&::after,
+			&::before {
+				content: "";
+				position: absolute;
+				background-color: transparent;
+				bottom: 32px;
+				inset-inline-start: -15px;
+				width: 16px;
+				height: 32px;
+				box-shadow: 0 16px 0 0 var(--tj-color-theme-dark);
+				border-end-end-radius: 16px;
+				z-index: -1;
+				transform: scaleY(-1);
+				@media #{$md, $sm} {
+					bottom: 17px;
+				}
+				@media #{$xs} {
+					bottom: 8px;
+				}
+			}
+			&::after {
+				inset-inline-start: auto;
+				inset-inline-end: -15px;
+				border-end-end-radius: 0;
+				border-end-start-radius: 16px;
+			}
+			@media #{$md,$sm} {
+				font-size: 50px;
+				width: 100px;
+				height: 100px;
+				top: -50px;
+			}
+			@media #{$xs} {
+				font-size: 40px;
+				width: 80px;
+				height: 80px;
+				top: -40px;
+			}
+		}
+		.testimonial-item {
+			background-color: transparent;
+			border-radius: 0;
+			margin: 0;
+			padding: 0;
+			&::before {
+				display: none;
+			}
+			.desc {
+				font-size: 26px;
+				line-height: 1.54;
+				max-width: 905px;
+				margin: 0 auto;
+				@media #{$lg, $md} {
+					font-size: 20px;
+				}
+				@media #{$sm, $xs} {
+					font-size: 18px;
+				}
+			}
+		}
+		.client-thumb {
+			margin: 40px auto 0;
+			.thumb-img {
+				opacity: 0.2;
+			}
+			.swiper-slide-active {
+				.thumb-img {
+					opacity: 1;
+				}
+			}
+			@media #{$xs} {
+				margin: 30px auto 0;
+			}
+		}
+		.testimonial-navigation {
+			max-width: 100%;
+			opacity: 1;
+		}
+		.slider-next,
+		.slider-prev {
+			&:not(:hover) {
+				background-color: var(--tj-color-theme-dark);
+			}
+		}
+		.slider-prev {
+			margin-inline-start: -25px;
+			@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+				margin-inline-start: 10px;
+			}
+		}
+		.slider-next {
+			margin-inline-end: -25px;
+			@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+				margin-inline-end: 10px;
+			}
+		}
+		.swiper-pagination-area {
+			margin-top: 50px;
+			@media #{$sm, $xs} {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
+/* !END: Testimonial CSS */

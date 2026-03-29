@@ -1,0 +1,193 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Hero CSS
+----------------------------------------*/
+.h9-hero {
+	min-height: 880px;
+	padding: 0;
+	@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+		padding: 0;
+	}
+	@media #{$xl, $lg, $md, $sm, $xs} {
+		min-height: 645px;
+	}
+	.hero-bg {
+		opacity: 1;
+		border-radius: 16px;
+		background-position: center center;
+		mix-blend-mode: normal;
+	}
+	&-content {
+		padding-top: 185px;
+		padding-bottom: 285px;
+		@media #{$xl, $lg} {
+			padding-top: 170px;
+			padding-bottom: 270px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding-top: 130px;
+			padding-bottom: 40px;
+		}
+	}
+	&-title {
+		font-size: 80px;
+		line-height: 1.05;
+		max-width: 507px;
+		margin-bottom: 20px;
+		@media #{ $xl} {
+			font-size: 70px;
+		}
+		@media #{ $lg} {
+			font-size: 60px;
+			margin-bottom: 15px;
+		}
+		@media #{ $md} {
+			font-size: 55px;
+		}
+		@media #{ $sm, $xs} {
+			font-size: 45px;
+			margin-bottom: 15px;
+		}
+		@media #{ $md, $sm, $xs} {
+			max-width: 100%;
+		}
+		span {
+			& > span {
+				display: inline-flex;
+				align-items: center;
+				transition: none;
+				& > span.image {
+					display: inline-flex;
+					align-items: center;
+					span,
+					img {
+						width: 55px;
+						height: 55px;
+						background-color: var(--tj-color-common-white);
+						padding: 2px;
+						border-radius: 50%;
+						line-height: 1;
+						margin-inline-start: -22px;
+						@media #{ $md, $lg} {
+							width: 50px;
+							height: 50px;
+							margin-inline-start: -18px;
+						}
+						@media #{ $sm, $xs} {
+							width: 44px;
+							height: 44px;
+							margin-inline-start: -18px;
+						}
+					}
+					img {
+						&:first-child {
+							margin-inline-start: 0;
+						}
+					}
+					span {
+						font-size: 16px;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						letter-spacing: unset;
+						padding: 0;
+						width: 53px;
+						height: 53px;
+						border: 2px solid var(--tj-color-common-white);
+						background-color: var(--tj-color-theme-dark);
+						@media #{ $md, $lg} {
+							width: 48px;
+							height: 48px;
+							font-size: 14px;
+						}
+						@media #{ $sm, $xs} {
+							width: 44px;
+							height: 44px;
+							font-size: 14px;
+						}
+						div {
+							letter-spacing: 0.5px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-img-area {
+		position: relative;
+		max-width: 684px;
+		margin-inline-end: -50px;
+		@media #{$xxl} {
+			margin-inline-end: -20px;
+		}
+		@media #{$xl, $lg, $md, $sm, $xs} {
+			margin-inline-end: 0;
+		}
+		@media #{$md, $sm, $xs} {
+			max-width: 635px;
+			margin: 0 auto;
+		}
+		.h9-hero-img {
+			height: 100%;
+			width: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			&.chart {
+				border-radius: 10px;
+				overflow: hidden;
+				max-width: 248px;
+				width: 100%;
+				height: auto;
+				position: absolute;
+				inset-inline-start: 0;
+				bottom: 185px;
+				z-index: 3;
+				@media #{$xl, $md} {
+					max-width: 200px;
+				}
+				@media #{$lg, $sm, $xs} {
+					max-width: 180px;
+				}
+				@media #{$sm, $xs} {
+					bottom: 35px;
+				}
+			}
+		}
+	}
+}
+.h9-desc-area {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	gap: 20px;
+	flex-wrap: wrap;
+	@media #{ $lg, $sm, $xs} {
+		flex-direction: column;
+		gap: 25px;
+	}
+	.h9-desc-wrap {
+		max-width: 322px;
+		@media #{ $lg} {
+			max-width: 100%;
+		}
+		@media #{ $md} {
+			max-width: 425px;
+		}
+		@media #{ $sm, $xs} {
+			max-width: 100%;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+.h9-btn-wrap {
+	.tj-primary-btn {
+		background-color: var(--tj-color-grey-4);
+	}
+}
+/* !END: Hero CSS */

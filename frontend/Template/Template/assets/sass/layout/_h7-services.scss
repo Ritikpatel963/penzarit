@@ -1,0 +1,130 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Services CSS
+----------------------------------------*/
+.tj-service-section-2 {
+	background-color: var(--tj-color-theme-bg);
+	border-radius: 16px;
+	.service-slider {
+		overflow: hidden;
+		&-wrapper {
+			margin: 0 -15px;
+		}
+	}
+	.swiper-pagination-bullet {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+}
+.service-item {
+	&.service-item-5 {
+		position: relative;
+		padding-bottom: 0;
+		overflow: hidden;
+		.title {
+			margin-bottom: 16px;
+			a {
+				color: var(--tj-color-common-white);
+			}
+			@media #{$lg, $xs} {
+				margin-bottom: 11px;
+			}
+		}
+		.desc {
+			margin-bottom: 15px;
+			@media #{$lg, $xs} {
+				margin-bottom: 11px;
+			}
+		}
+		.service {
+			&-inner {
+				padding: 30px 30px 35px;
+				background-color: var(--tj-color-theme-dark);
+				border: 0;
+				&::before {
+					display: none;
+				}
+				@media #{$lg, $xs} {
+					padding: 20px 20px 30px;
+				}
+			}
+			&_image {
+				position: relative;
+				z-index: 0;
+				overflow: hidden;
+				border-radius: 8px;
+				margin-bottom: 22px;
+				@media #{$lg, $xs} {
+					margin-bottom: 17px;
+				}
+				img {
+					transition: all 0.4s;
+				}
+			}
+			&-icon {
+				&-wrapper {
+					padding-inline-start: 15px;
+					padding-top: 15px;
+					background-color: var(--tj-color-theme-dark);
+					border-start-start-radius: 8px;
+					position: absolute;
+					inset-inline-end: 0;
+					bottom: 0;
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						background-color: transparent;
+						width: 25px;
+						height: 8px;
+						box-shadow: 8px 0 0 0 var(--tj-color-theme-dark);
+						border-start-end-radius: 8px;
+						transform: scaleY(-1);
+					}
+					&::before {
+						top: -8px;
+						inset-inline-end: 0;
+					}
+					&::after {
+						bottom: 0px;
+						inset-inline-start: -25px;
+					}
+				}
+				width: 63px;
+				height: 63px;
+				background-color: var(--tj-color-theme-primary);
+				color: var(--tj-color-theme-dark);
+				border: 0;
+				border-radius: 7px;
+				margin-bottom: 0;
+
+				@media #{$sm, $xs} {
+					width: 55px;
+					height: 55px;
+				}
+			}
+		}
+
+		&:hover {
+			.service {
+				&_image {
+					img {
+						transform: scale(1.1) !important;
+					}
+				}
+			}
+			.desc {
+				color: var(--tj-color-text-body);
+			}
+			.tj-text-btn {
+				color: var(--tj-color-text-body);
+				&:hover {
+					color: var(--tj-color-theme-primary);
+				}
+			}
+		}
+	}
+}
+
+/* !END: Services CSS */

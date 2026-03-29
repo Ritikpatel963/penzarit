@@ -1,0 +1,141 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: About CSS
+----------------------------------------*/
+.h4-about {
+	&-section {
+		.sec-heading {
+			margin-bottom: 15px;
+			.sec-title {
+				@media #{$xl} {
+					font-size: 44px;
+				}
+				@media #{$lg} {
+					font-size: 40px;
+				}
+			}
+		}
+		.about-left {
+			max-width: 100%;
+			height: 100%;
+			position: relative;
+			background-color: var(--tj-color-theme-bg);
+			border-radius: 16px;
+			overflow: hidden;
+			@media #{$md, $sm, $xs} {
+				border-radius: 12px;
+			}
+		}
+		.about-img {
+			mask-image: none;
+			overflow: hidden;
+			max-width: 915px;
+			margin: 0 auto;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.about-content-area {
+			padding: 120px 20px 120px 95px;
+			background-color: var(--tj-color-theme-bg);
+			border: 1px solid var(--tj-color-border-1);
+			.about-content {
+				max-width: 555px;
+				@media #{$md} {
+					max-width: 700px;
+				}
+			}
+			.desc {
+				max-width: 530px;
+				@media #{$md} {
+					max-width: 570px;
+				}
+			}
+			&::before {
+				display: none;
+			}
+			@media #{$xl} {
+				padding: 120px 20px 120px 60px;
+			}
+			@media #{$lg} {
+				padding: 100px 20px 100px 60px;
+			}
+			@media #{$md, $sm, $xs} {
+				max-width: 100%;
+				padding: 60px 15px;
+				border-radius: 12px;
+				background-color: var(--tj-color-theme-bg);
+			}
+		}
+	}
+}
+.clients-review {
+	&-area {
+		display: inline-flex;
+		justify-content: space-between;
+		gap: 20px;
+		max-width: 350px;
+		width: 100%;
+		margin-top: 52px;
+		padding-top: 22px;
+		border-top: 1px solid var(--tj-color-border-1);
+		position: relative;
+		.separator-line {
+			width: 1px;
+			height: 68px;
+			border-inline-start: 1px solid var(--tj-color-border-1);
+			margin-top: 6px;
+		}
+		@media #{$md, $sm, $xs} {
+			margin-top: 40px;
+		}
+	}
+	&-point {
+		.total-point {
+			color: var(--tj-color-heading-primary);
+			font-size: 52px;
+			line-height: 0.85;
+			font-family: var(--tj-ff-heading);
+			font-weight: var(--tj-fw-sbold);
+			letter-spacing: -0.03em;
+			margin-bottom: 11px;
+			@media #{$xs} {
+				font-size: 48px;
+			}
+		}
+		span {
+			display: inline-flex;
+			line-height: 1.3;
+		}
+	}
+	&-rating {
+		.title {
+			color: var(--tj-color-heading-primary);
+			margin-bottom: 18px;
+		}
+		.review-stars {
+			display: inline-flex;
+			gap: 2px;
+			span {
+				font-size: 15px;
+				line-height: 1;
+				color: var(--tj-color-theme-primary);
+				background-color: var(--tj-color-theme-dark);
+				border: 1px solid var(--tj-color-border-1);
+				border-radius: 4px;
+				width: 30px;
+				height: 30px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				@media #{$xs} {
+					font-size: 13px;
+					width: 25px;
+					height: 25px;
+				}
+			}
+		}
+	}
+}
+
+/* !END: About CSS */

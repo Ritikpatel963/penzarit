@@ -1,0 +1,67 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Blog CSS
+----------------------------------------*/
+.h8-blog-item {
+	&.blog-item {
+		height: 430px;
+		padding: 0;
+		position: relative;
+		.blog-thumb {
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			inset-inline-start: 0;
+			opacity: 0;
+			visibility: hidden;
+			@include transition(all 0.3s ease-in-out 0s);
+			@media #{$xl, $lg, $sm} {
+				height: 100%;
+			}
+		}
+		.blog-content {
+			padding: 30px;
+			position: absolute;
+			bottom: -50px;
+			inset-inline-start: 0;
+			@include transition(all 0.3s ease-in-out 0s);
+		}
+		.tj-text-btn {
+			margin-top: 25px;
+			opacity: 0;
+			visibility: hidden;
+			@include transition(all 0.3s ease-in-out 0s);
+		}
+		&:hover {
+			.tj-text-btn,
+			.blog-thumb {
+				opacity: 1;
+				visibility: visible;
+			}
+			.blog-thumb {
+				opacity: 0.5;
+			}
+			.blog-content {
+				bottom: 0;
+			}
+		}
+
+		@media #{$xs} {
+			.blog-content {
+				padding: 20px;
+			}
+		}
+	}
+	.blog-date {
+		inset-inline-start: 30px;
+		top: 30px;
+		@media #{$xs} {
+			inset-inline-start: 20px;
+			top: 20px;
+		}
+	}
+}
+/* !END: Blog CSS */

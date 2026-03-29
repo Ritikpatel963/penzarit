@@ -1,0 +1,989 @@
+@use "./utilities" as *;
+
+/**----------------------------------------
+START: Default CSS
+----------------------------------------*/
+.tji-check,
+.tji-check-2,
+.tji-check-3,
+.tji-check-4,
+.tji-arrow-right-4,
+.tji-play,
+.slider-prev,
+.slider-next {
+	transform: scaleX(-1);
+}
+.swiper-pagination-bullet::before {
+	transform: translate(50%, -50%);
+}
+.vbox-close {
+	right: auto;
+	left: 0;
+}
+.vbox-left-corner {
+	left: auto;
+	right: 0;
+}
+.tj-primary-btn {
+	padding: 5px 30px 5px 5px;
+	.btn-icon {
+		i {
+			transform: rotate(45deg) scaleX(-1);
+		}
+	}
+	&:hover {
+		.btn-icon {
+			i {
+				transform: rotate(0) scaleX(-1);
+			}
+		}
+	}
+	&.style-2 {
+		padding: 4px 29px 4px 4px;
+	}
+}
+.tj-icon-btn {
+	i {
+		transform: rotate(45deg) scaleX(-1);
+	}
+	&:hover {
+		i {
+			transform: rotate(0) scaleX(-1);
+		}
+	}
+}
+.nice-select {
+	&::after {
+		transform: rotate(-45deg);
+		transform-origin: center;
+	}
+	&.open:after {
+		transform: rotate(135deg);
+	}
+}
+.video-btn-2 .btn-icon i {
+	display: inline-block;
+}
+
+// Marquee
+.marquee-slider-wrapper,
+.client-slider-wrap .scroll-slider .scroll-wrapper {
+	animation-name: scroll-rtl;
+}
+[dir="rtl"] [dir="rtl"] .scroll-wrapper {
+	animation-direction: reverse;
+}
+.tj-page-link span:not(:first-child) i {
+	transform: scaleX(-1);
+}
+
+.tj-pagination ul li .page-numbers i {
+	transform: scaleX(-1);
+	display: inline-block;
+}
+/* !END:  Default CSS */
+
+/**----------------------------------------
+START: Preloader CSS
+----------------------------------------*/
+#loading-icon {
+	transform: translate(50%, -50%);
+}
+
+/* !END:  Preloader CSS */
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-button {
+	.tj-primary-btn {
+		padding: 5px 25px 5px 5px;
+	}
+}
+.tj-primary-btn.signup-btn {
+	padding: 10px 28px;
+}
+.header-top {
+	&-content {
+		.topbar-text {
+			a {
+				&::after {
+					transform: rotate(45deg) scaleX(-1);
+				}
+				&:hover {
+					&::after {
+						transform: rotate(0deg) scaleX(-1);
+					}
+				}
+			}
+		}
+		.header-info {
+			.info-item {
+				.tj-language {
+					&:hover {
+						span {
+							&::after {
+								transform: translateY(-50%) rotate(180deg);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.mainmenu ul > li.menu-item-has-children:hover > a::after,
+.mainmenu ul > li.has-dropdown:hover > a::after {
+	transform: rotate(180deg);
+}
+.hamburger {
+	&_search {
+		select,
+		.nice-select,
+		input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]),
+		input {
+			padding: 0 16px 0 65px;
+		}
+	}
+	&_menu {
+		.mean-nav {
+			ul {
+				li {
+					a.mean-expand {
+						&.mean-clicked {
+							transform: rotate(-180deg);
+							& i {
+								transform: rotate(-180deg);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.tj_search_wrapper
+	.search_form
+	form
+	.search_input
+	.search-box
+	input[type="search"] {
+	padding: 20px 24px 20px 75px;
+}
+.number-wrapper .number span {
+	background-position: 100% 100%;
+}
+/* !END: Theme Header CSS */
+
+/**----------------------------------------
+START: Hero CSS
+----------------------------------------*/
+.banner-img-area .banner-img {
+	mask-image: url(../images/rtl/hero-img-shape.svg);
+	mask-position: top right;
+	@media #{$lg, $sm, $xs} {
+		mask-image: none;
+	}
+}
+.banner-content .btn-area .number span {
+	background-position: 100% 100%;
+}
+.tj-banner-section-2 .banner-img-area .banner-img img {
+	mask-image: url(../images/rtl/hero-img-shape-2.svg);
+	mask-position: top left;
+	@media #{$lg,$md,$sm,$xs} {
+		mask-image: none;
+	}
+}
+.tj_slider_item .slider-bg::after {
+	transform: scaleX(-1);
+}
+.slider_socials {
+	writing-mode: sideways-rl;
+}
+.tj-banner-section.h5-banner-section {
+	.blur-shape {
+		transform: scaleX(-1);
+	}
+	.banner-img-area .box-item {
+		> img {
+			transform: scaleX(-1);
+		}
+	}
+}
+.h6-hero .hero-orbit {
+	transform: translateX(50%);
+}
+.h7-hero-shape img {
+	transform: scaleX(-1);
+}
+.tj-h8-banner-shape .shape {
+	&-1,
+	&-2 {
+		img {
+			transform: scaleX(-1);
+		}
+	}
+}
+.tj-h8-banner-subscribe .subscribe-form.cta-form {
+	[type="submit"],
+	input[type="submit"] {
+		.btn-icon i {
+			transform: rotate(45deg) scaleX(-1);
+		}
+		&:hover {
+			.btn-icon i {
+				transform: rotate(0deg) scaleX(-1);
+			}
+		}
+	}
+}
+.header-area.header-8 .header-button .tj-primary-btn {
+	.btn-icon i {
+		transform: rotate(45deg) scaleX(-1);
+	}
+	&:hover {
+		.btn-icon i {
+			transform: rotate(0deg) scaleX(-1);
+		}
+	}
+}
+.h9-video .h9-video-item .video-wrap {
+	transform: translate(50%, -50%);
+}
+/* !END: Hero CSS */
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.client-slider::before,
+.client-slider::after,
+.h10-client-shape-1 {
+	transform: scaleX(-1);
+}
+/* !END: Client CSS */
+
+/**----------------------------------------
+START: About CSS
+----------------------------------------*/
+.about-img {
+	mask-image: url(../images/rtl/shape-2.svg);
+	mask-position: top right;
+	@media #{$lg, $sm, $xs} {
+		mask-image: none;
+	}
+}
+.circle-text {
+	transform: translate(50%, -50%);
+}
+.about-content-area {
+	padding: 55px 45px 64px 70px;
+	&::before {
+		mask-image: url(../images/rtl/shape-1.svg);
+		mask-position: bottom left;
+	}
+	@media #{$xl} {
+		padding: 40px 35px;
+	}
+
+	@media #{$lg} {
+		padding: 40px 30px;
+	}
+	@media #{$sm, $xs} {
+		padding: 40px 20px;
+	}
+}
+.circle-icon {
+	transform: translate(50%, -50%);
+}
+.author-area .author-info {
+	padding: 27px 0 27px 15px;
+	@media #{$xl} {
+		padding: 24px 0 24px 15px;
+	}
+	@media #{$lg, $sm} {
+		padding: 20px 0;
+	}
+}
+.experience-area .exp-badge {
+	transform: rotate(-45deg);
+}
+.tj-about-section-2 {
+	.about-left {
+		&::after,
+		&::before {
+			box-shadow: 16px 0 0 0 var(--tj-color-theme-dark);
+		}
+	}
+	.about-content-area {
+		padding: 110px 10px 0 0;
+		@media #{$xxl,$xl} {
+			padding: 110px 40px 0 30px;
+		}
+		@media #{$lg} {
+			padding: 90px 30px 0 30px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding: 70px 15px 30px;
+		}
+	}
+}
+.circle-text-wrap.about-btn .circle-icon {
+	transform: translate(50%, -50%) rotate(45deg) scaleX(-1);
+	&:hover {
+		transform: translate(50%, -50%) rotate(0deg) scaleX(-1);
+	}
+}
+.h3_about_img .about_reviews {
+	padding: 0 50px 25px 0;
+	&::before,
+	&::after {
+		box-shadow: -10px 0 0 0 var(--tj-color-theme-dark);
+	}
+	.bg {
+		transform: scaleX(-1);
+	}
+	@media #{$xs} {
+		padding: 0 34px 25px 0;
+	}
+}
+.h4-about-section .about-content-area {
+	padding: 120px 95px 120px 20px;
+	@media #{$xl} {
+		padding: 120px 60px 120px 20px;
+	}
+	@media #{$lg} {
+		padding: 100px 60px 100px 20px;
+	}
+	@media #{$md, $sm, $xs} {
+		padding: 60px 15px;
+	}
+}
+.h8-about-shape {
+	img {
+		transform: scaleX(-1);
+	}
+}
+.h9-counter-section {
+	.counter-image,
+	.counter-shape {
+		img {
+			transform: scaleX(-1);
+		}
+	}
+	&::after {
+		transform: translateX(50%);
+	}
+}
+
+/* !END: About CSS */
+
+/**----------------------------------------
+START: Services CSS
+----------------------------------------*/
+.service-inner {
+	border-radius: 10px 10px 10px 0;
+}
+.service-btn::before {
+	box-shadow: -10px 0 0 0 var(--tj-color-theme-bg);
+	border-inline-end: 0;
+}
+.service-item .item-count {
+	&::before,
+	&::after {
+		border-inline-end: 0;
+		box-shadow: -13px 0 0 0 var(--tj-color-theme-dark);
+	}
+}
+
+.service_list_item {
+	.service_reveal_img {
+		transform: translate(50%, -50%) rotateX(270deg);
+	}
+	&:hover {
+		.service_reveal_img {
+			transform: translate(50%, -50%) rotateX(360deg);
+		}
+	}
+}
+.service-item-3.service-item .service-img::after {
+	transform: translateX(50%);
+}
+.service-categories ul li a {
+	padding: 20px 25px 17px 15px;
+	.icon {
+		i {
+			transform: scaleX(-1);
+		}
+	}
+}
+.tj-post__navigation .tj-nav-post__nav a span i {
+	transform: scaleX(-1);
+}
+/* !END: Services CSS */
+
+/**----------------------------------------
+START: Project CSS
+----------------------------------------*/
+.project-wrapper-2 .project-item {
+	padding: 15px 15px 15px 30px;
+	@media #{$xs} {
+		padding: 15px;
+	}
+}
+.h8-project-more {
+	transform: translateX(50%);
+}
+/* !END: Project CSS */
+
+/**----------------------------------------
+START: Video CSS
+----------------------------------------*/
+.video-content-area .video-wrap {
+	transform: translate(50%, -50%);
+}
+/* !END: Video CSS */
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.testimonial-wrapper {
+	.testimonial-item::before {
+		transform: translateX(50%) rotate(45deg);
+	}
+	.client-thumb .author-header {
+		transform: translateX(50%);
+	}
+	.testimonial-navigation {
+		transform: translate(50%, -50%);
+	}
+}
+.testimonial-wrapper-2 {
+	.slider-prev,
+	.slider-next {
+		transform: translateX(0) scaleX(-1);
+	}
+	&:hover .slider-prev {
+		transform: translateX(50%) scaleX(-1);
+	}
+	&:hover .slider-next {
+		transform: translateX(-50%) scaleX(-1);
+	}
+}
+.testimonial_item_2 .testimonial_thumb .video_btn {
+	transform: translate(50%, -50%);
+}
+.h9-testimonial-item .tj-qutoe-icon {
+	&::before,
+	&::after {
+		box-shadow: -12px 0 0 0 var(--tj-color-theme-bg);
+	}
+}
+.h10-testimonial-shape {
+	transform: scaleX(-1);
+}
+.location {
+	&-tooltip {
+		transform: translateX(50%);
+	}
+	&-indicator {
+		&::after,
+		&::before {
+			transform: translate(50%, -50%);
+		}
+	}
+}
+.global-map-img img {
+	transform: scaleX(-1);
+}
+/* !END: Testimonial CSS */
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.team-item .social-links {
+	padding: 15px 15px 0 5px;
+}
+.testimonial-wrapper-3 .quote-icon {
+	transform: translateX(50%);
+}
+/* !END: Testimonial CSS */
+
+/**----------------------------------------
+START: Technologies CSS
+----------------------------------------*/
+[dir="rtl"] {
+	.tech-item {
+		flex-direction: row;
+	}
+	.tech-content {
+		text-align: start;
+	}
+	[dir="rtl"] {
+		.tech-item {
+			flex-direction: row;
+		}
+	}
+}
+.technologies-item-wrap {
+	&::before {
+		transform: scaleX(-1);
+	}
+	&::after {
+		transform: scaleX(1);
+	}
+}
+.h5-technologies-section .blur-shape {
+	transform: scaleX(-1);
+}
+.technologies-circle {
+	animation-direction: reverse;
+	.tech-icon img {
+		animation-direction: reverse;
+	}
+}
+/* !END: Technologies CSS */
+
+/**----------------------------------------
+START: Process CSS
+----------------------------------------*/
+.process-step {
+	left: 50%;
+	writing-mode: sideways-rl;
+}
+.process-item:hover {
+	.process-step {
+		transform: translateX(-50%) rotate(-90deg);
+	}
+}
+.process-border {
+	transform: translate(50%, -50%);
+	@media #{$md,$sm,$xs} {
+		transform: translate(50%, -50%) rotate(90deg);
+	}
+}
+.process-item-2 {
+	&::before {
+		transform: translateX(50%);
+	}
+	.process-step {
+		transform: translate(50%, -50%);
+	}
+}
+.process-border-2 {
+	transform: translateX(50%);
+}
+/* !END: Process CSS */
+
+/**----------------------------------------
+START: Blog CSS
+----------------------------------------*/
+.blog-item .blog-content .title a {
+	background-position: 100% 90%;
+}
+.tj_blog_wrap {
+	&_2 {
+		.blog-item {
+			&:first-child {
+				.blog-content {
+					padding: 15px 30px 15px 15px;
+				}
+			}
+		}
+
+		@media #{$md, $sm, $xs} {
+			.blog-item {
+				&:first-child {
+					.blog-content {
+						padding: 20px 15px 15px 15px;
+					}
+				}
+			}
+		}
+		@media #{$sm} {
+			.blog-item {
+				&:not(:first-child) {
+					.blog-content {
+						padding: 15px;
+						padding-inline-start: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+.tj_blog_wrap .blog-item:not(:first-child) .blog-content {
+	padding: 15px 25px 15px 15px;
+	@media #{$xs} {
+		padding: 25px 10px 5px 5px;
+	}
+}
+.tj-sidebar-widget.widget-search .search-box form input[type="search"] {
+	padding: 18px 20px 18px 55px;
+}
+.post-details-wrapper .blog-text .blog-video .video-btn {
+	&::before {
+		transform: translate(50%, -50%);
+	}
+	span {
+		i {
+			display: inline-block;
+		}
+	}
+}
+/* !END: Blog CSS */
+
+/**----------------------------------------
+START: CTA CSS
+----------------------------------------*/
+.subscribe-form.cta-form input[type="email"] {
+	padding: 6px 30px 6px 205px;
+	@media #{$xs} {
+		padding: 5px 24px 5px 60px;
+	}
+}
+.subscribe-form {
+	input[type="email"] {
+		padding: 15px 25px 15px 60px;
+	}
+	[type="submit"],
+	input[type="submit"] {
+		i {
+			transform: scaleX(-1);
+		}
+		&:hover i,
+		&:focus i,
+		&:hover i,
+		&:focus i {
+			transform: scaleX(-1) scale(0.8);
+		}
+	}
+	input[type="checkbox"] {
+		&::before {
+			transform: scaleX(-1) scale(0.5);
+
+			margin-inline-start: 1px;
+		}
+		&:checked {
+			&::before {
+				transform: scaleX(-1) scale(1);
+			}
+		}
+	}
+}
+.h6-cta-section .cta-area .cta-baner img {
+	transform: scaleX(-1);
+}
+.tj-footer-section.footer-7 .footer-cta .subscribe_form {
+	form {
+		input[type="email"] {
+			padding: 22px 20px 22px 70px;
+		}
+	}
+	input[type="checkbox"] {
+		&::before {
+			transform: scaleX(-1) scale(0.5);
+			margin-inline-start: 1px;
+		}
+		&:checked {
+			&::before {
+				transform: scaleX(-1) scale(1);
+			}
+		}
+	}
+}
+.h9-cta-section .bg-img {
+	transform: scaleX(-1);
+}
+.h9-cta-section .cta-baner {
+	.image-2 {
+		img {
+			transform: none;
+		}
+	}
+}
+.h10-cta-section .cta-right .tj-text-btn.style-2 {
+	&::before {
+		transform-origin: right;
+	}
+	&:hover {
+		&::before {
+			transform-origin: left;
+		}
+	}
+}
+/* !END: CTA CSS */
+
+/**----------------------------------------
+START: FAQ CSS
+----------------------------------------*/
+.accordion {
+	&_title {
+		padding: 27px 0 27px 45px;
+	}
+	@media #{$md, $sm, $xs} {
+		&_title {
+			padding: 20px 0 20px 45px;
+			&::after {
+				top: 17px;
+			}
+		}
+	}
+	@media #{$sm, $xs} {
+		&_title {
+			padding: 20px 0 20px 40px;
+		}
+	}
+}
+.tj_accordion_2 .accordion {
+	&_title {
+		padding: 27px 30px 27px 70px;
+	}
+	@media #{$md, $sm, $xs} {
+		&_title {
+			padding: 20px 20px 20px 55px;
+		}
+	}
+	@media #{$sm, $xs} {
+		&_title {
+			padding: 20px 20px 20px 60px;
+		}
+	}
+}
+.h9-faq-shape {
+	&-1,
+	&-2 {
+		img {
+			transform: scaleX(-1);
+		}
+	}
+}
+.h10-faq-section .shape img {
+	transform: scaleX(-1);
+}
+.tj_accordion.h10-accordion .accordion_title {
+	padding: 37px 0 37px 45px;
+	@media #{$lg,$md} {
+		padding: 30px 0 30px 45px;
+	}
+	@media #{$sm,$xs} {
+		padding: 20px 0 20px 45px;
+	}
+}
+/* !END: FAQ CSS */
+
+/**----------------------------------------
+START: Funfact CSS
+----------------------------------------*/
+.funfact-3 .countup-item:not(:last-child) {
+	&::before {
+		transform: translate(-50%, -50%);
+		@media (max-width: 575px) {
+			transform: translate(-50%, 50%);
+		}
+	}
+	&::after {
+		transform: translateX(-50%);
+		@media (max-width: 575px) {
+			transform: translateY(50%);
+		}
+	}
+}
+.h5-faq-section .shape {
+	img {
+		transform: scaleX(-1);
+	}
+}
+/* !END: FAQ CSS */
+
+/**----------------------------------------
+START: Technologies CSS
+----------------------------------------*/
+.integration-section-wrap::before {
+	transform: translateX(50%);
+}
+.throwable_items_wrap > * {
+	inset-inline-start: inherit;
+	left: 0;
+}
+.integration_item {
+	justify-content: left;
+}
+.tech-left-area {
+	padding: 120px 30px 120px 130px;
+	@media #{$xl, $lg} {
+		padding: 100px 30px;
+	}
+	@media #{$md, $sm, $xs} {
+		padding: 60px 15px;
+	}
+}
+.technologies-right::before {
+	transform: translate(50%, -50%);
+}
+/* !END: Technologies CSS */
+
+/**----------------------------------------
+START: Pricing CSS
+----------------------------------------*/
+.price_switcher.style-2 .toggle_switcher {
+	.toggle {
+		&-m {
+			transform: translateX(-2px);
+		}
+		&-y {
+			transform: translateX(9px);
+		}
+	}
+}
+.pricing-box .icon i {
+	display: inline-block;
+}
+/* !END: Pricing CSS CSS */
+
+/**----------------------------------------
+START: Shop CSS
+----------------------------------------*/
+.tj-checkout-billing-wrapper .nice-select {
+	&::after {
+		transform: rotate(-45deg);
+	}
+	&.open::after {
+		transform: rotate(135deg);
+	}
+}
+.woosw-list table.woosw-items tr.woosw-item td .woosw-item--atc {
+	float: left;
+	@media #{$sm,$xs} {
+		float: unset;
+	}
+}
+div.product-widget.widget_product_categories ul li {
+	padding-inline-start: 25px;
+	padding-inline-end: 15px;
+}
+.tj-product-action-btn-tooltip::after {
+	transform: translate(50%, -50%) rotate(45deg);
+}
+.tj-product-details-description ol.commentlist {
+	padding-inline-start: 0;
+	padding-inline-end: 0;
+	.review .comment_container img {
+		float: right;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+}
+div.woocommerce
+	.woocommerce-cart-form
+	.actions
+	button[name="update_cart"]:disabled:hover
+	.btn-icon
+	i {
+	transform: scaleX(-1) rotate(-45deg);
+}
+.woocommerce-form.woocommerce-form-login
+	.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme
+	span::before {
+	transform: scaleX(-1);
+	margin-inline-start: -1px;
+}
+/* !END: Shop CSS */
+
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+.widget-nav-menu ul li a:hover {
+	transform: translateX(-5px);
+}
+.footer-3 .tj_footer_inner::before {
+	transform: translateX(50%);
+}
+.footer-widget.subscription_widget .subscribe_form input[type="email"] {
+	padding: 22px 20px 22px 70px;
+	@media #{$md, $sm, $xs} {
+		padding: 16px 20px 16px 62px;
+	}
+}
+.tj-footer-section.footer-5::before {
+	transform: translateX(50%);
+}
+.footer-8 .subscription_widget .subscribe_form form {
+	input[type="email"] {
+		padding: 22px 20px 22px 70px;
+	}
+	input[type="checkbox"] {
+		&::before {
+			transform: scaleX(-1) scale(0.5);
+			margin-inline-start: 1px;
+		}
+		&:checked::before {
+			transform: scaleX(-1) scale(1);
+		}
+	}
+}
+.footer-9 .subscription_widget .subscribe_form form {
+	input[type="email"] {
+		padding: 22px 20px 22px 70px;
+	}
+	input[type="checkbox"] {
+		&::before {
+			transform: scaleX(-1) scale(0.5);
+			margin-inline-start: 1px;
+		}
+		&:checked {
+			&::before {
+				transform: scaleX(-1) scale(1);
+			}
+		}
+	}
+}
+/* !END: Theme Footer CSS */
+
+/**----------------------------------------
+START: Animation 
+----------------------------------------*/
+@keyframes textRotate {
+	0% {
+		transform: translate(50%, -50%) rotate(360deg);
+	}
+	100% {
+		transform: translate(50%, -50%) rotate(0deg);
+	}
+}
+@keyframes rotate-loading {
+	0% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+@keyframes rotateAntiClock {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes bouncexAnim {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(15px);
+	}
+	50% {
+		transform: translateX(0);
+	}
+	75% {
+		transform: translateX(15px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+/* !END: Animation */

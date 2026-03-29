@@ -1,0 +1,105 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.h9-client {
+	&-section {
+		background-color: var(--tj-color-theme-bg);
+		border-radius: 16px;
+		z-index: 2;
+		@media #{$md, $sm, $xs} {
+			border-radius: 12px;
+		}
+		.bg-img {
+			opacity: 1;
+			mix-blend-mode: normal;
+		}
+		.sec-heading {
+			margin-bottom: 100px;
+			@media #{$md, $sm, $xs} {
+				margin-bottom: 16px;
+			}
+		}
+		.sub-title {
+			margin-bottom: 16px;
+		}
+		.sec-title {
+			font-size: 74px;
+			line-height: 1.05;
+			@media #{$xl} {
+				font-size: 60px;
+			}
+			@media #{$lg} {
+				font-size: 50px;
+			}
+			@media #{$md} {
+				font-size: 40px;
+			}
+			@media #{$sm, $xs} {
+				font-size: 32px;
+			}
+		}
+		.section-right-content {
+			max-width: 513px;
+			margin-inline-start: auto;
+			@media #{$md, $sm, $xs} {
+				max-width: 100%;
+			}
+			p {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&-wrap {
+		margin-top: 60px;
+		@media #{$lg} {
+			margin-top: 50px;
+		}
+		@media #{$md, $sm, $xs} {
+			margin-top: 40px;
+		}
+	}
+	&-item {
+		width: 100%;
+		padding: 0;
+		.client-logo {
+			width: 100%;
+			height: 157px;
+			border: 0;
+			background-color: var(--tj-color-grey-4);
+			position: relative;
+			overflow: hidden;
+			img {
+				transition: all 0.5s ease;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(
+					45deg,
+					transparent,
+					rgba(255, 255, 255, 0.1),
+					transparent
+				);
+				top: -100%;
+				inset-inline-start: -100%;
+				transition: all 0.5s ease;
+				border-radius: 10px;
+			}
+			&:hover {
+				&::before {
+					top: 100%;
+					inset-inline-start: 100%;
+				}
+				img {
+					transform: scale(1.15);
+				}
+			}
+		}
+	}
+}
+
+/* !END: Client CSS */

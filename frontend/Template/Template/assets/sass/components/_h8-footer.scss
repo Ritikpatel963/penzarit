@@ -1,0 +1,171 @@
+@use "../utilities" as *;
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+.footer-8 {
+	&.tj-footer-section {
+		padding-top: 0;
+	}
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		top: -280px;
+		inset-inline-start: 22%;
+		inset-inline-end: auto;
+		width: 395px;
+		height: 395px;
+		border-radius: 50%;
+		background: var(--tj-color-theme-primary);
+		-webkit-filter: blur(200px);
+		filter: blur(200px);
+		opacity: 1;
+		z-index: -1;
+		pointer-events: none;
+	}
+	&::after {
+		top: auto;
+		inset-inline-end: auto;
+		inset-inline-start: -100px;
+		bottom: -100px;
+		opacity: 0.5;
+	}
+	.footer-main-area {
+		position: relative;
+		z-index: 2;
+		padding: 120px 0 0;
+		margin-bottom: 30px;
+		border-radius: 16px;
+		background-color: var(--tj-color-theme-dark);
+		@media #{$lg} {
+			padding: 100px 0 0;
+			margin-bottom: 15px;
+		}
+		@media #{$md, $sm, $xs} {
+			padding: 70px 0 0;
+			margin-bottom: 15px;
+		}
+	}
+	.footer_widget_wrapper .footer-widget {
+		@media #{$lg, $md} {
+			max-width: calc(50% - 15px);
+			width: 100%;
+		}
+		@media #{$sm, $xs} {
+			max-width: 100%;
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+
+	.footer_bottom_area {
+		border-top: 1px solid var(--tj-color-border-1);
+		padding: 30px 0;
+		margin-top: 100px;
+		@media #{$lg} {
+			margin-top: 80px;
+		}
+		@media #{$md, $sm, $xs} {
+			margin-top: 60px;
+		}
+	}
+	.subscription_widget {
+		.subscribe_form {
+			form {
+				position: relative;
+				z-index: 1;
+				input[type="email"] {
+					min-height: 72px;
+					padding: 22px 70px 22px 20px;
+					background-color: var(--tj-color-theme-bg);
+				}
+
+				button[type="submit"],
+				input[type="submit"] {
+					position: absolute;
+					inset-inline-end: 5px;
+					top: 5px;
+					width: 62px;
+					height: 62px;
+					background-color: var(--tj-color-theme-primary);
+					border-radius: 8px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 24px;
+					line-height: 1;
+					color: var(--tj-color-theme-dark);
+					transition: all 0.3s ease-in-out 0s;
+
+					i,
+					svg {
+						display: inline-flex;
+						line-height: 1;
+					}
+					svg {
+						max-width: 24px;
+						height: auto;
+					}
+
+					&:hover {
+						i,
+						svg {
+							animation: bellShake 1s linear infinite;
+						}
+					}
+				}
+			}
+			input[type="checkbox"] {
+				position: relative;
+				margin-inline-end: 8px;
+				width: 18px;
+				height: 18px;
+				border: 1px solid var(--tj-color-theme-dark-3);
+				border-radius: 3px;
+				appearance: none;
+				cursor: pointer;
+
+				&::before {
+					content: "\e941";
+					font-size: 19px;
+					line-height: 1;
+					font-family: "tekmino-icon" !important;
+					color: var(--tj-color-common-white);
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					line-height: 16px;
+					transform: scale(0.5);
+					margin-inline-start: -1px;
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+				}
+				&:checked {
+					background-color: var(--tj-color-theme-primary);
+					border-color: var(--tj-color-theme-primary);
+					&::before {
+						color: var(--tj-color-theme-dark);
+						transform: scale(1);
+						opacity: 1;
+					}
+				}
+			}
+			label {
+				font-size: 16px;
+				color: var(--tj-color-text-body);
+				margin-top: 18px;
+				display: inline-flex;
+				align-items: center;
+				a {
+					color: var(--tj-color-text-body);
+					font-weight: var(--tj-fw-sbold);
+					margin-inline-start: 4px;
+					&:hover {
+						color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Theme Footer CSS */

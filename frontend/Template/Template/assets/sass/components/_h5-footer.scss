@@ -1,0 +1,135 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+.tj-footer-section {
+	&.footer-5 {
+		padding-top: 100px;
+		.bg-img {
+			mask-image: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0) 0%,
+				rgb(0, 0, 0) 100%,
+				rgb(0, 0, 0) 100%,
+				rgba(0, 0, 0, 0) 100%
+			);
+		}
+		&::before {
+			top: -250px;
+			inset-inline-start: 50%;
+			inset-inline-end: auto;
+			max-width: 1550px;
+			width: 100%;
+			height: 500px;
+			transform: translateX(-50%);
+		}
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.footer-5 {
+	.footer-cta {
+		&-content {
+			max-width: 610px;
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			.footer-award {
+				max-width: 163px;
+				width: 100%;
+				margin: 0 auto 17px;
+				@media #{$sm, $xs} {
+					max-width: 130px;
+				}
+			}
+			.title {
+				margin-bottom: 26px;
+			}
+		}
+	}
+	.footer-main-area {
+		padding: 100px 0 0 0;
+		@media #{$lg, $md} {
+			padding: 90px 0 0 0;
+		}
+		@media #{$sm, $xs} {
+			padding: 70px 0 0 0;
+		}
+	}
+	.footer_widget_wrapper {
+		background-color: var(--tj-color-theme-dark);
+		padding: 100px 30px 88px;
+		border-radius: 20px;
+		.subscription_widget {
+			max-width: 416px;
+			width: 100%;
+			.subscribe_form {
+				input[type="email"] {
+					background-color: var(--tj-color-theme-bg);
+				}
+			}
+		}
+		.footer-widget {
+			@media #{$lg, $md} {
+				max-width: calc(50% - 15px);
+				width: 100%;
+			}
+			@media #{$sm, $xs} {
+				max-width: 100%;
+				width: 100%;
+				margin: 0;
+			}
+		}
+		@media #{$lg, $md} {
+			padding: 80px 20px;
+		}
+		@media #{$sm, $xs} {
+			padding: 70px 15px;
+		}
+	}
+	.widget-nav-menu {
+		ul {
+			li {
+				a {
+					color: var(--tj-color-text-body);
+					&:hover {
+						color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+		}
+	}
+	.footer-contact-info {
+		.contact-item {
+			span {
+				color: var(--tj-color-text-body);
+			}
+			a {
+				color: var(--tj-color-text-body);
+				&:hover {
+					color: var(--tj-color-theme-primary);
+				}
+			}
+		}
+	}
+
+	.footer_bottom_area {
+		padding: 23px 0;
+	}
+
+	@media #{$md} {
+		.copyright-text {
+			order: 1;
+		}
+		.copyright-menu {
+			order: 3;
+		}
+		.footer_socials {
+			order: 2;
+		}
+	}
+}
+/* !END: Theme Footer CSS */

@@ -1,0 +1,161 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Services CSS
+----------------------------------------*/
+.h5-service-section {
+	.sec-heading {
+		.desc {
+			max-width: 325px;
+			margin-bottom: 0;
+		}
+	}
+}
+.service-item {
+	&.service-item-4 {
+		position: relative;
+		padding-bottom: 0;
+		overflow: hidden;
+		.title {
+			@media #{$lg} {
+				font-size: 20px;
+			}
+		}
+		.desc {
+			color: var(--tj-color-text-body-2);
+			margin-bottom: 0;
+		}
+		.service-content {
+			padding-bottom: 94px;
+			@media #{$xl, $lg, $md, $sm, $xs} {
+				padding-bottom: 70px;
+			}
+		}
+		.service-inner {
+			padding: 40px 30px 50px 30px;
+			@media #{$xl} {
+				padding: 40px 25px 50px;
+			}
+			@media #{$lg, $xs} {
+				padding: 30px 20px 50px 20px;
+			}
+		}
+		.service-icon {
+			width: 95px;
+			height: 95px;
+			font-size: 44px;
+			margin-bottom: 20px;
+			@media #{$sm, $xs} {
+				width: 80px;
+				height: 80px;
+				font-size: 38px;
+			}
+		}
+		.service-btn {
+			background-color: var(--tj-color-theme-dark);
+			border: 1px solid var(--tj-color-border-1);
+			border-bottom: 0;
+			border-inline-end: 0;
+			border-radius: 0;
+			border-start-start-radius: 12px;
+			border-start-start-radius: 12px;
+			padding: 0;
+			padding-inline-start: 20px;
+			.tj-text-btn {
+				padding: 16px 0;
+			}
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: transparent;
+				top: -25px;
+				inset-inline-end: 0;
+				inset-inline-start: auto;
+				width: 12px;
+				height: 25px;
+				box-shadow: 0 12px 0 0 var(--tj-color-theme-dark);
+				border-top: 0;
+				border-start-end-radius: 0;
+				border-end-end-radius: 12px;
+				border-bottom: 1px solid var(--tj-color-border-1);
+				border-inline-end: 1px solid var(--tj-color-border-1);
+				pointer-events: none;
+			}
+			&::after {
+				top: auto;
+				inset-inline-end: auto;
+				bottom: 0;
+				inset-inline-start: -12px;
+			}
+		}
+		.item-count {
+			font-size: 142px;
+			line-height: 0.8;
+			letter-spacing: -0.02em;
+			color: transparent;
+			-webkit-text-stroke: 1px var(--tj-color-border-1);
+			background-color: transparent;
+			border: 0;
+			width: auto;
+			height: auto;
+			top: auto;
+			inset-inline-end: auto;
+			inset-inline-start: 28px;
+			bottom: -45px;
+			&::after,
+			&::before {
+				display: none;
+			}
+			@media #{$xl, $md} {
+				font-size: 110px;
+				bottom: -30px;
+			}
+			@media #{$lg, $xs} {
+				font-size: 100px;
+				inset-inline-start: 20px;
+				bottom: -25px;
+			}
+		}
+
+		&:hover {
+			.desc {
+				color: var(--tj-color-text-body);
+			}
+			.item-count {
+				color: transparent;
+				opacity: 0;
+				bottom: -20%;
+			}
+		}
+	}
+}
+.service-slider {
+	overflow: visible;
+	.nav-pagiation-wrap {
+		margin-top: 60px;
+		@media #{$sm, $xs} {
+			margin-top: 40px;
+		}
+	}
+	.slider-next,
+	.slider-prev {
+		&:not(:hover) {
+			background-color: var(--tj-color-theme-bg);
+		}
+	}
+}
+.style-2 {
+	.swiper-pagination-bullet {
+		&::before {
+			display: none;
+		}
+	}
+}
+.nav-pagiation-wrap {
+	display: inline-flex;
+	align-items: center;
+	gap: 14px;
+}
+
+/* !END: Services CSS */

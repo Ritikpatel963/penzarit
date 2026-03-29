@@ -1,0 +1,84 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.h10-faq-section {
+	position: relative;
+	z-index: 1;
+	.shape {
+		position: absolute;
+		top: 50%;
+		inset-inline-start: 0;
+		width: 26%;
+		transform: translateY(-50%);
+		z-index: -1;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&-2 {
+			inset-inline-start: inherit;
+			inset-inline-end: 0;
+		}
+		@media #{$lg,$md} {
+			width: 30%;
+		}
+		@media #{$sm,$xs} {
+			width: 40%;
+		}
+	}
+}
+.tj_accordion {
+	&.h10-accordion {
+		max-width: 1140px;
+		width: 100%;
+		margin: 0 auto;
+		gap: 0;
+		.accordion_item {
+			padding: 0;
+			border: 0;
+			border-radius: 0;
+			border-top: 1px solid var(--tj-color-border-1);
+			background-color: transparent;
+			&:last-child {
+				border-bottom: 1px solid var(--tj-color-border-1);
+			}
+		}
+		.accordion_title {
+			color: var(--tj-color-heading-primary);
+			padding: 37px 45px 37px 0;
+			span {
+				color: var(--tj-color-theme-primary);
+			}
+			&::after {
+				background-color: var(--tj-color-theme-bg);
+				top: 35px;
+				@media #{$lg,$md} {
+					top: 28px;
+				}
+				@media #{$sm,$xs} {
+					top: 16px;
+				}
+			}
+			&:not(.collapsed) {
+				&::after {
+					background-color: var(--tj-color-theme-primary);
+				}
+			}
+			@media #{$lg,$md} {
+				padding: 30px 45px 30px 0;
+			}
+			@media #{$sm,$xs} {
+				padding: 20px 45px 20px 0;
+			}
+		}
+		.accordion_content {
+			border: 0;
+			padding-top: 0;
+		}
+	}
+}
+
+/* !END: Client CSS */

@@ -1,0 +1,316 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Working process CSS
+----------------------------------------*/
+.process-area {
+	position: relative;
+	z-index: 1;
+}
+.process {
+	&-wrap {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+		margin-top: 40px;
+		position: relative;
+		z-index: 3;
+		@media #{$md, $sm, $xs} {
+			grid-template-columns: 100%;
+		}
+	}
+	&-item {
+		border-radius: 10px;
+		padding: 90px 35px 50px 35px;
+		position: relative;
+		z-index: 1;
+		&::before {
+			content: "";
+			background-color: var(--tj-color-theme-bg);
+			mask-image: url(../images/shapes/process-item-bg.svg);
+			mask-repeat: no-repeat;
+			mask-size: cover;
+			mask-position: top center;
+			position: absolute;
+			top: 0;
+			inset-inline-start: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			border-radius: 10px;
+		}
+		&:hover {
+			.process-step {
+				transform: translateX(-50%) rotate(90deg);
+			}
+		}
+
+		&.style-2 {
+			&::before {
+				background-color: var(--tj-color-theme-dark);
+				mask-image: url(../images/shapes/h3-process-item-bg.svg);
+			}
+
+			.process-step {
+				writing-mode: inherit;
+				transform: translateX(-50%) rotate(0);
+			}
+		}
+
+		@media #{$md, $sm, $xs} {
+			max-width: 420px;
+			margin-top: 40px;
+			margin-inline-start: auto;
+			margin-inline-end: auto;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		@media #{$xxs} {
+			padding: 90px 20px 35px 20px;
+		}
+	}
+	&-step {
+		width: 80px;
+		height: 80px;
+		background-color: var(--tj-color-theme-primary);
+		border-radius: 50%;
+		color: var(--tj-color-theme-dark);
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		writing-mode: sideways-lr;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: 0.02em;
+		font-family: var(--tj-ff-heading);
+		font-weight: var(--tj-fw-sbold);
+		position: absolute;
+		top: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&-content {
+		.title {
+			max-width: 250px;
+			width: 100%;
+			margin-bottom: 18px;
+		}
+		.desc {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.process-border {
+	position: absolute;
+	top: calc((100% + 40px) / 2);
+	inset-inline-start: 50%;
+	width: 100%;
+	height: 4px;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	mask-image: url(../images/shapes/process-line.svg);
+	mask-repeat: repeat;
+	mask-size: auto;
+	mask-position: center center;
+	background: linear-gradient(
+		90deg,
+		rgba(211, 237, 49, 0) 0%,
+		var(--tj-color-theme-primary) 50%,
+		rgba(211, 237, 49, 0) 100%
+	);
+
+	@media #{$md, $sm, $xs} {
+		width: 850px;
+		transform: translate(-50%, -50%) rotate(90deg);
+	}
+}
+
+.h3-working-process-section-wrap {
+	position: relative;
+	background-color: var(--tj-color-theme-bg);
+	border-radius: 16px;
+	overflow: hidden;
+	z-index: 1;
+
+	.bg-img {
+		opacity: 0.12;
+		mix-blend-mode: luminosity;
+	}
+	@media #{$md, $sm, $xs} {
+		border-radius: 12px;
+	}
+}
+
+.working-process-section-2 {
+	&-wrap {
+		position: relative;
+		border-radius: 16px;
+		overflow: hidden;
+		z-index: 1;
+		.sec-heading {
+			max-width: 550px;
+			.desc {
+				margin-top: 18px;
+				margin-bottom: 24px;
+				max-width: 350px;
+				color: var(--tj-color-text-body-2);
+			}
+		}
+		@media #{$md, $sm, $xs} {
+			border-radius: 12px;
+		}
+	}
+}
+.process {
+	&-wrap-2 {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		position: relative;
+		max-width: 420px;
+		margin-inline-start: auto;
+		z-index: 0;
+		@media #{$md,$sm} {
+			max-width: calc(100% - 108px);
+		}
+		@media #{$xs} {
+			max-width: 100%;
+			gap: 120px;
+			margin-top: 85px;
+		}
+	}
+	&-border-2 {
+		position: absolute;
+		top: 0;
+		width: 4px;
+		height: 100%;
+		inset-inline-start: -75px;
+		z-index: -1;
+		transform: translateX(-50%);
+		mask-image: url(../images/shapes/process-line-2.svg);
+		mask-repeat: repeat;
+		mask-size: auto;
+		mask-position: top center;
+		background: var(--tj-color-text-body-2);
+		opacity: 0.15;
+	}
+	&-item {
+		&-2 {
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				top: -1px;
+				width: 4px;
+				height: 100%;
+				inset-inline-start: -76px;
+				z-index: -1;
+				transform: translateX(-50%);
+				mask-image: url(../images/shapes/process-line-2.svg);
+				mask-repeat: repeat;
+				mask-size: auto;
+				mask-position: top center;
+				background: var(--tj-color-theme-primary);
+				opacity: 0;
+			}
+			.process {
+				&-content {
+					padding: 30px 34px 32px 35px;
+					background-color: var(--tj-color-theme-dark);
+					border: 1px solid var(--tj-color-border-1);
+					border-radius: 10px;
+					@include transition(all 0.3s ease-in-out);
+					@media #{$sm, $xs} {
+						padding: 30px 20px;
+					}
+				}
+				&-step {
+					width: 66px;
+					height: 66px;
+					border-radius: 50%;
+					margin-bottom: 0;
+					background-color: var(--tj-color-heading-primary);
+					position: absolute;
+					top: 50%;
+					inset-inline-start: auto;
+					inset-inline-start: -75px;
+					transform: translate(-50%, -50%);
+					font-size: 24px;
+					line-height: 1;
+					z-index: 1;
+					writing-mode: inherit;
+					&::before {
+						content: "";
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						inset-inline-start: 0;
+						background-color: var(--tj-color-theme-primary);
+						border-radius: 50%;
+						transform: scale(0);
+						opacity: 0;
+						z-index: -1;
+						@include transition(all 0.5s ease-in-out);
+					}
+				}
+			}
+			&.active {
+				&::before {
+					opacity: 1;
+				}
+				.process {
+					&-content {
+						margin-inline-start: -10px;
+					}
+					&-step {
+						&::before {
+							transform: scale(1);
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media #{$xs} {
+		&-border-2 {
+			inset-inline-start: 50%;
+			top: -55px;
+		}
+		&-item {
+			&-2 {
+				&::before {
+					inset-inline-start: 50%;
+					top: -55px;
+				}
+				.process {
+					&-step {
+						inset-inline-start: 50%;
+						top: -50px;
+					}
+				}
+			}
+		}
+	}
+	@media #{$lg} {
+		&-border-2 {
+			inset-inline-start: -50px;
+		}
+		&-item {
+			&-2 {
+				&::before {
+					inset-inline-start: -50px;
+				}
+				.process {
+					&-step {
+						inset-inline-start: -50px;
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Working process CSS */

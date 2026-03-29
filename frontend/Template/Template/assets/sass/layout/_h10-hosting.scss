@@ -1,0 +1,100 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: insights CSS
+----------------------------------------*/
+.hosting-monitor {
+	&-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-img {
+		max-width: 550px;
+		width: 100%;
+		border-radius: 10px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		.benefits-content {
+			position: absolute;
+			bottom: 25px;
+			inset-inline-start: 25px;
+			max-width: 390px;
+			width: 100%;
+			background-color: var(--tj-color-theme-dark);
+			border-radius: 8px;
+			border: 1px solid var(--tj-color-border-1);
+			padding: 25px 30px;
+			.title {
+				margin-bottom: 18px;
+			}
+			.tj_list {
+				li {
+					color: var(--tj-color-heading-primary);
+					font-weight: var(--tj-fw-regular);
+					i {
+						font-size: 18px;
+						margin-top: 5px;
+					}
+				}
+			}
+
+			@media #{$xs} {
+				max-width: calc(100% - 30px);
+				bottom: 15px;
+				inset-inline-start: 15px;
+				padding: 25px 20px;
+			}
+		}
+		@media #{$lg} {
+			max-width: 450px;
+		}
+		@media #{$md, $sm, $xs} {
+			max-width: 100%;
+		}
+	}
+	&-content {
+		max-width: 550px;
+		width: 100%;
+		.hosting-icon {
+			width: 80px;
+			height: 80px;
+			background-color: var(--tj-color-theme-primary);
+			border-radius: 50%;
+			font-size: 48px;
+			color: var(--tj-color-theme-dark);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 25px;
+			position: relative;
+			z-index: 1;
+			overflow: hidden;
+		}
+		.sec-heading {
+			margin-bottom: 0;
+			.sec-title {
+				@media #{$md, $sm, $xs} {
+					max-width: 600px;
+				}
+			}
+			.desc {
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+		}
+		@media #{$lg} {
+			max-width: 450px;
+		}
+		@media #{$md, $sm, $xs} {
+			max-width: 100%;
+		}
+	}
+}
+
+/* !END: insights CSS */

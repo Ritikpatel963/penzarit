@@ -1,0 +1,95 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Technologies CSS
+----------------------------------------*/
+.h5-technologies {
+	&-section {
+		background-color: var(--tj-color-theme-bg);
+		border-radius: 16px;
+		position: relative;
+		z-index: 1;
+		.bg-img {
+			opacity: 0.15;
+			mix-blend-mode: luminosity;
+		}
+
+		.blur-shape {
+			position: absolute;
+			top: 0;
+			inset-inline-start: 0;
+			z-index: -1;
+			pointer-events: none;
+			&-2 {
+				top: auto;
+				inset-inline-start: auto;
+				bottom: 0;
+				inset-inline-end: 0;
+			}
+		}
+		.sec-heading-centered {
+			max-width: 655px;
+			margin-bottom: 60px;
+			@media #{$md, $sm, $xs} {
+				margin-bottom: 40px;
+			}
+		}
+		.desc {
+			font-size: 18px;
+			max-width: 480px;
+			margin: 14px auto 0;
+		}
+	}
+	&-wrap {
+		.tech {
+			&-item {
+				background-color: var(--tj-color-theme-dark);
+				border-radius: 135px;
+				max-width: 284px;
+				padding: 22px;
+				align-items: center;
+				flex: 0 0 auto;
+				@media #{$xl, $lg} {
+					max-width: 270px;
+				}
+				@media #{$md, $sm, $xs} {
+					max-width: 210px;
+					padding: 15px;
+				}
+			}
+			&-icon {
+				max-width: 74px;
+				height: 74px;
+				border-radius: 100%;
+				@media #{$xl, $lg} {
+					max-width: 60px;
+					height: 60px;
+				}
+				@media #{$md, $sm, $xs} {
+					max-width: 50px;
+					height: 50px;
+				}
+			}
+			&-content {
+				.title {
+					font-size: 28px;
+					margin: 0;
+					@media #{$md, $sm, $xs} {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+		.scroll-slider {
+			--gap: 30px;
+			@media #{$lg} {
+				--gap: 25px;
+			}
+			@media #{$md, $sm, $xs} {
+				--gap: 25px;
+			}
+		}
+	}
+}
+
+/* !END: Technologies CSS */

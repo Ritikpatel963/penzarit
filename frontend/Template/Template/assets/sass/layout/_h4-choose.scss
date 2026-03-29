@@ -1,0 +1,42 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Choose CSS
+----------------------------------------*/
+.choose-box {
+	&.h4-choose {
+		.choose-inner {
+			padding: 15px;
+			border: 1px solid var(--tj-color-border-1);
+		}
+		.choose-content {
+			padding: 15px;
+			@media #{$xl, $lg, $md} {
+				padding: 15px 10px;
+			}
+			@media #{$sm, $xs} {
+				padding: 10px 0;
+			}
+		}
+		.choose-img {
+			border-radius: 8px;
+			overflow: hidden;
+			img {
+				transform: scale(1.1);
+				@include transition(all 0.3s ease-in-out);
+			}
+		}
+		.title {
+			margin-top: 8px;
+			margin-bottom: 16px;
+		}
+		&:hover {
+			.choose-img {
+				img {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+/* !END: Choose CSS */

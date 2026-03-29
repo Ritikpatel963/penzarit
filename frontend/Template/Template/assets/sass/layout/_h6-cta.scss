@@ -1,0 +1,67 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: CTA CSS
+----------------------------------------*/
+.h6-cta-section {
+	background-color: var(--tj-color-theme-bg);
+	position: relative;
+	z-index: 1;
+	border-radius: 16px;
+	overflow: hidden;
+	.sec-heading {
+		max-width: 640px;
+		margin-bottom: 0;
+		.sec-title {
+			margin-bottom: 26px;
+			font-size: var(--tj-fs-h1);
+			line-height: 1.027;
+
+			@media #{$xl} {
+				font-size: 60px;
+			}
+			@media #{$lg} {
+				font-size: 50px;
+			}
+			@media #{$md } {
+				font-size: 45px;
+			}
+			@media #{$sm, $xs} {
+				font-size: 39px;
+			}
+		}
+		@media #{ $sm, $xs} {
+			padding-bottom: 30px;
+		}
+	}
+
+	.cta {
+		&-area {
+			background: transparent;
+			padding: 0;
+			border-radius: 0;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: flex-end;
+			overflow: visible;
+			@media #{$xxl,$xl,$lg,$md} {
+				padding-inline-start: 10px;
+			}
+			@media #{$sm,$xs} {
+				flex-wrap: wrap;
+			}
+		}
+		&-app-store {
+			display: flex;
+			gap: 15px;
+			a:hover {
+				transform: translateY(-3px);
+			}
+			@media #{$sm,$xs} {
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+/* !END: CTA CSS */

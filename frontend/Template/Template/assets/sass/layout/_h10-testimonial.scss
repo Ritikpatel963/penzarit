@@ -1,0 +1,320 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+
+.global-location-wrapper {
+	.sec-heading {
+		.desc {
+			max-width: 400px;
+			width: 100%;
+			margin: 15px auto 0;
+		}
+	}
+}
+.global-map {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	background-color: var(--tj-color-theme-dark);
+	border: 1px solid var(--tj-color-border-1);
+	padding: 80px 90px;
+	border-radius: 12px;
+	margin-bottom: 120px;
+
+	&-img {
+		position: relative;
+		width: 100%;
+		z-index: 2;
+		img {
+			width: 100%;
+			opacity: 0.2;
+		}
+	}
+	@media #{$md, $sm, $xs} {
+		&-img {
+			margin-bottom: 40px;
+		}
+	}
+	@media #{$md} {
+		padding: 40px 20px;
+		margin-bottom: 70px;
+	}
+	@media #{$sm, $xs} {
+		padding: 60px 10px 20px;
+		margin-bottom: 70px;
+	}
+}
+.location {
+	&-indicator {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		position: absolute;
+		cursor: pointer;
+
+		@media #{$lg, $md, $sm, $xs} {
+			width: 12px;
+			height: 12px;
+		}
+		&.loc-1 {
+			top: 24%;
+			inset-inline-start: 21%;
+		}
+		&.loc-2 {
+			top: 63%;
+			inset-inline-start: 31%;
+		}
+		&.loc-3 {
+			top: 27%;
+			inset-inline-start: 49%;
+		}
+		&.loc-4 {
+			top: 82%;
+			inset-inline-start: 53.4%;
+		}
+		&.loc-5 {
+			top: 39%;
+			inset-inline-start: 82.2%;
+		}
+		&.loc-6 {
+			top: 87%;
+			inset-inline-start: 89.5%;
+		}
+		&::before {
+			content: "";
+			background-color: var(--tj-color-theme-primary);
+			width: 32px;
+			height: 32px;
+			z-index: -2;
+			position: absolute;
+			top: 50%;
+			inset-inline-start: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			filter: blur(18px);
+			opacity: 0;
+		}
+		&::after {
+			content: "";
+			background: rgba(246, 247, 247, 0.08);
+			backdrop-filter: blur(20px);
+			border: 1px solid rgba(246, 247, 247, 0.2);
+			width: 24px;
+			height: 24px;
+			z-index: -1;
+			position: absolute;
+			top: 50%;
+			inset-inline-start: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+		&-blur {
+			width: 12px;
+			height: 12px;
+			background-color: var(--tj-color-common-white);
+			position: absolute;
+			top: 0;
+			inset-inline-start: 0;
+			z-index: 1;
+			border-radius: 100%;
+		}
+		@media #{$xs} {
+			width: 8px;
+			height: 8px;
+			&::after {
+				width: 18px;
+				height: 18px;
+			}
+			&-blur {
+				width: 8px;
+				height: 8px;
+			}
+		}
+		&:hover,
+		&.current {
+			&::before {
+				opacity: 1;
+			}
+			&::after {
+				animation: pulse5 1.6s linear infinite;
+			}
+			.location {
+				&-indicator {
+					&-blur {
+						background-color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+			.location-tooltip {
+				opacity: 1;
+				visibility: visible;
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	&-tooltip {
+		background: rgba(246, 247, 247, 0.08);
+		backdrop-filter: blur(20px);
+		border: 1px solid rgba(246, 247, 247, 0.2);
+		font-size: 16px;
+		letter-spacing: -0.02em;
+		font-weight: var(--tj-fw-sbold);
+		padding: 6px 10px;
+		margin-bottom: 40px;
+		position: absolute;
+		width: max-content;
+		inset-inline-start: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		cursor: default;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		border-radius: 100px;
+		z-index: 2;
+		img {
+			width: 32px;
+			height: 32px;
+			object-fit: cover;
+			border-radius: 100%;
+			flex: 0 0 auto;
+			opacity: 1;
+		}
+		span {
+			color: var(--tj-color-common-white);
+			text-wrap: nowrap;
+		}
+		@media #{$xs} {
+			padding: 4px 4px;
+			padding-inline-end: 10px;
+			font-size: 12px;
+			img {
+				width: 28px;
+				height: 28px;
+			}
+		}
+	}
+
+	&-indicator {
+		&.loc-1 {
+			.location {
+				&-tooltip {
+					z-index: 3;
+				}
+			}
+		}
+	}
+}
+
+.h10-testimonial {
+	position: relative;
+	&-section {
+		background-color: var(--tj-color-theme-bg);
+		border-radius: 16px;
+		z-index: 2;
+		position: relative;
+		.sec-heading:not(.sec-heading-centered) {
+			margin-top: 12px;
+			margin-bottom: 12px;
+			@media #{$md, $sm, $xs} {
+				margin-top: 0;
+			}
+			.slider-next,
+			.slider-prev {
+				background-color: var(--tj-color-theme-dark);
+				&:hover {
+					background-color: var(--tj-color-theme-primary);
+				}
+			}
+		}
+	}
+	&-slider {
+		margin-inline-end: -34%;
+		padding-top: 10px;
+		@media #{$xxl, $xl, $lg} {
+			margin-inline-end: -24%;
+		}
+		@media #{$sm, $xs} {
+			padding-top: 0;
+			margin-inline-end: 0;
+		}
+	}
+	&-item {
+		position: relative;
+	}
+	&.testimonial-wrapper-5 {
+		max-width: 100%;
+		margin-inline-start: 0;
+		display: block;
+		.testimonial_header {
+			justify-content: inherit;
+			align-items: center;
+			gap: 4px;
+			margin-top: 24px;
+			margin-bottom: 30px;
+		}
+		.star-ratings {
+			margin-top: 0;
+		}
+		.testimonial_item_3 {
+			width: 100%;
+			padding: 34px 30px 40px;
+			overflow: hidden;
+			background-color: var(--tj-color-theme-dark);
+			border: 0;
+			@media #{$sm,$xs} {
+				padding: 32px 20px 30px;
+			}
+			.author_avatar_wrapper {
+				margin-top: 22px;
+				margin-bottom: 0;
+				padding-top: 20px;
+				border-top: 0;
+				gap: 12px;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					inset-inline-end: -100px;
+					inset-inline-start: -100px;
+					width: calc(100% + 200px);
+					height: 1px;
+					background-color: var(--tj-color-border-1);
+				}
+			}
+		}
+		.nav-pagiation-wrap {
+			padding-inline-end: 25%;
+		}
+	}
+	&-shape {
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		&-1 {
+			inset-inline-end: 0;
+			width: 59%;
+		}
+		&-2 {
+			inset-inline-start: 0;
+			top: 18%;
+			width: 28.2%;
+		}
+		&-3 {
+			top: auto;
+			bottom: 0;
+			inset-inline-end: 0;
+			width: 50.3%;
+		}
+	}
+}
+
+/* !END: Testimonial CSS */

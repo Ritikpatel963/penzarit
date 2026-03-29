@@ -1,0 +1,117 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Home 9 counter CSS
+----------------------------------------*/
+.h9-counter {
+	&-section {
+		position: relative;
+		z-index: 2;
+		@media #{$sm, $xs} {
+			overflow: hidden;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -435px;
+			inset-inline-start: 50%;
+			transform: translateX(-50%);
+			width: 580px;
+			height: 580px;
+			border-radius: 50%;
+			background-color: var(--tj-color-theme-primary);
+			opacity: 0.5;
+			filter: blur(200px);
+			z-index: -1;
+			@media #{$sm, $xs} {
+				bottom: auto;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 450px;
+				height: 450px;
+			}
+		}
+		.counter-shape,
+		.counter-image {
+			position: absolute;
+			top: 5px;
+			inset-inline-start: 0;
+		}
+		.counter-image {
+			inset-inline-end: 0;
+			inset-inline-start: auto;
+			max-width: 615px;
+			@media #{$xxxl} {
+				max-width: 500px;
+			}
+			@media #{$xxl, $xl} {
+				max-width: 425px;
+			}
+			@media #{$xl} {
+				max-width: 340px;
+			}
+			@media #{$lg, $md} {
+				max-width: 290px;
+			}
+			@media #{$md} {
+				top: auto;
+				bottom: 60px;
+			}
+			@media #{$sm, $xs} {
+				top: 160px;
+				max-width: 215px;
+			}
+		}
+		.counter-shape {
+			top: 15px;
+			@media #{$xxl} {
+				max-width: 180px;
+			}
+			@media #{$xl, $lg} {
+				max-width: 160px;
+			}
+			@media #{$md, $sm, $xs} {
+				display: none;
+			}
+		}
+	}
+
+	&-wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 55px;
+		@media #{$lg} {
+			column-gap: 30px;
+		}
+		@media #{$md} {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px;
+		}
+		@media #{$sm, $xs} {
+			grid-template-columns: repeat(1, 1fr);
+			gap: 30px;
+		}
+	}
+	&-item {
+		min-height: 237px;
+		border-inline-start: 1px solid var(--tj-color-theme-primary);
+		padding-inline-start: 20px;
+		display: flex;
+		align-items: end;
+		.inline-content {
+			font-size: 68px;
+			@media #{$lg, $md, $sm, $xs} {
+				font-size: 60px;
+			}
+			.text {
+				margin-inline-start: 8px;
+			}
+		}
+		.count-text {
+			font-size: 16px;
+			font-weight: var(--tj-fw-normal);
+			max-width: 345px;
+		}
+	}
+}
+/* !END: Home 9 counter CSS */

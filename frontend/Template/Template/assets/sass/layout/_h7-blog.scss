@@ -1,0 +1,116 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Blog CSS
+----------------------------------------*/
+.tj-blog-section {
+	&-3 {
+	}
+}
+
+.blog-item {
+	&-2 {
+		padding-inline-end: 0;
+		padding-inline-start: 24%;
+		position: relative;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		gap: 0 20px;
+		align-items: center;
+		border-top: 1px solid var(--tj-color-border-1);
+		background-color: transparent;
+		border-radius: 0;
+		&:last-child {
+			border-bottom: 1px solid var(--tj-color-border-1);
+		}
+		@media #{$xl} {
+			padding-inline-start: 21%;
+		}
+		@media #{$lg} {
+			padding-inline-start: 15%;
+		}
+		@media #{$md} {
+			padding-inline-start: 17%;
+		}
+		@media #{$sm,$xs} {
+			border-radius: 10px;
+			padding: 15px 15px 24px;
+			flex-direction: column;
+			border: 1px solid var(--tj-color-border-1);
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.categories a {
+			background-color: var(--tj-color-theme-bg);
+			&:hover {
+				background-color: var(--tj-color-theme-primary);
+			}
+		}
+		.blog {
+			&-thumb {
+				position: static;
+				width: 320px;
+				height: 253px;
+				border-radius: 12px;
+				@media #{$sm,$xs} {
+					width: 100%;
+					border-radius: 8px;
+				}
+			}
+			&-date {
+				background-color: var(--tj-color-theme-primary);
+				padding: 14px 16px 19px;
+				top: 30px;
+				inset-inline-start: 0;
+				.date {
+					font-size: 48px;
+					letter-spacing: -0.03em;
+					color: var(--tj-color-theme-dark);
+				}
+				.month {
+					color: var(--tj-color-theme-dark);
+				}
+				@media #{$sm,$xs} {
+					top: 25px;
+					inset-inline-start: 10px;
+					.date {
+						font-size: 36px;
+					}
+				}
+			}
+			&-content {
+				width: 467px;
+				padding: 0;
+				@media #{$sm,$xs} {
+					width: 100%;
+					padding: 20px 5px 0;
+				}
+				.title {
+					font-size: var(--tj-fs-h3);
+					line-height: 1.25;
+					@media #{$md} {
+						font-size: 28px;
+					}
+					@media #{$sm, $xs} {
+						font-size: 25px;
+					}
+				}
+				.tj-text-btn {
+					position: relative;
+					color: var(--tj-color-common-white);
+
+					&:hover {
+						color: var(--tj-color-theme-primary);
+					}
+					@media #{$sm,$xs} {
+						margin-top: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Blog CSS */

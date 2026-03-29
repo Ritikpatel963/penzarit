@@ -1,0 +1,220 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: About CSS
+----------------------------------------*/
+.h7-about {
+	&-item {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px 30px;
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+			@media #{$md, $sm, $xs} {
+				flex-direction: column-reverse;
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: 140px;
+			@media #{$xl} {
+				margin-bottom: 100px;
+			}
+			@media #{$lg} {
+				margin-bottom: 70px;
+			}
+			@media #{$md, $sm, $xs} {
+				margin-bottom: 40px;
+			}
+		}
+
+		@media #{$md, $sm, $xs} {
+			flex-direction: column;
+		}
+		@media #{ $sm, $xs} {
+			gap: 40px 30px;
+		}
+	}
+
+	&-content {
+		max-width: 643px;
+		width: 100%;
+		flex: 1;
+		@media #{$md, $sm, $xs} {
+			max-width: 100%;
+			flex: auto;
+		}
+		.sec-heading {
+			margin-bottom: 20px;
+			.sec-title {
+				@media #{$xl} {
+					font-size: 44px;
+				}
+				@media #{$lg} {
+					font-size: 40px;
+				}
+			}
+			@media #{$md, $sm, $xs} {
+				margin-bottom: 12px;
+			}
+		}
+		.desc {
+			margin-bottom: 0;
+		}
+
+		.about-funfact {
+			flex-wrap: wrap;
+			gap: 30px;
+			margin-top: 35px;
+			.countup-item {
+				max-width: calc(50% - 15px);
+				width: 100%;
+				padding: 32px 20px 38px;
+				background-color: var(--tj-color-theme-bg);
+				border: 1px solid var(--tj-color-border-1);
+				border-radius: 10px;
+				&:not(:last-child)::after {
+					display: none;
+				}
+			}
+			.inline-content {
+				font-size: 74px;
+				margin-bottom: 18px;
+				align-items: flex-end;
+				.count-plus {
+					font-size: 48px;
+					margin-bottom: 2px;
+				}
+				@media #{$lg,$md} {
+					font-size: 64px;
+					.count-plus {
+						font-size: 42px;
+					}
+				}
+				@media #{$sm,$xs} {
+					font-size: 54px;
+					.count-plus {
+						font-size: 38px;
+					}
+				}
+			}
+
+			.count-text {
+				font-family: var(--tj-ff-body);
+				font-size: 16px;
+				font-weight: var(--tj-fw-regular);
+				line-height: 1.625;
+				color: var(--tj-color-text-body);
+			}
+			@media #{$md,$sm,$xs} {
+				margin-top: 28px;
+			}
+			@media #{$sm,$xs} {
+				gap: 20px;
+				.countup-item {
+					max-width: 100%;
+				}
+			}
+		}
+		.btn-area {
+			margin-top: 40px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 20px;
+			.video-btn-2 {
+				padding: 0;
+				border: 0;
+				border-radius: 0;
+				gap: 7px;
+				@media #{$sm,$xs} {
+					.btn-text {
+						display: block;
+					}
+				}
+			}
+			@media #{$md,$sm,$xs} {
+				margin-top: 32px;
+			}
+		}
+	}
+
+	&-img {
+		&-wrap {
+			max-width: 615px;
+			width: 100%;
+			margin-inline-start: auto;
+			display: flex;
+			flex: 1;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			border-radius: 10px;
+			padding: 0;
+			overflow: hidden;
+			@media #{$xl, $lg} {
+				min-height: 495px;
+			}
+			@media #{$md, $sm, $xs} {
+				min-height: auto;
+				max-width: 100%;
+				flex: auto;
+			}
+		}
+
+		width: 100%;
+		height: 100%;
+		.img-reveal-2 {
+			width: 100%;
+			height: 100%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.img-reveal-2 {
+			overflow: visible;
+		}
+	}
+	.about-badge {
+		max-width: 259px;
+		width: 100%;
+		padding: 20px;
+		background-color: var(--tj-color-theme-primary);
+		border-radius: 8px;
+		position: absolute;
+		inset-inline-start: 30px;
+		bottom: 30px;
+
+		&-icon {
+			margin-bottom: 64px;
+			line-height: 1;
+			i {
+				font-size: 60px;
+				color: var(--tj-color-theme-dark);
+			}
+		}
+		&-title {
+			color: var(--tj-color-theme-dark);
+			margin-bottom: 2px;
+		}
+		@media #{$xs} {
+			max-width: 240px;
+			padding: 20px 15px;
+			inset-inline-start: 15px;
+			bottom: 15px;
+			&-icon {
+				margin-bottom: 14px;
+
+				i {
+					font-size: 50px;
+					color: var(--tj-color-theme-dark);
+				}
+			}
+		}
+	}
+}
+
+/* !END: About CSS */

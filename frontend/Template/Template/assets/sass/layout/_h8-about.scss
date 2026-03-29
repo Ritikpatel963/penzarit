@@ -1,0 +1,98 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: About CSS
+----------------------------------------*/
+.h8-about {
+	&-shape {
+		position: absolute;
+		inset-inline-end: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+	&-left {
+		max-width: 605px;
+		position: relative;
+	}
+	&-img {
+		border-radius: 12px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.h8-counter {
+		position: absolute;
+		top: 50%;
+		inset-inline-end: -100px;
+		transform: translateY(-50%);
+		@media #{$xl, $lg} {
+			top: 0;
+			inset-inline-end: auto;
+			inset-inline-start: 0;
+			transform: unset;
+		}
+		@media #{$sm, $xs} {
+			top: auto;
+			inset-inline-end: 0;
+			bottom: 0;
+			transform: unset;
+		}
+	}
+	.countup-item {
+		max-width: 220px;
+		padding: 20px 25px 30px 25px;
+		border-radius: 6px;
+		background-color: var(--tj-color-theme-primary);
+		justify-content: center;
+		align-items: center;
+		@media #{$lg, $sm, $xs} {
+			max-width: 180px;
+			padding: 20px 15px 22px 15px;
+		}
+	}
+	.inline-content {
+		color: var(--tj-color-theme-dark);
+		font-size: 110px;
+		.count-plus {
+			font-size: 56px;
+			align-self: flex-start;
+		}
+		@media #{$xl, $lg, $md, $sm, $xs} {
+			font-size: 60px;
+		}
+	}
+	.count-text {
+		color: var(--tj-color-theme-dark);
+		font-size: 18px;
+		font-family: var(--tj-ff-heading);
+		font-weight: var(--tj-fw-sbold);
+		display: block;
+		@media #{$lg, $sm, $xs} {
+			font-size: 16px;
+		}
+	}
+	&-content {
+		margin-inline-start: auto;
+		max-width: 555px;
+		@media #{$md, $sm, $xs} {
+			margin-inline-start: 0;
+		}
+		.desc {
+			margin-bottom: 0;
+		}
+	}
+	&-btn-wrap {
+		margin-top: 35px;
+		@media #{$md, $sm, $xs} {
+			margin-top: 25px;
+		}
+	}
+	.clients-review-area {
+		margin-top: 22px;
+	}
+}
+
+/* !END: About CSS */

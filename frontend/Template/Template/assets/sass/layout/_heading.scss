@@ -1,0 +1,110 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Heading CSS
+----------------------------------------*/
+.sec-heading {
+  width: 100%;
+  margin-bottom: 52px;
+  &-centered {
+    max-width: 550px;
+    text-align: center;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    @media #{$md, $sm, $xs} {
+      gap: 15px;
+    }
+    .sec-title {
+      max-width: 550px;
+      width: 100%;
+    }
+  }
+
+  .sec-title {
+    margin-bottom: 0;
+    span {
+      color: var(--tj-color-theme-dark-2);
+      img {
+        max-width: 140px;
+        @media #{$lg, $md, $sm} {
+          max-width: 112px;
+        }
+        @media #{$xs} {
+          max-width: 90px;
+        }
+      }
+    }
+  }
+  .sub-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--tj-color-theme-primary);
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: var(--tj-fw-medium);
+    margin-bottom: 18px;
+    position: relative;
+    transition: none;
+    i {
+      color: var(--tj-color-theme-primary);
+      font-size: 16px;
+      line-height: 1;
+      display: inline-flex;
+    }
+    @media #{$md, $sm, $xs} {
+      margin-bottom: 15px;
+    }
+    @media #{$md, $sm, $xs} {
+      font-size: 13px;
+    }
+  }
+  &.style-2 {
+    .sec-title {
+      display: block;
+      span {
+        color: var(--tj-color-theme-primary);
+      }
+    }
+    .sub-title {
+      color: var(--tj-color-text-body);
+      span {
+        color: var(--tj-color-theme-primary);
+        margin-inline-end: 5px;
+      }
+    }
+  }
+  &.style-3 {
+    .sec-title {
+      display: block;
+      span {
+        color: var(--tj-color-theme-primary);
+      }
+    }
+    .sub-title {
+      color: var(--tj-color-text-body);
+      font-size: 16px;
+      text-transform: capitalize;
+      letter-spacing: 0;
+      border: 1px solid var(--tj-color-border-1);
+      background-color: rgba(250, 251, 251, 0.08);
+      padding: 5px 10px;
+      border-radius: 40px;
+    }
+  }
+
+  @media #{$md, $sm, $xs} {
+    margin-bottom: 35px;
+  }
+}
+
+/* !END: Heading CSS */

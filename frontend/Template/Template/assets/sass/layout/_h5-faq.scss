@@ -1,0 +1,62 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Faq CSS
+----------------------------------------*/
+.h5-faq-section {
+	position: relative;
+	z-index: 1;
+	.sec-heading {
+		max-width: 966px;
+		width: 100%;
+		margin-inline-start: auto;
+		margin-inline-end: auto;
+		@media #{$xxl} {
+			max-width: 860px;
+		}
+		@media #{$xl} {
+			max-width: 800px;
+		}
+		@media #{$lg} {
+			max-width: 650px;
+		}
+	}
+	.tj_accordion {
+		max-width: 966px;
+		width: 100%;
+		margin: auto;
+		@media #{$xxl} {
+			max-width: 860px;
+		}
+		@media #{$xl} {
+			max-width: 800px;
+		}
+		@media #{$lg} {
+			max-width: 650px;
+		}
+	}
+	.shape {
+		position: absolute;
+		inset-inline-start: 0;
+		bottom: 120px;
+		max-width: 232px;
+		width: 100%;
+		@media #{$xl} {
+			max-width: 180px;
+		}
+		@media #{$lg} {
+			max-width: 160px;
+		}
+		@media #{$md,$sm,$xs} {
+			display: none;
+		}
+		&-2 {
+			inset-inline-start: auto;
+			bottom: auto;
+			inset-inline-end: 0;
+			top: 250px;
+		}
+	}
+}
+
+/* !END: Faq CSS */

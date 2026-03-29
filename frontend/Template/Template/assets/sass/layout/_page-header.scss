@@ -1,0 +1,120 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Breadcrumb CSS
+----------------------------------------*/
+.tj-page {
+	&-header {
+		position: relative;
+		margin: 0 30px;
+		background-color: var(--tj-color-theme-bg);
+		padding-top: 272px;
+		padding-bottom: 151px;
+		border-radius: 16px;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+			margin: 0 15px;
+		}
+		@media #{$xl} {
+			padding-top: 242px;
+			padding-bottom: 131px;
+		}
+		@media #{$lg} {
+			padding-top: 232px;
+			padding-bottom: 121px;
+		}
+		@media #{$md} {
+			padding-top: 150px;
+			padding-bottom: 82px;
+		}
+		@media #{ $sm, $xs} {
+			padding-top: 140px;
+			padding-bottom: 72px;
+			border-radius: 12px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			width: 280px;
+			height: 280px;
+			bottom: -30px;
+			inset-inline-start: 57%;
+			filter: blur(173px);
+			backdrop-filter: inherit;
+			border-radius: 50%;
+			background: var(--tj-color-theme-primary);
+			opacity: 1;
+			z-index: -1;
+		}
+		.hero-bg {
+			position: absolute;
+			top: 0;
+			inset-inline-start: 0;
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: top left;
+			mix-blend-mode: luminosity;
+			opacity: 0.15;
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+	&-title {
+		color: var(--tj-color-heading-primary);
+		line-height: 1;
+		margin-bottom: 0;
+	}
+	&-link {
+		margin-top: 22px;
+		display: inline-flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		position: relative;
+		border-radius: 40px;
+		background: rgba(250, 251, 251, 0.08);
+		backdrop-filter: blur(20px);
+		padding: 5px 12px;
+		z-index: 2;
+		span {
+			color: var(--tj-color-heading-primary);
+			font-size: 16px;
+			font-weight: var(--tj-fw-medium);
+			position: relative;
+			display: inline-block;
+			line-height: 1;
+			i {
+				display: inline-flex;
+				line-height: 1;
+				font-size: 20px;
+				color: var(--tj-color-theme-primary);
+			}
+			&:not(:first-child) {
+				i {
+					font-size: 12px;
+					font-weight: var(--tj-fw-regular);
+					color: var(--tj-color-text-body);
+					justify-content: center;
+					width: 7px;
+					margin-top: 2px;
+				}
+			}
+			a {
+				color: var(--tj-color-text-body);
+				&:hover {
+					color: var(--tj-color-heading-primary);
+				}
+			}
+		}
+		@media #{$md, $sm, $xs} {
+			margin-top: 25px;
+		}
+	}
+}
+
+/* !END: Breadcrumb CSS */

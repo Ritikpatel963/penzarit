@@ -1,0 +1,143 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: insights CSS
+----------------------------------------*/
+.h9-insights {
+  .sec-heading {
+    .desc {
+      max-width: 315px;
+      @media #{$md, $sm, $xs} {
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .insights {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &-box {
+      padding: 30px;
+      background-color: var(--tj-color-theme-bg);
+      border: 1px solid var(--tj-color-border-1);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title {
+        margin-bottom: 15px;
+        &:hover {
+          a {
+            color: var(--tj-color-theme-primary);
+          }
+        }
+      }
+      .desc {
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        width: 100%;
+        flex-direction: row;
+        gap: 30px;
+        @media #{$md, $sm, $xs} {
+          flex-direction: column;
+        }
+        .insights-content,
+        .insights-img {
+          width: 50%;
+          flex: 1;
+          @media #{$md, $sm, $xs} {
+            width: 100%;
+          }
+        }
+        .insights-content {
+          padding: 30px 0;
+          flex-direction: column;
+          justify-content: space-between;
+          @media #{$md, $sm, $xs} {
+            padding: 0;
+          }
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: calc(50% - 15px);
+        gap: 60px;
+        @media #{$md, $sm, $xs} {
+          gap: 30px;
+        }
+        .insights-img {
+          max-width: 525px;
+          margin: 0 auto;
+        }
+      }
+    }
+    &-content {
+      display: flex;
+      gap: 30px;
+      @media #{$md, $sm, $xs} {
+        gap: 25px;
+        flex-direction: column;
+      }
+      &-inner {
+        max-width: 503px;
+        width: 100%;
+        @media #{$md, $sm, $xs} {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-btn {
+      .tj-icon-btn {
+        width: 52px;
+        height: 52px;
+        background-color: var(--tj-color-theme-dark);
+        i {
+          color: var(--tj-color-common-white);
+        }
+        &:hover {
+          background-color: var(--tj-color-theme-primary);
+          i {
+            color: var(--tj-color-theme-dark);
+          }
+        }
+      }
+    }
+    &-img {
+      mask-image: none;
+      img {
+        width: 100%;
+      }
+    }
+    @media #{$md} {
+      &-wrapper {
+        gap: 20px;
+      }
+      &-box {
+        padding: 30px;
+        .desc {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @media #{$sm,$xs} {
+      &-box {
+        padding: 30px 24px;
+        .desc {
+          margin-bottom: 0;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* !END: insights CSS */

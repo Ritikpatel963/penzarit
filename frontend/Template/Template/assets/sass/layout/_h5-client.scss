@@ -1,0 +1,51 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.tj-client-section {
+	.sec-heading-centered {
+		max-width: 600px;
+	}
+}
+.client-slider-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	mask-image: linear-gradient(
+		90deg,
+		rgba(217, 217, 217, 0) 0%,
+		rgb(166, 166, 166) 20%,
+		rgb(140, 140, 140) 80%,
+		rgba(115, 115, 115, 0) 100%
+	);
+	.scroll-slider {
+		--gap: 25px;
+		.scroll-wrapper {
+			--gap: 25px;
+			animation: scroll 40s linear infinite;
+		}
+	}
+	[dir="rtl"] .scroll-wrapper {
+		animation: scroll-rtl 40s linear infinite;
+	}
+	.client-logo {
+		width: 255px;
+		height: 107px;
+		padding: 20px;
+		border-radius: 10px;
+
+		@media #{$lg, $md} {
+			width: 230px;
+			height: 100px;
+			padding: 15px;
+		}
+		@media #{$sm, $xs} {
+			width: 180px;
+			height: 85px;
+			padding: 15px;
+		}
+	}
+}
+
+/* !END: Client CSS */

@@ -1,0 +1,36 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-area {
+  &.header-8 {
+    .header-button {
+      gap: 14px;
+      .tj-primary-btn {
+        .btn-icon {
+          i {
+            transform: rotate(-45deg);
+          }
+        }
+        &:hover {
+          .btn-icon {
+            i {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+    }
+    .cubes {
+      background-color: var(--tj-color-grey-4);
+      span {
+        &:nth-child(2) {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+/* !END: Theme Header CSS */

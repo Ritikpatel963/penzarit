@@ -1,0 +1,332 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Faq CSS
+----------------------------------------*/
+.tj-faq-section {
+	border-bottom: 1px solid var(--tj-color-border-1);
+	.tj_accordion {
+		max-width: 940px;
+		width: 100%;
+		margin: auto;
+	}
+}
+.tj_accordion {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.accordion {
+	&_item {
+		background-color: var(--tj-color-theme-bg);
+		border: 1px solid var(--tj-color-border-1);
+		border-radius: 10px;
+		padding: 0 30px;
+
+		&.active {
+			border-color: var(--tj-color-theme-primary);
+			background-color: var(--tj-color-theme-dark);
+		}
+	}
+	&_title {
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		font-size: 20px;
+		line-height: 1.4;
+		letter-spacing: -0.02em;
+		font-weight: var(--tj-fw-sbold);
+		color: var(--tj-color-heading-primary);
+		padding: 27px 45px 27px 0;
+		text-align: start;
+
+		&::after {
+			content: "\e91f";
+			font-family: var(--tj-ff-fonticon);
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			border: 1px solid var(--tj-color-border-1);
+			background-color: var(--tj-color-theme-dark);
+			color: var(--tj-color-theme-primary);
+			font-size: 20px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			line-height: 1;
+			position: absolute;
+			inset-inline-end: 0;
+			top: 24px;
+			z-index: 2;
+		}
+
+		&:not(.collapsed) {
+			color: var(--tj-color-theme-primary);
+
+			&::after {
+				content: "\e920";
+				border-color: var(--tj-color-theme-primary);
+				background-color: var(--tj-color-theme-primary);
+				color: var(--tj-color-theme-dark);
+			}
+		}
+	}
+	&_content {
+		border-top: 1px solid var(--tj-color-border-1);
+		padding: 30px 0;
+	}
+	@media #{$md, $sm, $xs} {
+		&_item {
+			padding: 0 20px;
+		}
+		&_title {
+			padding: 20px 45px 20px 0;
+			&::after {
+				top: 17px;
+			}
+		}
+		&_content {
+			padding: 20px 0;
+		}
+	}
+	@media #{$sm, $xs} {
+		&_title {
+			padding: 20px 40px 20px 0;
+			font-size: 18px;
+
+			&::after {
+				top: 16px;
+			}
+		}
+	}
+}
+
+.tj-faq-section {
+	&-2 {
+		background-color: var(--tj-color-theme-bg);
+		border-radius: 16px;
+		.sec-heading {
+			max-width: 550px;
+			@media #{$md,$sm,$xs} {
+				max-width: 100%;
+			}
+			.tj-primary-btn {
+				margin-top: 24px;
+			}
+		}
+		@media #{$md, $sm, $xs} {
+			border-radius: 12px;
+		}
+	}
+	&-3 {
+		background-color: transparent;
+	}
+	&-4 {
+		background-color: transparent;
+		border-radius: 0;
+		border-bottom: 1px solid var(--tj-color-border-1);
+	}
+	&-5 {
+		border-bottom: 0;
+	}
+}
+.faq {
+	&-left {
+		height: 100%;
+
+		@media #{$md,$sm,$xs} {
+			margin-bottom: 40px;
+		}
+	}
+	&-contact {
+		padding: 30px 30px 24px;
+		background-color: var(--tj-color-theme-dark);
+		border: 1px solid var(--tj-color-border-1);
+		border-radius: 10px;
+		max-width: 381px;
+		margin-top: 128px;
+		@media #{$md,$sm,$xs} {
+			margin-top: 0;
+		}
+		&-2 {
+			background-color: var(--tj-color-theme-bg);
+			.faq-contact-item {
+				background-color: var(--tj-color-theme-dark);
+			}
+		}
+		.title {
+			margin-bottom: 26px;
+			color: var(--tj-color-text-body);
+			letter-spacing: -0.02em;
+		}
+		ul {
+			display: flex;
+			align-items: center;
+			list-style: none;
+			li {
+				width: 56px;
+				height: 56px;
+				border-radius: 100%;
+				position: relative;
+				border-radius: 50%;
+				z-index: 1;
+				&:not(:first-child) {
+					margin-inline-start: -10px;
+				}
+				&:has(i) {
+					background-color: var(--tj-color-theme-primary);
+					border: 2px solid var(--tj-color-theme-dark);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 24px;
+					color: var(--tj-color-theme-dark);
+					z-index: 2;
+				}
+				img {
+					border: 2px solid var(--tj-color-theme-dark);
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 50%;
+				}
+			}
+		}
+		&-item {
+			padding: 24px 20px;
+			background-color: var(--tj-color-theme-bg);
+			border: 1px solid var(--tj-color-border-1);
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			flex-wrap: wrap;
+			&:hover {
+				.faq-contact-list li:has(i) {
+					transform: rotateY(360deg);
+				}
+			}
+		}
+		.faq-contact-number {
+			&-wrapper {
+				.desc {
+					font-size: 14px;
+					line-height: 1.57;
+					margin-bottom: 2px;
+				}
+				.faq-contact-number {
+					margin-bottom: 0;
+					position: relative;
+					&::before {
+						content: "";
+						height: 1px;
+						width: 100%;
+						background-color: var(--tj-color-heading-primary);
+						position: absolute;
+						inset-inline-end: 0;
+						bottom: 3px;
+						transition: transform 0.3s ease-in-out;
+					}
+					&:hover {
+						&::before {
+							animation: lineHover 0.8s linear;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.tj_accordion {
+	&_2 {
+		max-width: 645px;
+		margin-inline-start: auto;
+		@media #{$md,$sm,$xs} {
+			max-width: 100%;
+		}
+		.accordion {
+			&_item {
+				padding: 0;
+				background-color: var(--tj-color-theme-dark);
+				&.active {
+					border-color: var(--tj-color-border-1);
+				}
+			}
+			&_title {
+				padding: 27px 70px 27px 30px;
+				&::after {
+					inset-inline-end: 30px;
+					border-color: var(--tj-color-border-1);
+					background-color: var(--tj-color-theme-bg);
+				}
+				&:not(.collapsed) {
+					&::after {
+						border-color: var(--tj-color-theme-primary);
+						background-color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+			&_content {
+				padding: 30px;
+			}
+			@media #{$md, $sm, $xs} {
+				&_title {
+					padding: 20px 55px 20px 20px;
+					&::after {
+						inset-inline-end: 20px;
+					}
+				}
+				&_content {
+					padding: 20px;
+				}
+			}
+			@media #{$sm, $xs} {
+				&_title {
+					padding: 20px 60px 20px 20px;
+				}
+			}
+		}
+	}
+	&_3 {
+		.accordion {
+			&_item {
+				background-color: var(--tj-color-theme-bg);
+			}
+		}
+	}
+	&_4 {
+		max-width: 100%;
+		.accordion {
+			&_title {
+				&::after {
+					border: 0;
+					background-color: transparent;
+				}
+				&:not(.collapsed) {
+					color: var(--tj-color-theme-dark);
+
+					&::after {
+						border: 0;
+						background-color: transparent;
+					}
+				}
+			}
+			&_content {
+				padding-top: 0;
+				border-top: 0;
+			}
+			&_item {
+				background-color: var(--tj-color-theme-bg);
+				&:has(button:not(.collapsed)) {
+					background-color: var(--tj-color-theme-primary);
+					.accordion {
+						&_content {
+							color: var(--tj-color-theme-dark);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* !END: Faq CSS */

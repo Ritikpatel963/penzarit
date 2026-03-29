@@ -1,0 +1,117 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Services CSS
+----------------------------------------*/
+.service-item-8 {
+  &.service-item {
+    padding-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .service-inner {
+      padding: 50px 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      justify-content: space-between;
+      gap: 25px;
+      position: relative;
+      z-index: 3;
+      overflow: hidden;
+      min-height: 183px;
+      @include transition(all 0.3s ease-in-out 0s);
+      @media #{$lg, $xs} {
+        padding: 30px 20px;
+      }
+      @media #{$md} {
+        padding-bottom: 40px;
+      }
+      @media #{$sm, $xs} {
+        padding: 35px 30px 25px 30px;
+        gap: 20px;
+      }
+    }
+    .service-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0;
+    }
+    .service-content {
+      max-width: max-content;
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .title {
+      margin-top: -7px;
+      margin-bottom: 0;
+      font-size: 28px;
+      max-width: 170px;
+      @media #{$md} {
+        font-size: 24px;
+      }
+      @media #{$sm,$xs} {
+        font-size: 20px;
+        margin-top: -5px;
+        max-width: max-content;
+      }
+    }
+    .desc-wrap {
+      max-width: 380px;
+      width: 100%;
+      @media #{$md} {
+        max-width: 360px;
+      }
+      @media #{$xs, $sm} {
+        max-width: 100%;
+      }
+      .desc {
+        margin-bottom: 0;
+      }
+      .categories {
+        margin-top: 22px;
+        margin-bottom: 0;
+        a {
+          color: var(--tj-color-text-body-2);
+          background-color: var(--tj-color-theme-dark);
+          &:hover {
+            color: var(--tj-color-theme-dark);
+            background-color: var(--tj-color-theme-primary);
+          }
+        }
+      }
+    }
+    .tj-icon-btn {
+      background: none;
+      width: 50px;
+      height: 50px;
+      border: 0;
+      font-size: 66px;
+      line-height: 1;
+      @include transition(all 0.3s ease-in-out 0s);
+      color: var(--tj-color-text-body-2);
+      i {
+        color: var(--tj-color-text-body-2);
+      }
+      @media #{$md, $sm, $xs} {
+        margin-top: 18px;
+        width: 44px;
+        height: 44px;
+        font-size: 44px;
+      }
+    }
+    &:hover {
+      .tj-icon-btn {
+        color: var(--tj-color-theme-primary);
+        i {
+          color: var(--tj-color-theme-primary);
+        }
+      }
+    }
+  }
+}
+
+/* !END: Services CSS */

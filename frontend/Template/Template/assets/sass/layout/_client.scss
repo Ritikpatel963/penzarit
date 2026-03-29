@@ -1,0 +1,123 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Client CSS
+----------------------------------------*/
+.tj-client-section {
+	position: relative;
+	.client-content {
+		margin-bottom: 60px;
+		@media #{$lg, $md, $sm, $xs} {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.client-content {
+	max-width: 420px;
+	width: 100%;
+	padding: 3px 10px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 40px;
+	border: 1px solid var(--tj-color-border-1);
+	.sec-title {
+		font-size: 18px;
+		line-height: 1.25;
+		letter-spacing: -0.02em;
+		margin-bottom: 0;
+	}
+	span {
+		display: inline-flex;
+		color: var(--tj-color-theme-dark);
+		background-color: var(--tj-color-theme-primary);
+		line-height: 1.25;
+		border-radius: 50px;
+		padding: 0 5px;
+		position: relative;
+	}
+	@media #{$xs} {
+		max-width: 300px;
+		.sec-title {
+			font-size: 16px;
+		}
+	}
+}
+.client-slider {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: 600px;
+		height: 100%;
+		background-image: linear-gradient(
+			90deg,
+			rgba(5, 5, 5, 1) 0%,
+			rgba(5, 5, 5, 0) 100%
+		);
+		top: 0;
+		inset-inline-start: 0;
+		z-index: 2;
+		@media #{$xl, $lg} {
+			width: 300px;
+		}
+		@media #{$md, $sm} {
+			width: 200px;
+		}
+		@media #{$xs} {
+			width: 100px;
+		}
+	}
+	&::after {
+		inset-inline-start: auto;
+		inset-inline-end: 0;
+		background-image: linear-gradient(
+			-90deg,
+			rgba(5, 5, 5, 1) 0%,
+			rgba(5, 5, 5, 0) 100%
+		);
+	}
+
+	.swiper-wrapper {
+		transition-timing-function: linear;
+	}
+}
+
+.client-item {
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-inline-end: 30px;
+	@media #{$sm, $xs} {
+		padding-inline-end: 20px;
+	}
+}
+.client-logo {
+	width: 285px;
+	height: 121px;
+	background-color: var(--tj-color-theme-bg);
+	border: 1px solid var(--tj-color-border-1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 5;
+	padding: 20px;
+	border-radius: 10px;
+
+	@media #{$lg, $md} {
+		width: 230px;
+		height: 100px;
+		padding: 15px;
+	}
+	@media #{$sm, $xs} {
+		width: 180px;
+		height: 85px;
+		padding: 15px;
+	}
+}
+/* !END: Client CSS */

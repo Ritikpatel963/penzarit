@@ -1,0 +1,101 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Team CSS
+----------------------------------------*/
+.tj-team-section-2 {
+	.rg-30 {
+		@media #{$lg} {
+			--bs-gutter-x: 16px;
+		}
+	}
+}
+.team-item-2 {
+	padding: 48px 30px 32px;
+	@media #{$xl} {
+		padding: 34px 20px 20px;
+	}
+	@media #{$lg} {
+		padding: 34px 20px 14px;
+	}
+	@media #{$md,$sm,$xs} {
+		padding: 38px 20px 26px;
+	}
+	@media #{$xs} {
+		padding-bottom: 16px;
+	}
+	.team-img {
+		max-width: 284px;
+		aspect-ratio: 1/1;
+		margin: 0 auto;
+		border: 2px solid transparent;
+		border-radius: 100%;
+	}
+	.social-links {
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		&::before {
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--tj-color-theme-dark);
+			opacity: 0;
+			z-index: 1;
+		}
+		ul {
+			width: 100%;
+			height: 100%;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			z-index: 2;
+			li {
+				margin-bottom: 0;
+				a {
+					background-color: var(--tj-color-theme-dark);
+				}
+				&:not(:first-child) {
+					margin-inline-start: -42px;
+				}
+			}
+		}
+	}
+	.share-icon {
+		display: none !important;
+	}
+	.team-content {
+		text-align: center;
+		padding-inline-start: 0;
+		padding-inline-end: 0;
+		.title {
+			@media #{$lg} {
+				font-size: 21px;
+			}
+		}
+	}
+
+	&:hover {
+		.team-img {
+			border-color: var(--tj-color-theme-primary);
+		}
+		.social-links {
+			&::before {
+				opacity: 0.5;
+			}
+			ul {
+				li {
+					&:not(:first-child) {
+						margin-inline-start: 0;
+					}
+				}
+			}
+		}
+		.share-icon {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+
+/* !END: Team CSS */

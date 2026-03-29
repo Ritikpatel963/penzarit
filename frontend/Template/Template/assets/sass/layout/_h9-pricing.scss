@@ -1,0 +1,115 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Pricing CSS
+----------------------------------------*/
+.h9_pricing_wrap {
+	position: relative;
+	z-index: 2;
+}
+.h9_pricing_shape {
+	position: absolute;
+	top: -90px;
+	inset-inline-start: 70px;
+	z-index: -1;
+	@media #{$md} {
+		top: 0;
+		inset-inline-start: 0;
+	}
+	@media #{$sm, $xs} {
+		display: none;
+	}
+	img {
+		@media #{$md, $sm, $xs} {
+			width: 100%;
+			height: 600px;
+			object-fit: cover;
+		}
+	}
+}
+.h9_pricing_item {
+	.pricing_item_inner {
+		position: relative;
+	}
+	.price_switcher {
+		position: absolute;
+		top: 0;
+		inset-inline-end: 0;
+		p {
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+	}
+	.toggle_switcher .toggle-switch {
+		border-radius: 40px;
+		width: 40px;
+		height: 20px;
+		background-color: var(--tj-color-theme-dark);
+		&::before {
+			width: 15px;
+			height: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	.toggle-checkbox {
+		&:checked + .toggle-switch {
+			&::before {
+				inset-inline-start: 19px;
+			}
+		}
+	}
+
+	&.pricing_item {
+		background-color: var(--tj-color-grey-4);
+		overflow: hidden;
+		backdrop-filter: blur(20px);
+		&.style-3 {
+			background-color: var(--tj-color-theme-dark);
+			.package_price {
+				font-size: 48px;
+				margin-top: 42px;
+			}
+		}
+	}
+	.package_price {
+		margin-bottom: 30px;
+		.tj_currency {
+			font-size: 24px;
+		}
+		.tj_period {
+			font-size: 16px;
+			font-weight: var(--tj-fw-regular);
+			color: var(--tj-color-text-body);
+			margin-top: auto;
+		}
+	}
+	.pricing_features {
+		margin-top: 0;
+		margin-bottom: 30px;
+		padding-top: 30px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			inset-inline-start: -50px;
+			inset-inline-end: -50px;
+			width: calc(100% + 100px);
+			height: 1px;
+			background-color: rgb(246, 247, 247, 0.1);
+		}
+	}
+	.pricing_btn {
+		border: 1px solid var(--tj-color-theme-primary);
+		.btn-text > span {
+			gap: 4px;
+			i,
+			svg {
+				margin-top: 1px;
+			}
+		}
+	}
+}
+/* !END: Pricing CSS */

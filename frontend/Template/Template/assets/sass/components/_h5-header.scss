@@ -1,0 +1,95 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-area {
+	&.header-5 {
+		&.header-absolute {
+			top: 30px;
+			@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+				top: 15px;
+			}
+			.header-bottom {
+				@media #{$md, $sm, $xs} {
+					padding: 0;
+				}
+			}
+			.header-wrapper {
+				background-color: var(--tj-color-theme-dark);
+				border-radius: 45px;
+				border: 1px solid var(--tj-color-border-1);
+				padding: 0 15px;
+			}
+		}
+		&.header-duplicate {
+			background-color: transparent;
+			box-shadow: none;
+			.header-bottom {
+				@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+					padding: 0;
+				}
+			}
+			.header-wrapper {
+				background-color: var(--tj-color-theme-dark);
+				border-radius: 45px;
+				border: 1px solid var(--tj-color-border-1);
+				padding: 0 15px;
+			}
+		}
+		.site_logo {
+			padding: 14px 0;
+			@media #{$md, $sm, $xs} {
+				padding: 15px 0;
+			}
+		}
+		.mainmenu {
+			ul {
+				> li {
+					> a {
+						padding-top: 28px;
+						padding-bottom: 28px;
+					}
+					&.menu-item-has-children,
+					&.has-dropdown {
+						> a {
+							&::after {
+								top: 30px;
+							}
+						}
+					}
+					.sub-menu {
+						> li {
+							> a {
+								padding-top: 10px;
+								padding-bottom: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.header-button {
+			gap: 14px;
+			.tj-primary-btn {
+				.btn-icon {
+					i {
+						transform: rotate(0);
+					}
+				}
+			}
+		}
+	}
+}
+.tj-primary-btn {
+	&.signup-btn {
+		background-color: var(--tj-color-theme-bg);
+		border: 1px solid var(--tj-color-theme-primary);
+		padding: 10px 28px;
+		.btn-text {
+			color: var(--tj-color-heading-primary);
+		}
+	}
+}
+
+/* !END: Theme Header CSS */

@@ -1,0 +1,83 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Footer CSS
+----------------------------------------*/
+.tj-footer-section {
+	&.footer-4 {
+		background-color: transparent;
+		padding: 0;
+		border-radius: 0;
+		&::after,
+		&::before {
+			display: none;
+		}
+	}
+}
+
+.footer-4 {
+	.footer-main-area {
+		padding: 120px 0 100px;
+		@media #{$lg, $md} {
+			padding: 90px 0 80px;
+		}
+		@media #{$sm, $xs} {
+			padding: 70px 0 60px;
+		}
+	}
+	.footer_widget_wrapper {
+		.footer-widget {
+			@media #{$lg, $md} {
+				max-width: calc(50% - 15px);
+				width: 100%;
+			}
+			@media #{$sm, $xs} {
+				max-width: 100%;
+				width: 100%;
+				margin: 0;
+			}
+		}
+	}
+	.footer_socials {
+		li {
+			a:not(:hover) {
+				opacity: 0.18;
+			}
+		}
+	}
+	.widget-nav-menu {
+		ul {
+			li {
+				a {
+					color: var(--tj-color-text-body);
+					&:hover {
+						color: var(--tj-color-theme-primary);
+					}
+				}
+			}
+		}
+	}
+	.tj-copyright-area {
+		&::before {
+			width: 600px;
+			height: 400px;
+			margin: 0 auto;
+			bottom: -200px;
+			inset-inline-start: 0;
+			inset-inline-end: 0px;
+			opacity: 0.2;
+			@media #{$lg} {
+				width: 400px;
+				height: 300px;
+				bottom: -170px;
+			}
+			@media #{$md, $sm, $xs} {
+				display: block;
+				width: 300px;
+				height: 200px;
+				bottom: -80px;
+			}
+		}
+	}
+}
+/* !END: Theme Footer CSS */

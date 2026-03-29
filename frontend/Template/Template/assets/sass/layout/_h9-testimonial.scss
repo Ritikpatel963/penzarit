@@ -1,0 +1,136 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Testimonial CSS
+----------------------------------------*/
+.h9-testimonial {
+	&-section {
+		background-color: var(--tj-color-theme-bg);
+		border-radius: 16px;
+		z-index: 2;
+		position: relative;
+		.sec-heading {
+			margin-top: 12px;
+			margin-bottom: 12px;
+			@media #{$md, $sm, $xs} {
+				margin-top: 0;
+			}
+		}
+		.sec-desc {
+			max-width: 350px;
+			@media #{$md, $sm, $xs} {
+				max-width: 100%;
+			}
+			.desc {
+				margin-bottom: 22px;
+			}
+		}
+	}
+	&-slider {
+		margin-inline-end: -40%;
+		padding-top: 22px;
+		@media #{$sm, $xs} {
+			margin-inline-end: 0;
+		}
+	}
+	&-item {
+		position: relative;
+		.tj-qutoe-icon {
+			top: -40px;
+			inset-inline-end: 30px;
+			position: absolute;
+			width: 83px;
+			height: 83px;
+			font-size: 66px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--tj-color-theme-primary);
+			background-color: var(--tj-color-theme-bg);
+			border-radius: 12px;
+			z-index: 2;
+			&::after,
+			&::before {
+				content: "";
+				position: absolute;
+				background-color: transparent;
+				top: 40px;
+				inset-inline-start: -23px;
+				width: 25px;
+				height: 12px;
+				box-shadow: 12px 0 0 0 var(--tj-color-theme-bg);
+				border-start-end-radius: 12px;
+			}
+			&::after {
+				inset-inline-start: auto;
+				inset-inline-end: -24px;
+				transform: scaleX(-1);
+			}
+		}
+	}
+	&.testimonial-wrapper-5 {
+		max-width: 100%;
+		margin-inline-start: 0;
+		display: block;
+		.testimonial_header {
+			justify-content: inherit;
+			align-items: center;
+			gap: 4px;
+			margin-bottom: 24px;
+		}
+		.star-ratings {
+			margin-top: 0;
+		}
+		.testimonial_item_3 {
+			width: 100%;
+			padding: 34px 30px 30px;
+			overflow: hidden;
+			background-color: var(--tj-color-theme-dark);
+			border: 0;
+			@media #{$sm,$xs} {
+				padding: 32px 20px 30px;
+			}
+			.author_avatar_wrapper {
+				margin-top: 22px;
+				margin-bottom: 0;
+				padding-top: 30px;
+				border-top: 0;
+				gap: 12px;
+				position: relative;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				&::before {
+					content: "";
+					position: absolute;
+					top: 0;
+					inset-inline-end: -100px;
+					inset-inline-start: -100px;
+					width: calc(100% + 200px);
+					height: 1px;
+					background-color: var(--tj-color-border-1);
+				}
+			}
+		}
+	}
+}
+.nav-pagiation-wrap {
+	&.style-2 {
+		margin-top: 60px;
+		@media #{$md, $sm, $xs} {
+			margin-top: 30px;
+		}
+		.slider-next,
+		.slider-prev {
+			background-color: var(--tj-color-theme-dark);
+			&:last-child {
+				color: var(--tj-color-theme-dark);
+			}
+			&:hover {
+				color: var(--tj-color-theme-dark);
+				background-color: var(--tj-color-theme-primary);
+				border-color: var(--tj-color-theme-primary);
+			}
+		}
+	}
+}
+/* !END: Testimonial CSS */

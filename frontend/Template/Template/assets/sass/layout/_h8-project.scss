@@ -1,0 +1,53 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Project CSS
+----------------------------------------*/
+.h8-projcet {
+	position: relative;
+	padding-bottom: 160px;
+	@media #{$lg} {
+		padding-bottom: 140px;
+	}
+	@media #{$md, $sm,$xs} {
+		padding-bottom: 110px;
+	}
+}
+.h8-project-item {
+	&.project-item {
+		.project {
+			&-content {
+				bottom: -100px;
+				opacity: 0;
+				transition-delay: 0.2s;
+				gap: 15px;
+				@media #{$sm,$xs} {
+					opacity: 1;
+					bottom: 0;
+				}
+			}
+		}
+		.title {
+			max-width: max-content;
+		}
+		&:hover {
+			.project {
+				&-content {
+					opacity: 1;
+					bottom: 0;
+					transition-delay: 0s;
+				}
+			}
+		}
+	}
+}
+.h8-project-more {
+	position: absolute;
+	bottom: -35px;
+	inset-inline-start: 50%;
+	transform: translateX(-50%);
+	padding: 10px;
+	background-color: var(--tj-color-theme-dark);
+	border-radius: 60px;
+}
+/* !END: Project CSS */

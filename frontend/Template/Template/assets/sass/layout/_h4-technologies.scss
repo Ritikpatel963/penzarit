@@ -1,0 +1,130 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Technologies CSS
+----------------------------------------*/
+.h4-technologies-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-bottom: 40px;
+	.technologies-right,
+	.technologies-left {
+		width: 50%;
+		flex: 1;
+		@media #{$md, $sm, $xs} {
+			width: 100%;
+			flex: 0 0 auto;
+		}
+	}
+	.sec-heading {
+		margin-bottom: 0;
+	}
+}
+.tech-left-area {
+	background-color: var(--tj-color-theme-bg);
+	border-radius: 16px;
+	padding: 120px 130px 120px 30px;
+	border: 1px solid var(--tj-color-border-1);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	@media #{$xl, $lg} {
+		padding: 100px 30px;
+		justify-content: flex-start;
+	}
+	@media #{$md, $sm, $xs} {
+		padding: 60px 15px;
+		justify-content: flex-start;
+	}
+}
+.tech-left-content {
+	max-width: 530px;
+	width: 100%;
+	.desc {
+		margin-top: 16px;
+		margin-bottom: 26px;
+	}
+}
+.technologies-item-wrap-2 {
+	margin-top: 60px;
+	@media #{$md, $sm, $xs} {
+		margin-top: 30px;
+	}
+	.tech-icon {
+		max-width: 64px;
+		height: auto;
+		@media #{$md, $sm, $xs} {
+			max-width: 50px;
+		}
+	}
+	.scroll-slider {
+		--gap: 130px;
+		@media #{$md} {
+			--gap: 45px;
+		}
+		@media #{$sm, $xs} {
+			--gap: 30px;
+		}
+		.scroll-wrapper {
+			--gap: 60px;
+			animation-duration: 20s;
+			@media #{$md} {
+				--gap: 50px;
+			}
+			@media #{$sm, $xs} {
+				--gap: 30px;
+			}
+		}
+	}
+}
+.technologies-right {
+	background-color: var(--tj-color-theme-bg);
+	position: relative;
+	z-index: 1;
+	border: 1px solid var(--tj-color-border-1);
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 20px;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		inset-inline-start: 50%;
+		width: 450px;
+		height: 450px;
+		border-radius: 50%;
+		background: var(--tj-color-theme-primary);
+		-webkit-filter: blur(75px);
+		filter: blur(75px);
+		transform: translate(-50%, -50%);
+		opacity: 0.25;
+		z-index: -1;
+		@media #{$xl} {
+			width: 400px;
+			height: 400px;
+		}
+		@media #{$lg, $sm} {
+			width: 330px;
+			height: 330px;
+		}
+		@media #{$xs} {
+			width: 60%;
+			height: 60%;
+		}
+	}
+	.bg-img {
+		opacity: 0.1;
+		mix-blend-mode: luminosity;
+	}
+}
+.tech-circle-img {
+	max-width: 545px;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+/* !END: Technologies CSS */

@@ -1,0 +1,63 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Error 404 CSS
+----------------------------------------*/
+.tj-error {
+	&-section {
+		padding: 70px 0 120px;
+		@media #{$lg, $md} {
+			padding: 70px 0 100px;
+		}
+		@media #{$sm, $xs} {
+			padding: 70px 0;
+		}
+	}
+	&-content {
+		position: relative;
+		max-width: 1023px;
+		width: 100%;
+		margin-inline-start: auto;
+		margin-inline-end: auto;
+		z-index: 1;
+		.error-img {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			max-width: 1023px;
+			@media #{$xs} {
+				padding: 0 20px;
+			}
+		}
+		.error-title {
+			font-size: 74px;
+			margin: 0;
+			@media #{$md} {
+				font-size: 60px;
+			}
+			@media #{$sm} {
+				font-size: 45px;
+			}
+			@media #{$xs} {
+				font-size: 40px;
+			}
+		}
+		.error-desc {
+			max-width: 730px;
+			margin: 20px auto 0;
+			@media #{$md} {
+				max-width: 650px;
+			}
+			@media #{$sm, $xs} {
+				max-width: 500px;
+			}
+		}
+		.error-btn {
+			margin-top: 35px;
+			@media #{$xs} {
+				margin-top: 25px;
+			}
+		}
+	}
+}
+/* !END: Error 404 CSS */

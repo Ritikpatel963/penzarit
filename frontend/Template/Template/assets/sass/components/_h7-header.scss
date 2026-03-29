@@ -1,0 +1,86 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Header CSS
+----------------------------------------*/
+.header-area {
+	&.header-7 {
+		.header-wrapper {
+			background-color: var(--tj-color-theme-bg);
+			border: 1px solid var(--tj-color-border-1);
+			backdrop-filter: none;
+		}
+		&.header-absolute {
+			top: 24px;
+			padding: 0;
+			.header-bottom {
+				@media #{$md, $sm, $xs} {
+					padding: 0;
+				}
+			}
+			.header-wrapper {
+				padding: 0 15px;
+				border-radius: 8px;
+			}
+			.site_logo {
+				padding: 13px 0;
+			}
+			.mainmenu > ul > li {
+				& > a {
+					padding: 28px 0;
+				}
+				&.has-dropdown {
+					& > a {
+						padding-inline-end: 18px;
+						&::after {
+							top: 31px;
+						}
+					}
+				}
+			}
+			.header-right-item {
+				gap: 20px;
+			}
+			@media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+				top: 15px;
+			}
+		}
+	}
+}
+.number {
+	&-wrapper {
+		line-height: 1;
+		.number {
+			color: var(--tj-color-common-white);
+			font-size: 18px;
+			font-family: var(--tj-ff-heading);
+			font-weight: var(--tj-fw-sbold);
+			display: inline-flex;
+			align-items: center;
+			line-height: 1;
+			gap: 6px;
+			i {
+				color: var(--tj-color-theme-primary);
+				font-size: 24px;
+				display: inline-flex;
+			}
+			span {
+				background-image: linear-gradient(
+					to bottom,
+					currentColor 0%,
+					currentColor 100%
+				);
+				background-size: 0 1px;
+				background-repeat: no-repeat;
+				background-position: 0 100%;
+				display: inline;
+			}
+			&:hover {
+				span {
+					background-size: 100% 1px;
+				}
+			}
+		}
+	}
+}
+/* !END: Theme Header CSS */

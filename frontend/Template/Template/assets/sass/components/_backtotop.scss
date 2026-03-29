@@ -1,0 +1,88 @@
+@use "../utilities" as *;
+/**----------------------------------------
+START: Back to top CSS
+----------------------------------------*/
+.back-to-top {
+	&-wrapper {
+		position: fixed;
+		inset-inline-end: 60px;
+		bottom: 0;
+		display: block;
+		border-radius: 50%;
+		z-index: 99;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer;
+		@media #{$md} {
+			inset-inline-end: 45px;
+		}
+		@media #{$sm, $xs} {
+			inset-inline-end: 15px;
+		}
+	}
+	&-btn-show {
+		visibility: visible;
+		opacity: 1;
+		bottom: 60px;
+
+		&:hover {
+			transform: translateY(-6px);
+			.back_to_top_icon {
+				i {
+					transform: translateY(-40px);
+					transition: all 0.3s ease-in-out;
+				}
+			}
+		}
+		@media #{$xl} {
+			inset-inline-end: 50px;
+		}
+		@media #{$lg, $md} {
+			inset-inline-end: 30px;
+			bottom: 30px;
+		}
+		@media #{$sm, $xs} {
+			bottom: 25px;
+		}
+	}
+	&-btn {
+		color: var(--tj-color-heading-primary);
+		line-height: 1;
+		font-weight: var(--tj-fw-sbold);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+
+		.back_to_top {
+			&_icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 50px;
+				height: 50px;
+				font-size: 10px;
+				color: var(--tj-color-theme-bg);
+				background-color: var(--tj-color-theme-primary);
+				border-radius: 50%;
+				text-shadow: 0 40px 0 var(--tj-color-theme-dark);
+				overflow: hidden;
+			}
+			&_text {
+				font-weight: var(--tj-fw-medium);
+				line-height: 1;
+				letter-spacing: 0%;
+				text-align: end;
+				writing-mode: vertical-lr;
+				transform: scale(-1);
+
+				@media #{$md, $sm, $xs} {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+/* !END: Back to top CSS */
