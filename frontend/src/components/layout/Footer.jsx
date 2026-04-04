@@ -36,25 +36,27 @@ export default function Footer() {
                   </div>
                 </div>
                 <div className="footer-widget widget-nav-menu">
-                  <h5 className="title">Services</h5>
+                  <h5 className="title">Solution</h5>
                   <ul>
-                    <li><Link to="/servicedetails"><span>Manage IT Service</span></Link></li>
-                    <li><Link to="/servicedetails"><span>Cloud Computing</span></Link></li>
-                    <li><Link to="/servicedetails"><span>Cyber Security</span></Link></li>
-                    <li><Link to="/servicedetails"><span>Software Develop</span></Link></li>
-                    <li><Link to="/servicedetails"><span>Change Manage</span></Link></li>
-                    <li><Link to="/servicedetails"><span>IT Consulting</span></Link></li>
+                    <li id="menu-item-11716" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-11716"><a href="https://panzerit.com/solutions/mirobase-employee-monitoring/">Scopd DLP with UEBA</a></li>
+                    <li id="menu-item-4432" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432"><a href="https://panzerit.com/vulnerability-scanner-assessment-penetration-testing/">Vulnerability Scanner, Assessment &amp; Penetration Testing</a></li>
+                    <li id="menu-item-946" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-946"><a href="https://panzerit.com/brands/securetower-data-loss-prevention-dlp/">Employee Monitoring Solution</a></li>
+                    <li id="menu-item-976" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-976"><a href="https://panzerit.com/solutions/advance-anti-malware/">Most Advance Anti-Malware</a></li>
+                    <li id="menu-item-4019" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4019"><a href="https://panzerit.com/backup-disaster-recovery/">Backup &amp; Disaster Recovery</a></li>
+                    <li id="menu-item-1003" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="https://panzerit.com/solutions/acronis-india/">Backup Solution</a></li>
+                    <li id="menu-item-3497" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3497"><a href="https://panzerit.com/solutions/somansa-dlp/">Data Leak Prevention – DLP</a></li>
+                    <li id="menu-item-941" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-941"><a href="https://panzerit.com/?page_id=820">Advance Threat Prevention | EDR | EPS</a></li>
                   </ul>
                 </div>
                 <div className="footer-widget widget-nav-menu">
                   <h5 className="title">Resourses</h5>
                   <ul>
-                    <li><Link to="/contact"><span>Contact Us</span></Link></li>
-                    <li><Link to="/blogdetails"><span>Privacy Policy</span></Link></li>
-                    <li><Link to="/about"><span>Recognitions</span></Link></li>
-                    <li><Link to="/service"><span>Careers</span> <span className="badge">New</span></Link></li>
+                    <li><Link to="/about"><span>About</span></Link></li>
+                    <li><Link to="/contact"><span>Contact</span></Link></li>
+                    <li><Link to="/service"><span>Tech</span></Link></li>
                     <li><Link to="/blog"><span>News</span></Link></li>
-                    <li><Link to="/project"><span>Feedback</span></Link></li>
+                    <li><Link to="/blog"><span>Blog</span></Link></li>
+                    <li><Link to="/project"><span>Downloads</span></Link></li>
                   </ul>
                 </div>
                 <div className="footer-widget widget-contact">

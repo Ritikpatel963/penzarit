@@ -33,61 +33,47 @@ export default function Header() {
 
   const NavMenu = () => (
     <ul>
-      <li className="has-dropdown current-menu-ancestor">
-        <Link to="/">Home</Link>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/about">About</Link></li>
+      <li className="has-dropdown">
+        <Link to="/service">Solution</Link>
         <ul className="sub-menu">
-          <li className="current-menu-item"><Link to="/">IT Solution</Link></li>
-          <li><Link to="/index2">IT Consulting</Link></li>
-          <li><Link to="/index3">Managed IT</Link></li>
-          <li><Link to="/index4">Cloud Solutions</Link></li>
-          <li><Link to="/index5">Cyber Security</Link></li>
-          <li><Link to="/index6">Fintech</Link></li>
-          <li><Link to="/index7">Software Company</Link></li>
-          <li><Link to="/index8">Tech Startup</Link></li>
-          <li><Link to="/index9">Ai technology</Link></li>
-          <li><Link to="/index10">Hosting</Link></li>
-          <li><Link to="/indexrtl">RTL Demo</Link></li>
+          <li id="menu-item-11716" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-11716"><a href="https://panzerit.com/solutions/mirobase-employee-monitoring/">Scopd DLP with UEBA</a></li>
+          <li id="menu-item-4432" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432"><a href="https://panzerit.com/vulnerability-scanner-assessment-penetration-testing/">Vulnerability Scanner, Assessment &amp; Penetration Testing</a></li>
+          <li id="menu-item-946" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-946"><a href="https://panzerit.com/brands/securetower-data-loss-prevention-dlp/">Employee Monitoring Solution</a></li>
+          <li id="menu-item-976" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-976"><a href="https://panzerit.com/solutions/advance-anti-malware/">Most Advance Anti-Malware</a></li>
+          <li id="menu-item-4019" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4019"><a href="https://panzerit.com/backup-disaster-recovery/">Backup &amp; Disaster Recovery</a></li>
+          <li id="menu-item-1003" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1003"><a href="https://panzerit.com/solutions/acronis-india/">Backup Solution</a></li>
+          <li id="menu-item-3497" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3497"><a href="https://panzerit.com/solutions/somansa-dlp/">Data Leak Prevention – DLP</a></li>
+          <li id="menu-item-941" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-941"><a href="https://panzerit.com/?page_id=820">Advance Threat Prevention | EDR | EPS</a></li>
         </ul>
       </li>
       <li className="has-dropdown">
-        <Link to="/about">Pages</Link>
+        <Link to="/project">Brand</Link>
         <ul className="sub-menu">
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/service">Service</Link></li>
-          <li><Link to="/servicedetails">Service Details</Link></li>
-          <li><Link to="/team">Team</Link></li>
-          <li><Link to="/teamdetails">Team Details</Link></li>
-          <li><Link to="/faq">Faq</Link></li>
-          <li><Link to="/pricing">Pricing Page</Link></li>
-          <li><Link to="/error">Error 404</Link></li>
+          <li id="menu-item-9406" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9406"><a href="https://panzerit.com/brands/netand-iam-pam/">Netand IAM PAM</a></li>
+          <li id="menu-item-7794" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-7794"><a href="https://panzerit.com/brands/scopd-employee-monitoring/">Scopd DLP with UEBA</a></li>
+          <li id="menu-item-944" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-944"><a href="https://panzerit.com/solutions/securetower/">FalconGaze SecureTower – UBA</a></li>
+          <li id="menu-item-3544" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3544"><a href="https://panzerit.com/somansa-data-loss-prevention/">Somansa Endpoint Data Loss Prevention</a></li>
+          <li id="menu-item-4429" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4429"><a href="https://panzerit.com/secpoint-penetrator-vulnerability-scanner-assessment/">SecPoint Penetrator Vulnerability Scanner &amp; Assessment</a></li>
+          <li id="menu-item-1650" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1650"><a href="https://panzerit.com/brands/netop-secure-remote-access/">Netop – Secure Remote Access</a></li>
+          <li id="menu-item-945" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-945"><a href="https://panzerit.com/brands/emsisoft-most-advance-malware-protection/">Emsisoft – Advance Malware Protection</a></li>
+          <li id="menu-item-4020" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4020"><a href="https://panzerit.com/vembu-bdr-suite/">Vembu BDR Suite</a></li>
+          <li id="menu-item-3508" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3508"><a href="https://panzerit.com/solutions/acronis-india/">Acronis Backup Solution</a></li>
         </ul>
       </li>
-      <li className="has-dropdown">
-        <Link to="/project">Projects</Link>
-        <ul className="sub-menu">
-          <li><Link to="/project">Projects</Link></li>
-          <li><Link to="/projectdetails">Project Details</Link></li>
-        </ul>
-      </li>
-      <li className="has-dropdown">
-        <Link to="/shop">Shop</Link>
-        <ul className="sub-menu">
-          <li><Link to="/shop">Shop</Link></li>
-          <li><Link to="/shopdetails">Shop Details</Link></li>
-          <li><Link to="/cart">Cart</Link></li>
-          <li><Link to="/wishlist">Wishlist</Link></li>
-          <li><Link to="/checkout">Checkout</Link></li>
-          <li><Link to="/login">Login</Link></li>
-          <li><Link to="/password">Password</Link></li>
-        </ul>
-      </li>
+      <li><Link to="/service">Tech</Link></li>
+      <li><Link to="/blog">News</Link></li>
       <li className="has-dropdown">
         <Link to="/blog">Blog</Link>
         <ul className="sub-menu">
-          <li><Link to="/blog">Blog</Link></li>
-          <li><Link to="/blogdetails">Blog Details</Link></li>
+          <li id="menu-item-1097" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1097"><a href="https://panzerit.com/category/writeups/">Write-ups</a></li>
+          <li id="menu-item-1096" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1096"><a href="https://panzerit.com/category/techstuff/">Tech Stuff</a></li>
+          <li id="menu-item-1098" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1098"><a href="https://panzerit.com/category/it_security_tips/">Daily_Tips</a></li>
+          <li id="menu-item-1095" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1095"><a href="https://panzerit.com/category/news/">News</a></li>
         </ul>
       </li>
+      <li><Link to="/project">Downloads</Link></li>
       <li><Link to="/contact">Contact</Link></li>
     </ul>
   );
