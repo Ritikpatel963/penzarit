@@ -2397,7 +2397,7 @@ div.product-widget {
 					text-decoration: none;
 				}
 				del {
-					color: var();
+					color: initial;
 					.woocommerce-Price-amount,
 					span {
 						text-decoration-line: line-through;

@@ -2303,7 +2303,7 @@ div.product-widget .tj-product-sidebar-rating-price ins {
   text-decoration: none;
 }
 div.product-widget .tj-product-sidebar-rating-price del {
-  color: var();
+  color: initial;
 }
 div.product-widget .tj-product-sidebar-rating-price del .woocommerce-Price-amount,
 div.product-widget .tj-product-sidebar-rating-price del span {
@@ -4423,7 +4423,9 @@ div.woocommerce .woocommerce-cart-form table.shop_table td:before {
   font-weight: 300;
   display: inline-block;
 }
-.tj-product-action-btn button::before.woosw-btn.woosw-added::before {
+/* Option 2 — two separate rules if both states need the style */
+.tj-product-action-btn button::before,
+.tj-product-action-btn .woosw-btn.woosw-added::before {
   margin: 0;
 }
 .tj-product-action-btn-tooltip {
