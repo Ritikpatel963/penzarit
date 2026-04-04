@@ -1462,7 +1462,7 @@ START: Theme Header CSS
           animation: zoomEffect 1.5s linear infinite;
 }
 .header-top-content .topbar-text a {
-  color: var(--primary-color);
+  color: var(--primary-text-color);
   font-weight: var(--tj-fw-medium);
   line-height: 1;
   display: -webkit-inline-box;
@@ -1490,7 +1490,7 @@ START: Theme Header CSS
           transform: rotate(-45deg);
 }
 .header-top-content .topbar-text a:hover {
-  color: var(--tj-color-theme-primary);
+  color: white;
 }
 .header-top-content .topbar-text a:hover::after {
   -webkit-transform: rotate(0deg);
@@ -4363,8 +4363,8 @@ START: Hero CSS
           transform: translateY(6px);
 }
 .banner-scroll .scroll-down:hover .icon {
-  background-color: var(--tj-color-theme-primary);
-  color: var(--tj-color-theme-dark);
+  background-color: var(--primary-text-color);
+  color: white;
 }
 .banner-scroll .scroll-down:hover .icon i {
   -webkit-transform: translateY(30px);
@@ -6173,7 +6173,7 @@ START: Services CSS
   margin-bottom: 22px;
 }
 .service-item .tj-text-btn:hover {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
 }
 .service-item:hover .service-icon {
   color: var(--tj-color-theme-dark);

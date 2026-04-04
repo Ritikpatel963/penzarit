@@ -6,27 +6,27 @@ export default function Index5() {
   const serviceCards = [
     {
       icon: "tji-computer",
-      title: "Managed IT Services",
+      title: "Endpoint Security",
       description:
-        "Comprehensive IT management, including monitoring, maintenance, and support to keep your business running smoothly.",
+        "Endpoint Security — protect every device of your IT infrastructure against malware, hacking & other attacks.",
     },
     {
       icon: "tji-cloud",
-      title: "Cloud Computing",
+      title: "Firewall",
       description:
-        "Scalable cloud-based services, including migration, storage, and security, for enhanced flexibility and efficiency.",
+        "Firewall security at every entry point — network perimeter, mail server, web server, and endpoints.",
     },
     {
       icon: "tji-cybersecurity",
-      title: "Cybersecurity Solutions",
+      title: "Automated Data Backup",
       description:
-        "Advanced security measures, including firewall protection, threat detection, and compliance solutions, to safeguard your business.",
+        "Automated Data Backup — continuous, scheduled backup ensuring data is never lost.",
     },
     {
       icon: "tji-development",
-      title: "Software Development",
+      title: "Disaster Recovery Management",
       description:
-        "Custom software solutions tailored to your business needs, including web and mobile application development.",
+        "Disaster Recovery Management — data must be available without any downtime even after natural disaster.",
     },
   ];
   return (
@@ -395,10 +395,10 @@ export default function Index5() {
                   <div className="tj-fade-anim" data-delay="0.3">
                     <Link
                       className="tj-primary-btn d-none d-lg-inline-flex"
-                      to="/service"
+                      to="/contact"
                     >
                       <span className="btn-text">
-                        <span>Explore More</span>
+                        <span>Contact Us</span>
                       </span>
                       <span className="btn-icon">
                         <i className="tji-arrow-right-2"></i>
@@ -1403,7 +1403,7 @@ export default function Index5() {
       {/*  end: Pricing Section  */}
 
       {/*  start: Technologies Section  */}
-      <div className="h5-technologies-section section-gap section-gap-x fix">
+      {/* <div className="h5-technologies-section section-gap section-gap-x fix">
         <div
           className="bg-img"
           data-bg-image={assetPath("images/bg/common-bg-3.webp")}
@@ -1563,7 +1563,7 @@ export default function Index5() {
             <img src={assetPath("images/shapes/h5-blur-2.png")} alt="" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/*  end: Technologies Section  */}
 
       {/*  start: FAQ Section  */}
