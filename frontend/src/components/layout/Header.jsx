@@ -162,7 +162,7 @@ export default function Header() {
               <div className="col-12">
                 <div className="header-wrapper">
                   <div className="site_logo">
-                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo.webp" alt="Logo" /></Link>
+                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo.png" alt="Logo" /></Link>
                   </div>
                   <div className="menu-area d-none d-lg-inline-flex align-items-center">
                     <nav id="mobile-menu" className="mainmenu">
@@ -185,7 +185,7 @@ export default function Header() {
               <div className="col-12">
                 <div className="header-wrapper">
                   <div className="site_logo">
-                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo.webp" alt="Logo" /></Link>
+                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo.png" alt="Logo" /></Link>
                   </div>
                   <div className="menu-area d-none d-lg-inline-flex align-items-center">
                     <nav className="mainmenu">

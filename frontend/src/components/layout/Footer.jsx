@@ -28,15 +28,11 @@ export default function Footer() {
                 <div className="footer-widget footer-col-1">
                   <div className="footer-logo">
                     <Link to="/">
-                      <img src="/assets/images/logos/primary-logo.webp" alt="Logo" />
+                      <img src="/assets/images/logos/primary-logo.png" alt="Logo" />
                     </Link>
                   </div>
                   <div className="footer-text">
                     <p>Every great solution start understand the time into learn about.</p>
-                  </div>
-                  <div className="download-buttons">
-                    <a href="https://play.google.com/store/games" target="_blank" rel="noreferrer"><img src="/assets/images/footer/google-play.webp" alt="Google Play" /></a>
-                    <a href="https://www.apple.com/app-store/" target="_blank" rel="noreferrer"><img src="/assets/images/footer/app-store.webp" alt="App Store" /></a>
                   </div>
                 </div>
                 <div className="footer-widget widget-nav-menu">
@@ -65,14 +61,11 @@ export default function Footer() {
                   <h5 className="title">Contact Info</h5>
                   <div className="footer-contact-info">
                     <div className="contact-item">
-                      <span>993 Renner Burg, West Rond, MT 94251-030, USA.</span>
+                      <span>New Delhi | Mumbai, India</span>
                     </div>
                     <div className="contact-item">
-                      <a href="tel:10095447818">P: +1 (009) 544-7818</a>
-                      <a href="mailto:support@tekmino.com">E: support@tekmino.com</a>
-                    </div>
-                    <div className="contact-item">
-                      <span><i className="tji-clock"></i> Mon-Fri 09am-06pm</span>
+                      <a href="tel:+91 90046 55099">P: +91 90046 55099</a>
+                      <a href="mailto:sales@panzerit.com">E: Sales@PanzerIT.com</a>
                     </div>
                   </div>
                 </div>
@@ -88,7 +81,7 @@ export default function Footer() {
               <div className="col-12">
                 <div className="copyright-content-area">
                   <div className="copyright-text">
-                    <p><a href="https://themeforest.net/user/theme-junction/portfolio" target="_blank" rel="noreferrer">Tekmino</a>
+                    <p><a href="https://themeforest.net/user/theme-junction/portfolio" target="_blank" rel="noreferrer">Panzer IT</a>
                       &copy; <span>2026</span>. All right reserved.</p>
                   </div>
                   <div className="copyright-menu">

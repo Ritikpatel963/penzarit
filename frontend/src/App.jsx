@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import useTemplateInit from './hooks/useTemplateInit';
+import useGsapAnimation from './hooks/useGsapAnimation';
 
 // Layout imports
 import Preloader from './components/layout/Preloader';
@@ -46,6 +47,8 @@ import Wishlist from './pages/Wishlist';
 function AppContent() {
   // Initialize all template JS functionality
   useTemplateInit();
+  // Initialize all GSAP animations
+  useGsapAnimation();
 
   return (
     <>
@@ -60,7 +63,7 @@ function AppContent() {
         <div id="smooth-content">
           <main id="primary" className="site-main">
             <Routes>
-              <Route path="/" element={<Index />} />
+              <Route path="/" element={<Index5 />} />
               <Route path="/about" element={<About />} />
               <Route path="/blogdetails" element={<BlogDetails />} />
               <Route path="/blog" element={<Blog />} />
@@ -73,28 +76,28 @@ function AppContent() {
               <Route path="/index2" element={<Index2 />} />
               <Route path="/index3" element={<Index3 />} />
               <Route path="/index4" element={<Index4 />} />
-              <Route path="/index5" element={<Index5 />} />
-              <Route path="/index6" element={<Index6 />} />
-              <Route path="/index7" element={<Index7 />} />
-              <Route path="/index8" element={<Index8 />} />
-              <Route path="/index9" element={<Index9 />} />
-              <Route path="/indexrtl" element={<IndexRtl />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/new" element={<New />} />
-              <Route path="/password" element={<Password />} />
-              <Route path="/pricing" element={<Pricing />} />
-              <Route path="/projectdetails" element={<ProjectDetails />} />
-              <Route path="/project" element={<Project />} />
-              <Route path="/servicedetails" element={<ServiceDetails />} />
-              <Route path="/service" element={<Service />} />
-              <Route path="/shopdetails" element={<ShopDetails />} />
-              <Route path="/shop" element={<Shop />} />
-              <Route path="/teamdetails" element={<TeamDetails />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/wishlist" element={<Wishlist />} />
-              <Route path="/home" element={<Index />} />
-              <Route path="*" element={<Error />} />
-            </Routes>
+                <Route path="/index5" element={<Index5 />} />
+                <Route path="/index6" element={<Index6 />} />
+                <Route path="/index7" element={<Index7 />} />
+                <Route path="/index8" element={<Index8 />} />
+                <Route path="/index9" element={<Index9 />} />
+                <Route path="/indexrtl" element={<IndexRtl />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/new" element={<New />} />
+                <Route path="/password" element={<Password />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/projectdetails" element={<ProjectDetails />} />
+                <Route path="/project" element={<Project />} />
+                <Route path="/servicedetails" element={<ServiceDetails />} />
+                <Route path="/service" element={<Service />} />
+                <Route path="/shopdetails" element={<ShopDetails />} />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/teamdetails" element={<TeamDetails />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/wishlist" element={<Wishlist />} />
+                <Route path="/home" element={<Index5 />} />
+                <Route path="*" element={<Error />} />
+              </Routes>
           </main>
         </div>
       </div>

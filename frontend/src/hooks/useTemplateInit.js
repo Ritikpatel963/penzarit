@@ -1,5 +1,6 @@
 import { useEffect, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
+import VanillaTilt from 'vanilla-tilt';
 
 /**
  * Master hook that replicates all jQuery main.js functionality in React.
@@ -153,6 +154,8 @@ export default function useTemplateInit() {
     // Dynamically import Swiper
     import('swiper').then(({ default: Swiper }) => {
       import('swiper/modules').then(({ Navigation, Pagination, Autoplay, EffectFade, FreeMode, Controller, Thumbs }) => {
+        const getSlideCount = (selector) => document.querySelectorAll(`${selector} .swiper-slide`).length;
+        const canLoop = (selector, minimumSlides = 2) => getSlideCount(selector) >= minimumSlides;
 
         // Client slider (brand marquee)
         if (document.querySelector('.client-slider')) {
@@ -162,7 +165,7 @@ export default function useTemplateInit() {
             spaceBetween: 0,
             freeMode: true,
             centeredSlides: true,
-            loop: true,
+            loop: canLoop('.client-slider', 2),
             speed: 5000,
             allowTouchMove: false,
             autoplay: {
@@ -178,7 +181,7 @@ export default function useTemplateInit() {
             modules: [FreeMode, Controller],
             slidesPerView: 3,
             spaceBetween: 12,
-            loop: true,
+            loop: canLoop('.thumb-slider', 3),
             speed: 1200,
             centeredSlides: true,
             freeMode: true,
@@ -191,7 +194,7 @@ export default function useTemplateInit() {
             slidesPerView: 1,
             spaceBetween: 30,
             centeredSlides: true,
-            loop: true,
+            loop: canLoop('.testimonial-slider', 3),
             speed: 1200,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -215,7 +218,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.testimonial_slider_2', 3),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -235,7 +238,7 @@ export default function useTemplateInit() {
             slidesPerView: 'auto',
             centeredSlides: true,
             spaceBetween: 30,
-            loop: true,
+            loop: canLoop('.h3_testimonial_slider', 2),
             speed: 1500,
             autoplay: { delay: 3000 },
             pagination: { el: '.swiper-pagination-area', clickable: true },
@@ -252,7 +255,7 @@ export default function useTemplateInit() {
             modules: [FreeMode, Controller],
             slidesPerView: 3,
             spaceBetween: 10,
-            loop: true,
+            loop: canLoop('.thumb-slider-2', 3),
             speed: 1200,
             centeredSlides: true,
             freeMode: true,
@@ -263,7 +266,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay, Controller],
             slidesPerView: 'auto',
             spaceBetween: 30,
-            loop: true,
+            loop: canLoop('.testimonial-slider-4', 2),
             speed: 1200,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -279,7 +282,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.h8-testimonial-slider', 5),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -299,7 +302,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.h9-testimonial-slider', 3),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -318,7 +321,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.h10-testimonial-slider', 4),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -337,7 +340,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.project-slider', 4),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -358,7 +361,7 @@ export default function useTemplateInit() {
             slidesPerView: 1,
             spaceBetween: 0,
             effect: 'fade',
-            loop: true,
+            loop: canLoop('.tj-hero-slider', 2),
             speed: 1400,
             autoplay: { delay: 5000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -371,7 +374,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Autoplay],
             slidesPerView: 1,
             spaceBetween: 20,
-            loop: true,
+            loop: canLoop('.tj-post-slider', 2),
             speed: 1400,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -384,7 +387,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.h8-blog-slider', 3),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -403,7 +406,7 @@ export default function useTemplateInit() {
             modules: [Navigation, Pagination, Autoplay],
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: true,
+            loop: canLoop('.service-slider', 5),
             speed: 1500,
             autoplay: { delay: 3000 },
             navigation: { nextEl: '.slider-next', prevEl: '.slider-prev' },
@@ -588,12 +591,79 @@ export default function useTemplateInit() {
 
   // ── Fix image src paths (add leading /) ────────────────────────
   const fixImagePaths = useCallback(() => {
+    // Fix img src starting with "assets/"
     document.querySelectorAll('img[src^="assets/"]').forEach((img) => {
       img.src = '/' + img.getAttribute('src');
+    });
+    // Fix img src starting with "./assets/"
+    document.querySelectorAll('img[src^="./assets/"]').forEach((img) => {
+      img.src = img.getAttribute('src').replace('./', '/');
     });
     // Also fix any <a> href to assets
     document.querySelectorAll('a[href^="assets/"]').forEach((a) => {
       a.href = '/' + a.getAttribute('href');
+    });
+    document.querySelectorAll('a[href^="./assets/"]').forEach((a) => {
+      a.href = a.getAttribute('href').replace('./', '/');
+    });
+    // Fix data-bg-image paths
+    document.querySelectorAll('[data-bg-image^="./assets/"]').forEach((el) => {
+      el.setAttribute('data-bg-image', el.getAttribute('data-bg-image').replace('./', '/'));
+    });
+  }, []);
+
+  // ── VanillaTilt initialization ─────────────────────────────────
+  const initVanillaTilt = useCallback(() => {
+    const tiltElements = document.querySelectorAll('[data-tilt]');
+    if (tiltElements.length === 0) return;
+    
+    // Destroy existing instances first
+    tiltElements.forEach((el) => {
+      if (el.vanillaTilt) {
+        el.vanillaTilt.destroy();
+      }
+    });
+    
+    VanillaTilt.init(Array.from(tiltElements), {
+      max: 15,
+      speed: 400,
+      glare: false,
+      'max-glare': 0.2,
+    });
+  }, []);
+
+  // ── Counter animation ─────────────────────────────────────────
+  const initCounters = useCallback(() => {
+    document.querySelectorAll('.counter').forEach((el) => {
+      // Skip if already animated
+      if (el.dataset.counterAnimated === 'true') return;
+      
+      const targetValue = parseInt(el.textContent, 10);
+      if (isNaN(targetValue)) return;
+      
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && el.dataset.counterAnimated !== 'true') {
+              el.dataset.counterAnimated = 'true';
+              let current = 0;
+              const duration = 2000; // 2 seconds
+              const increment = targetValue / (duration / 16);
+              const timer = setInterval(() => {
+                current += increment;
+                if (current >= targetValue) {
+                  current = targetValue;
+                  clearInterval(timer);
+                }
+                el.textContent = Math.floor(current);
+              }, 16);
+              observer.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+      observer.observe(el);
     });
   }, []);
 
@@ -612,6 +682,8 @@ export default function useTemplateInit() {
       initRoundedMarquee();
       initQuantity();
       initCopyrightYear();
+      initVanillaTilt();
+      initCounters();
     }, 100);
 
     // Scroll to top on route change

@@ -3,3 +3,43 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* ============================================================
+   Infinite Scroll Marquee for the client logo strip.
+   Keep this scoped so it does not override the vertical
+   testimonial scroller from the template CSS.
+   ============================================================ */
+.client-slider-wrap .scroll-slider {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.client-slider-wrap .scroll-slider .scroll-wrapper {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  animation: tj-marquee-left 25s linear infinite;
+}
+
+/* RTL variant scrolls in the opposite direction */
+.client-slider-wrap .scroll-slider[dir="rtl"] .scroll-wrapper {
+  animation: tj-marquee-right 25s linear infinite;
+  flex-direction: row; /* keep items left-to-right inside RTL wrapper */
+}
+
+@keyframes tj-marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+@keyframes tj-marquee-right {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
+}
+
+/* Pause marquee on hover */
+.client-slider-wrap .scroll-slider:hover .scroll-wrapper {
+  animation-play-state: paused;
+}

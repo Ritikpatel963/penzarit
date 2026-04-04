@@ -978,7 +978,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--primary-color);
   font-size: 16px;
   font-weight: var(--tj-fw-sbold);
   padding: 5px 5px 5px 30px;
@@ -991,7 +991,7 @@ table {
   white-space: nowrap;
 }
 .tj-primary-btn .btn-text {
-  color: var(--tj-color-theme-bg);
+  color: white;
   overflow: hidden;
 }
 .tj-primary-btn .btn-text span {
@@ -1453,15 +1453,16 @@ START: Theme Header CSS
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+  color: var(--primary-text-color);
 }
 .header-top-content .topbar-text i {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   font-size: 17px;
   -webkit-animation: zoomEffect 1.5s linear infinite;
           animation: zoomEffect 1.5s linear infinite;
 }
 .header-top-content .topbar-text a {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-color);
   font-weight: var(--tj-fw-medium);
   line-height: 1;
   display: -webkit-inline-box;
@@ -1542,7 +1543,7 @@ START: Theme Header CSS
   display: inline-flex;
   line-height: 1;
   font-size: 18px;
-  color: var(--tj-color-theme-primary);
+  color: white;
 }
 .header-top-content .header-info .info-item a {
   color: var(--tj-color-text-body);
@@ -1759,10 +1760,10 @@ START: Theme Header CSS
           transform: rotate(-180deg);
 }
 .mainmenu ul > li.current-menu-ancestor > a, .mainmenu ul > li.current-menu-item > a, .mainmenu ul > li:hover > a {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
 }
 .mainmenu ul > li.current-menu-ancestor > a::after, .mainmenu ul > li.current-menu-item > a::after, .mainmenu ul > li:hover > a::after {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
 }
 .mainmenu ul > li.current-menu-ancestor > a::before, .mainmenu ul > li.current-menu-item > a::before, .mainmenu ul > li:hover > a::before {
   opacity: 1;
@@ -1822,7 +1823,7 @@ START: Theme Header CSS
           transform: rotate(-90deg);
 }
 .mainmenu ul > li > .sub-menu > li.current-menu-ancestor > a, .mainmenu ul > li > .sub-menu > li.current-menu-item > a, .mainmenu ul > li > .sub-menu > li:hover > a {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
 }
 .mainmenu ul > li > .sub-menu > li.current-menu-ancestor > a::before, .mainmenu ul > li > .sub-menu > li.current-menu-item > a::before, .mainmenu ul > li > .sub-menu > li:hover > a::before {
   opacity: 1;
@@ -2338,7 +2339,7 @@ START: Theme Footer CSS
   overflow: hidden;
 }
 .widget-nav-menu ul li a:hover {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   -webkit-transform: translateX(5px);
       -ms-transform: translateX(5px);
           transform: translateX(5px);
@@ -2346,8 +2347,8 @@ START: Theme Footer CSS
 .widget-nav-menu ul li a .badge {
   font-size: 10px;
   text-transform: uppercase;
-  color: var(--tj-color-theme-bg);
-  background-color: var(--tj-color-theme-primary);
+  color: #ffffff;
+  background-color: var(--primary-text-color);
   border-radius: 50px;
   padding: 3px 6px 4px;
   -webkit-animation: zoomEffect2 1.5s infinite linear;
@@ -2640,7 +2641,7 @@ START: Theme Footer CSS
 }
 .footer-contact-info .contact-item span i {
   font-size: 20px;
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3648,8 +3649,8 @@ START: Back to top CSS
   width: 50px;
   height: 50px;
   font-size: 10px;
-  color: var(--tj-color-theme-bg);
-  background-color: var(--tj-color-theme-primary);
+  color: white;
+  background-color: var(--primary-color);
   border-radius: 50%;
   text-shadow: 0 40px 0 var(--tj-color-theme-dark);
   overflow: hidden;
@@ -3836,7 +3837,7 @@ START: Heading CSS
   transition: none;
 }
 .sec-heading .sub-title i {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1;
   display: -webkit-inline-box;
@@ -5515,7 +5516,7 @@ START: About CSS
           border-inline-end: 1px solid var(--tj-color-border-1);
 }
 .about-funfact .inline-content {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   font-size: 64px;
   margin-bottom: 15px;
 }
@@ -6208,7 +6209,7 @@ START: Services CSS
   border: 1px solid var(--tj-color-border-1);
   border-radius: 50%;
   font-size: 44px;
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -6233,7 +6234,7 @@ START: Services CSS
   top: 0;
   inset-inline-start: 0;
   border-radius: 50%;
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--primary-color);
   z-index: -1;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -8530,9 +8531,9 @@ START: Testimonial CSS
 }
 .slider-next:hover,
 .slider-prev:hover {
-  color: var(--tj-color-theme-dark);
-  background-color: var(--tj-color-theme-primary);
-  border-color: var(--tj-color-theme-primary);
+  color: #fff;
+  background-color: var(--primary-text-color);
+  border-color: var(--primary-text-color);
 }
 .slider-next:hover .anim-icon i:first-child,
 .slider-prev:hover .anim-icon i:first-child {
@@ -8584,7 +8585,7 @@ START: Testimonial CSS
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
-  background-color: var(--tj-color-theme-primary);
+  background-color: var(--primary-text-color);
   border-radius: 50%;
   opacity: 0.2;
   position: relative;
@@ -8667,7 +8668,7 @@ START: Faq CSS
   border-radius: 50%;
   border: 1px solid var(--tj-color-border-1);
   background-color: var(--tj-color-theme-dark);
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   font-size: 20px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8685,7 +8686,7 @@ START: Faq CSS
   z-index: 2;
 }
 .accordion_title:not(.collapsed) {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
 }
 .accordion_title:not(.collapsed)::after {
   content: "\e920";
@@ -8902,8 +8903,8 @@ START: Faq CSS
   background-color: var(--tj-color-theme-bg);
 }
 .tj_accordion_2 .accordion_title:not(.collapsed)::after {
-  border-color: var(--tj-color-theme-primary);
-  background-color: var(--tj-color-theme-primary);
+  border-color: var(--primary-text-color);
+  background-color: var(--primary-text-color);
 }
 .tj_accordion_2 .accordion_content {
   padding: 30px;
@@ -16576,7 +16577,7 @@ START: Hero CSS
   border-radius: 40px;
 }
 .tj-banner-section.h5-banner-section .banner-content .sub-title i {
-  color: var(--tj-color-theme-primary);
+  color: var(--primary-text-color);
   font-size: 16px;
 }
 .tj-banner-section.h5-banner-section .banner-content .banner-title {
@@ -16929,6 +16930,10 @@ START: Services CSS
 .h5-service-section .sec-heading .desc {
   max-width: 325px;
   margin-bottom: 0;
+}
+
+.h5-service-section .service-slider {
+  overflow: hidden;
 }
 
 .service-item.service-item-4 {
