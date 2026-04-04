@@ -1,8 +1,1 @@
-<svg width="502" height="562" viewBox="0 0 502 562" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_2244_470" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="502" height="562">
-<path d="M0 332.173C0 341.009 7.16345 348.173 16 348.173H116C124.837 348.173 132 355.336 132 364.173V546C132 554.837 139.163 562 148 562H486C494.837 562 502 554.837 502 546V16C502 7.16344 494.837 0 486 0H16C7.16345 0 0 7.16344 0 16V332.173Z" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0_2244_470)">
-<rect y="6.10352e-05" width="502" height="565" fill="black"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="502" height="562" fill="none" viewBox="0 0 502 562"><mask id="mask0_2244_470" style="mask-type:alpha" width="502" height="562" x="0" y="0" maskUnits="userSpaceOnUse"><path fill="#C4C4C4" d="M0 332.173C0 341.009 7.16345 348.173 16 348.173H116C124.837 348.173 132 355.336 132 364.173V546C132 554.837 139.163 562 148 562H486C494.837 562 502 554.837 502 546V16C502 7.16344 494.837 0 486 0H16C7.16345 0 0 7.16344 0 16V332.173Z"/></mask><g mask="url(#mask0_2244_470)"><rect width="502" height="565" y="0" fill="#000"/></g></svg>
