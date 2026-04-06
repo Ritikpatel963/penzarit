@@ -37,9 +37,9 @@ export default function About() {
             <div className="row">
               <div className="col-12">
                 <div className="sec-heading">
-                  <span className="sub-title tj-fade-anim">[ Why Chose Us ]</span>
+                  <span className="sub-title tj-fade-anim">Panzer IT — Make IT Secure</span>
                   <div className="sec-heading-inner">
-                    <h2 className="sec-title tj-split-text-1">Reliable IT Solution, for Best Results.</h2>
+                    <h2 className="sec-title tj-split-text-1">Mission: Continuous Secure Data Accessibility and Availability</h2>
                     <div className="tj-fade-anim">
                       <p className="desc">Our services are customized to meet your unique.</p>
                     </div>
@@ -61,9 +61,8 @@ export default function About() {
                       <i className="tji-thumbs-up"></i>
                     </div>
                     <div className="choose-content">
-                      <h4 className="title">Proven Track Record</h4>
-                      <p className="desc">With a portfolio of successful projects and satisfied clients, we have a
-                        reputation.</p>
+                      <h4 className="title">Pioneer in IT Security Solutions</h4>
+                      <p className="desc">Panzer IT delivers affordable IT Security Solutions — from Antivirus to APT, EPS to EDR, and Backup to DLP — ensuring the best user experience. Ranked among India's top technology and software distribution companies.</p>
                     </div>
                   </div>
                 </div>
@@ -75,8 +74,8 @@ export default function About() {
                       <i className="tji-idea"></i>
                     </div>
                     <div className="choose-content">
-                      <h4 className="title">Tailored Solutions</h4>
-                      <p className="desc">Our services are customized to meet your unique business needs, ensuring.</p>
+                      <h4 className="title"> Trusted Reseller Network Across India</h4>
+                      <p className="desc">With 2,000+ resellers spanning India's vast geography, Panzer IT brings over a decade of channel distribution expertise. We offer the best policies, channel-friendly environments, dedicated managers, and round-the-clock support.</p>
                     </div>
                   </div>
                 </div>
@@ -88,9 +87,9 @@ export default function About() {
                       <i className="tji-rocket"></i>
                     </div>
                     <div className="choose-content">
-                      <h4 className="title">Future Technologies</h4>
-                      <p className="desc">Stay ahead of the competition with AI, cloud computing, and automation solutions.
-                      </p>
+                      <h4 className="title">360° IT Security for Every Business
+Panzer IT</h4>
+                      <p className="desc">Delivers complete Endpoint Security, Backup, DRM, DLP, and Encryption with the best ROI and TCO. Serving Enterprises, Government, SMB, and SOHO clients through trusted channel partners across India.</p>
                     </div>
                   </div>
                 </div>
@@ -102,9 +101,9 @@ export default function About() {
                       <i className="tji-hand-2"></i>
                     </div>
                     <div className="choose-content">
-                      <h4 className="title">24/7 Support</h4>
-                      <p className="desc">Stay ahead of the competition with AI, cloud computing, and automation solutions.
-                      </p>
+                      <h4 className="title"> Experience & Pan-India Presence
+</h4>
+                      <p className="desc">With 150+ man-years of IT security experience, Panzer IT is headquartered in Mumbai with professionals in New Delhi, Kolkata, and Bangalore — and associates in all major Indian cities nationwide.</p>
                     </div>
                   </div>
                 </div>
@@ -136,9 +135,8 @@ export default function About() {
               <div className="col-lg-6 col-xxl-5 order-lg-2 order-1">
                 <div className="about-content-area fix">
                   <div className="sec-heading">
-                    <span className="sub-title tj-fade-anim">[ About Tekmino ]</span>
-                    <h2 className="sec-title tj-split-text-1">Driving Innovation Through AI and New Technology, Delivering
-                      Tailored.</h2>
+                    <span className="sub-title tj-fade-anim">[ About Panzer It]</span>
+                    <h2 className="sec-title tj-split-text-1">Panzer IT is a pioneer in IT security solutions with over 150 man-years of industry experience. </h2>
                   </div>
                   <div className="about-bottom">
                     <div className="about-logo tj-fade-anim" data-delay="0.3">
@@ -153,13 +151,13 @@ export default function About() {
                       <div className="about-features">
                         <div className="about-features-item">
                           <h4 className="title">Our Mission</h4>
-                          <p className="desc">Revolutionize the way you work the our solutions designed to meet the
-                            challenges of today business lands revolutionize.</p>
+                          <p className="desc">Our Mission
+To ensure continuous, secure data accessibility for every business by delivering affordable and complete IT security solutions to enterprises, government, SMB, and SOHO clients across India.</p>
                         </div>
                         <div className="about-features-item">
                           <h4 className="title">Our Vision</h4>
-                          <p className="desc">Revolutionize the way you work the solutions designed to meet unique
-                            challenges of today’s business landscape revolutionize.</p>
+                          <p className="desc">Our Vision
+To become India's most trusted IT security provider by making advanced data security accessible to every reseller and end user at the best price with unmatched support.</p>
                         </div>
                       </div>
                       <div className="tj-fade-anim" data-delay="0.3">
@@ -227,11 +225,98 @@ export default function About() {
         </section>
         {/*  end: About Section  */}
 
+ {/*  start: Working Process Section  */}
+        <section className="h3-working-process-section section-gap-x">
+          <div className="h3-working-process-section-wrap section-gap fix">
+            <div className="bg-img" data-bg-image="./assets/images/bg/common-bg.webp"></div>
+
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                  <div className="sec-heading style-3 sec-heading-centered">
+                    <span className="sub-title tj-fade-anim" data-delay="0.2" data-duration="0.5"><i
+                        className="tji-subtitle-2"></i>How we Work</span>
+                    <h2 className="sec-title tj-split-text-3">Transform Your Business in 3 Simple Steps.</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="process-area">
+              <div className="process-border tj-fade-anim" data-delay="1" data-direction="left"></div>
+              <div className="container">
+                <div className="row">
+                  <div className="col-12">
+                    <div className="process-wrap tj-slide-wrap">
+                      <div className="process-item style-2 tj-slide-left">
+                        <span className="process-step">01</span>
+                        <div className="process-content">
+                          <h4 className="title">Data Leak Prevention</h4>
+                          <p className="desc">
+Panzer IT offers Somansa DLP to discover, classify, and protect sensitive business data. It controls data transfer channels, detects confidential content, prevents unauthorized leaks, and secures data with built-in encryption.</p>
+                        </div>
+                      </div>
+                      <div className="process-item style-2 tj-slide-left">
+                        <span className="process-step">02</span>
+                        <div className="process-content">
+                          <h4 className="title">Employee Monitoring</h4>
+                          <p className="desc">FalconGaze SecureTower enables detailed employee monitoring with intelligent activity reports. It boosts workplace productivity, tracks gathered information, and supports remote PC monitoring for complete organizational visibility.</p>
+                        </div>
+                      </div>
+                      <div className="process-item style-2 tj-slide-left">
+                        <span className="process-step">03</span>
+                        <div className="process-content">
+                          <h4 className="title">Advance Anti-Malware & Zero-Day Threat Prevention</h4>
+                          <p className="desc">Emsisoft Anti-Malware provides next-gen, dual-engine protection against ransomware, zero-day threats, and unknown attacks. It scans data traffic and behavior with multi-layer security, trusted by security professionals worldwide.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                   <div className="row">
+                  <div className="col-12">
+                    <div className="process-wrap tj-slide-wrap">
+                      <div className="process-item style-2 tj-slide-left">
+                        <span className="process-step">01</span>
+                        <div className="process-content">
+                          <h4 className="title">Vulnerability Assessment & Penetration Testing </h4>
+                          <p className="desc">
+SecPoint offers unparalleled vulnerability management with robust penetration testing across all OS, devices, and websites. It supports unlimited scanning with straightforward, user-friendly licensing for businesses of all sizes.</p>
+                        </div>
+                      </div>
+                      <div className="process-item style-2 tj-slide-left">
+                        <span className="process-step">02</span>
+                        <div className="process-content">
+                          <h4 className="title">Remote Support & Remote Control
+</h4>
+                          <p className="desc">
+Netop Remote Control provides secure remote connection, control, and support trusted by the world's largest organizations. Leading banks, defence agencies, and enterprises rely on Netop for safe and reliable remote access.</p>
+                        </div>
+                      </div>
+                      <div className="process-item style-2 tj-slide-left">
+                        <span className="process-step">03</span>
+                        <div className="process-content">
+                          <h4 className="title">Data Security & Insider Threat Detection
+</h4>
+                          <p className="desc">Varonis protects critical business data through advanced threat detection and response. It covers data classification, compliance, ransomware protection, insider threat monitoring, and external threat defense across the entire organization.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*  end: Working Process Section  */}
+
+
         {/*  start: Team Section  */}
-        <section className="tj-team-section section-gap">
+        {/* <section className="tj-team-section section-gap">
           <div className="container">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12">  
                 <div className="sec-heading">
                   <span className="sub-title tj-fade-anim">[ Meet Our Team ]</span>
                   <div className="sec-heading-inner">
@@ -358,7 +443,7 @@ export default function About() {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
         {/*  end: Team Section  */}
 
         {/*  start: Testimonial Section  */}
