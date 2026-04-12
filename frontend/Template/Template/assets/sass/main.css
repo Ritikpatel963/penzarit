@@ -8296,9 +8296,7 @@ START: Blog CSS
 /**----------------------------------------
 START: CTA CSS
 ----------------------------------------*/
-.tj-cta-section {
-  margin-bottom: -138px;
-}
+
 
 .cta-area {
   background-color: var(--tj-color-theme-primary);
@@ -10862,10 +10860,12 @@ START: Blog Details CSS
   margin-bottom: 25px;
 }
 .post-details-wrapper .title {
+   margin-top: 40px;
   line-height: 1.1667;
-  margin-bottom: 14px;
+  margin-bottom: 45px;
 }
 .post-details-wrapper p {
+      margin-top: 45px;
   margin-bottom: 16px;
 }
 .post-details-wrapper p:last-child {

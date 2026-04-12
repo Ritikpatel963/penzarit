@@ -49,7 +49,7 @@ export default function Contact() {
                     <i className="tji-location"></i>
                   </div>
                   <h3 className="contact-title">Our Location</h3>
-                  <p>993 Renner Burg, West Rond, MT 94251-030</p>
+                  <p>NEW DELHI : F-398, Sector 63, Noida (NCR) 201307 +91 90046 55099 | Sales@PanzerIT.com</p>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-6 col-sm-6">
@@ -71,21 +71,18 @@ export default function Contact() {
                   </div>
                   <h3 className="contact-title">Call us</h3>
                   <ul className="contact-list">
-                    <li><a href="tel:10095447818">+1 (009) 544-7818</a></li>
-                    <li><a href="tel:10098801810">+1 (009) 880-1810</a></li>
+                    <li><a href="tel:+91 90046 55099">+91 90046 55099</a></li>
+                    {/* <li><a href="tel:10098801810">+1 (009) 880-1810</a></li> */}
                   </ul>
                 </div>
               </div>
               <div className="col-xl-3 col-lg-6 col-sm-6">
-                <div className="contact-item style-2 tj-fade-anim" data-delay="0.7">
+               <div className="contact-item style-2 tj-fade-anim" data-delay="0.1">
                   <div className="contact-icon">
-                    <i className="tji-chat"></i>
+                    <i className="tji-location"></i>
                   </div>
-                  <h3 className="contact-title">Live chat</h3>
-                  <ul className="contact-list">
-                    <li><a href="mailto:livechat@tekmino.com">livechat@tekmino.com</a></li>
-                    <li className="active"><Link to="/contact">Need help?</Link></li>
-                  </ul>
+                  <h3 className="contact-title">Our Location</h3>
+                  <p>MUMBAI 203 : Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210 +91 90046 55099 | Sales@PanzerIT.com</p>
                 </div>
               </div>
             </div>

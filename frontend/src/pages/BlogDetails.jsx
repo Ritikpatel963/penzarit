@@ -35,20 +35,20 @@ export default function BlogDetails() {
         <section className="tj-blog-section section-gap">
           <div className="container">
             <div className="row row-gap-5">
-              <div className="col-lg-8">
+              <div className="col-lg-12">
                 <div className="post-details-wrapper">
                   <div className="blog-images">
                     <img src="/assets/images/blog/blog-details.webp" alt="Images" />
                   </div>
-                  <h2 className="title">How to Successfully Migrate Your Business to the Cloud</h2>
+                  <h2 className="title">Somansa DLP Solution</h2>
                   <div className="blog-category-two">
                     <div className="category-item">
                       <div className="cate-images">
                         <img src="/assets/images/testimonial/client-2.webp" alt="Images" />
                       </div>
                       <div className="cate-text">
-                        <span className="degination">Authored by</span>
-                        <h6 className="title"><Link to="/blog-details">Burdee Nicolas</Link></h6>
+                        <span className="degination">	Complete Data Loss Prevention</span>
+                        <h6 className="title"><Link to="/blog-details">Discover, Monitor, Prevent Sensitive Data Endpoint, Network, Cloud DLP</Link></h6>
                       </div>
                     </div>
                     <div className="category-item">
@@ -56,8 +56,8 @@ export default function BlogDetails() {
                         <i className="tji-calendar"></i>
                       </div>
                       <div className="cate-text">
-                        <span className="degination">Date Released</span>
-                        <h6 className="text">29 December, 2025</h6>
+                        <span className="degination">	Complete Data Loss Prevention</span>
+                        <h6 className="text">iscover, Monitor, Prevent Sensitive Data Endpoint, Network, Cloud DLP</h6>
                       </div>
                     </div>
                     <div className="category-item">
@@ -65,56 +65,203 @@ export default function BlogDetails() {
                         <i className="tji-comment"></i>
                       </div>
                       <div className="cate-text">
-                        <span className="degination">Comments</span>
-                        <h6 className="text">03 Comments</h6>
+                        <span className="degination">Cloud Data Loss Prevention</span>
+                        <h6 className="text">Security, visibility, and policy controls to protect data stored in the cloud</h6>
                       </div>
                     </div>
                   </div>
+    
+
+                   
+
+                   
+
                   <div className="blog-text">
                     <p>
-                      In today’s fast-paced business environment, migrating to the cloud has become more of a necessity
-                      than a choice. The cloud offers businesses unmatched flexibility, scalability,
-                      and cost efficiency. However, making the shift to the cloud can be a complex process if not
-                      approached strategically. Before diving into the technical aspects of migration,
-                      it’s important to understand the why behind your decision. In this guide, we’ll take you through
-                      the essential steps to ensure a smooth and successful migration to the cloud.
+                      Our Complete Data Loss Prevention solution provides a powerful, all-in-one approach to securing sensitive data across endpoints, networks, and cloud environments. It intelligently discovers and classifies both structured and unstructured data using advanced policy-based detection techniques. With real-time monitoring, it prevents data leakage through USB devices, printing, email, and network channels. The solution ensures strict control over file transfers, uploads, and external storage usage with features like encryption and secure erase.
                     </p>
                     <p>
-                      The curve. Whether you're looking to streamline operations, enhance customer experiences, or
-                      explore new market opportunities, our tailored solutions are designed to empower
-                      your business to achieve unparalleled success. With a focus on sustainability, scalability, and
-                      adaptability, we help your business.
+                       Its centralized management console enables administrators to define policies, receive instant alerts, and generate detailed compliance reports.Designed for modern enterprises, it enhances visibility and strengthens data security across all touchpoints. Trusted by organizations worldwide, it delivers reliable protection and peace of mind.
                     </p>
+
+
+   {/*  start: Client Section  */}
+        <section id="client" className="tj-client-section section-gap-top overflow-hidden">
+          <div className="container-fluid gx-0">
+            <div className="row">
+              <div className="col-12">
+                <div className="client-content tj-fade-anim" data-delay="0.1">
+                  <h5 className="sec-title"> Worldwide Customers:<span> Trusted by thousands </span></h5>
+                </div>
+                <div className="swiper client-slider">
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-1.webp" alt="Image" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-2.webp" alt="Image" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-3.webp" alt="Image" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-4.webp" alt="Image" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-5.webp" alt="Image" />
+                      </div>
+                    </div>
+                       <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-7.webp" alt="Image" />
+                      </div>
+                    </div>   <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-8.webp" alt="Image" />
+                      </div>
+                    </div>
+                       <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-9.webp" alt="Image" />
+                      </div>
+                    </div>
+                    <div className="swiper-slide client-item">
+                      <div className="client-logo">
+                        <img src="/assets/images/brands/brand-6.webp" alt="Image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*  end: Client Section  */}
+
                     <blockquote>
                       <p>
-                        Migrating to the cloud is a journey toward greater flexibility, security, and scalability, where
-                        businesses unlock new capabilities, improve collaboration, and enhance
-                        overall performance.
+                       Protect your sensitive data with advanced DLP across endpoints, networks, and cloud.
+Monitor, control, and prevent data leaks with real-time security and smart policies.
                       </p>
                       <cite>Kevin Hooks</cite>
                     </blockquote>
-                    <h3>Understand Why You’re Migrating</h3>
-                    <p>
-                      Before diving into the technical aspects of migration, it’s important to understand the why behind
-                      your decision. Every business has different needs, so it’s critical to
-                      identify the key benefits you expect from the cloud. Some common reasons for migrating include
-                      them to not only survive but thrive in an ever-changing marketplace. One of the
-                      most important lessons is understanding the need for continuous innovation.
-                    </p>
-                    <div className="images-wrap">
-                      <div className="row">
-                        <div className="col-sm-6">
-                          <div className="image-box">
-                            <img src="/assets/images/blog/blog-9.webp" alt="Image" />
-                          </div>
-                        </div>
-                        <div className="col-sm-6">
-                          <div className="image-box">
-                            <img src="/assets/images/blog/blog-10.webp" alt="Image" />
-                          </div>
-                        </div>
-                      </div>
+
+        {/*  start: Service Section  */}
+        <section className="tj-service-section section-gap">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="sec-heading style-2">
+                  <span className="sub-title tj-fade-anim"><span>//</span>Explore Services</span>
+                  <div className="sec-heading-inner">
+                    <h2 className="sec-title tj-split-text-5">Technology Features </h2>
+                    <div className="tj-fade-anim d-lg-inline-flex d-none" data-delay="0.1">
+                      <Link className="tj-primary-btn mt-20" to="/services">
+                        <span className="btn-text"><span>Explore More</span></span>
+                        <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
+                      </Link>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row rg-30">
+              <div className="col-xl-4 col-md-6">
+                <div className="service-item service-item-2 tj-fade-anim" data-delay="0.1">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <i className="tji-computer"></i>
+                    </div>
+                    <div className="service-content">
+                      <h4 className="title"><Link to="/service-details">Discover</Link></h4>
+                      <p className="desc">Privacy-i scans and locates sensitive data stored on endpoints, PCs, mobile devices, servers, etc. based on policy rules.
+<br />
+1. Structured and unstructured data support <br />
+
+2. Detection by keywords, patterns, expressions etc. <br />
+3. Classification / Content and Context aware techniques</p>
+                      <Link className="tj-text-btn" to="/service-details">
+                        <span className="btn-inner">
+                          <span className="btn-icon"><span><i className="tji-arrow-right-4"></i></span></span>
+                          <span className="btn-text"><span>Learn More</span></span>
+                          <span className="btn-icon"><span><i className="tji-arrow-right-4"></i></span></span>
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                  <span className="item-count">01.</span>
+                </div>
+              </div>
+              <div className="col-xl-4 col-md-6">
+                <div className="service-item service-item-2 tj-fade-anim" data-delay="0.3">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <i className="tji-cloud"></i>
+                    </div>
+                    <div className="service-content">
+                      <h4 className="title"><Link to="/service-details">Security</Link></h4>
+                      <p className="desc">Privacy-i monitors and prevents data Leakage through removable storage, USB and Printing and protocols and applications email, network shares.
+<br />
+1. Monitors/Blocks copying, saving AND uploading of files <br />
+2. USBs and other removable storage devices <br />
+3. Wi-Fi, Bluetooth, FireWire and Printing <br />
+4. Encryption, Secure Erase, Authorize specific USB devices</p>
+                      <Link className="tj-text-btn" to="/service-details">
+                        <span className="btn-inner">
+                          <span className="btn-icon"><span><i className="tji-arrow-right-4"></i></span></span>
+                          <span className="btn-text"><span>Learn More</span></span>
+                          <span className="btn-icon"><span><i className="tji-arrow-right-4"></i></span></span>
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                  <span className="item-count">02.</span>
+                </div>
+              </div>
+              <div className="col-xl-4 col-md-6">
+                <div className="service-item service-item-2 tj-fade-anim" data-delay="0.5">
+                  <div className="service-inner">
+                    <div className="service-icon">
+                      <i className="tji-cybersecurity"></i>
+                    </div>
+                    <div className="service-content">
+                      <h4 className="title"><Link to="/service-details">Management</Link></h4>
+                      <p className="desc">Privacy-i’s management console allows administrators to set various policy rules and view real-time alerts and reports.
+<br />
+1. Set Policy Rules <br />
+2. Real-time Alerts <br />
+3. Generate Reports (compliance & audits)</p>
+                      <Link className="tj-text-btn" to="/service-details">
+                        <span className="btn-inner">
+                          <span className="btn-icon"><span><i className="tji-arrow-right-4"></i></span></span>
+                          <span className="btn-text"><span>Learn More</span></span>
+                          <span className="btn-icon"><span><i className="tji-arrow-right-4"></i></span></span>
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                  <span className="item-count">03.</span>
+                </div>
+              </div>
+     
+     
+             
+            </div>
+          </div>
+        </section>
+        {/*  end: Service Section  */}
+
+
+{/* 
                     <p>
                       Moving from expensive on-premise infrastructure to pay-as-you-go cloud services can significantly
                       lower your operating costs. The cloud allows your resources to grow or shrink
@@ -136,9 +283,9 @@ export default function BlogDetails() {
                         href="https://www.youtube.com/watch?v=MLpWrANjFbI&ab_channel=eidelchteinadvogados">
                         <span><i className="tji-play"></i></span>
                       </a>
-                    </div>
-                    <h3>Conclusions</h3>
-                    <p>
+                    </div> */}
+                   
+                    {/* <p>
                       Migrating your business to the cloud can be a transformative experience, unlocking a world of
                       flexibility, security, and cost-efficiency. However, to ensure success, you must
                       approach the migration process carefully, from assessment and planning to security and
@@ -148,7 +295,7 @@ export default function BlogDetails() {
                       By following these steps and working with a trusted IT solutions provider, you can ensure that
                       your business leverages the full potential of the cloud. The future is digital,
                       cloud is the key to unlocking that future.
-                    </p>
+                    </p> */}
                   </div>
                   <div className="tj-tags-post">
                     <div className="tagcloud">
@@ -175,222 +322,11 @@ export default function BlogDetails() {
                       </ul>
                     </div>
                   </div>
-                  <div className="tj-post__navigation">
-                    {/*  previous post  */}
-                    <div className="tj-nav__post previous">
-                      <div className="tj-nav-post__nav prev_post">
-                        <Link to="/blog-details"><span><i className="tji-arrow-left-5"></i></span>Previous</Link>
-                      </div>
-                    </div>
-                    <div className="tj-nav-post__grid">
-                      <Link to="/blog"><i className="tji-window"></i></Link>
-                    </div>
-                    {/*  next post  */}
-                    <div className="tj-nav__post next">
-                      <div className="tj-nav-post__nav next_post">
-                        <Link to="/blog-details">Next<span><i className="tji-arrow-right-5"></i></span></Link>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="tj-comments-container">
-                    <div className="tj-comments-wrap">
-                      <div className="comments-title">
-                        <h3 className="title">Top Comments (02)</h3>
-                      </div>
-                      <div className="tj-latest-comments">
-                        <ul>
-                          <li className="tj-comment">
-                            <div className="comment-content">
-                              <div className="comment-avatar">
-                                <img src="/assets/images/blog/avatar-1.webp" alt="Image" />
-                              </div>
-                              <div className="comments-header">
-                                <div className="avatar-name">
-                                  <h6 className="title">
-                                    <Link to="/blog-details">Owen Parker</Link>
-                                  </h6>
-                                </div>
-                                <div className="comment-text">
-                                  <span className="date">June 18, 2024 at 06:00 pm</span>
-                                  <Link className="comment-reply-link" to="/blog-details">Reply</Link>
-                                </div>
-                                <div className="desc">
-                                  <p>
-                                    Recently migrated our entire infrastructure to the cloud, and the process has been
-                                    smoother than we expected. This blog perfectly outlines the essential steps we
-                                    took to ensure a successful transition. The focus on security and compliance really
-                                    resonated with us.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li className="tj-comment">
-                            <div className="comment-content">
-                              <div className="comment-avatar">
-                                <img src="/assets/images/blog/avatar-2.webp" alt="Image" />
-                              </div>
-                              <div className="comments-header">
-                                <div className="avatar-name">
-                                  <h6 className="title">
-                                    <Link to="/blog-details">Hunter James</Link>
-                                  </h6>
-                                </div>
-                                <div className="comment-text">
-                                  <span className="date">June 18, 2024 at 06:00 pm</span>
-                                  <Link className="comment-reply-link" to="/blog-details">Reply</Link>
-                                </div>
-                                <div className="desc">
-                                  <p>
-                                    As a small business, we were hesitant about migrating to the cloud, fearing it might
-                                    be too complex and costly. However, this blog provided the we needed to
-                                    understand the true benefits and the step-by-step process for a smooth transition.
-                                    It helped us prioritize the right cloud.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="comment-respond">
-                      <h3 className="comment-reply-title">Leave a Comment</h3>
-                      <div className="row">
-                        <div className="col-lg-12">
-                          <div className="form-input">
-                            <textarea id="comment" name="message" placeholder="Write Your Comment *"></textarea>
-                          </div>
-                        </div>
-                        <div className="col-lg-4">
-                          <div className="form-input">
-                            <input type="text" id="name" name="name" placeholder="Full Name *" required="" />
-                          </div>
-                        </div>
-                        <div className="col-lg-4">
-                          <div className="form-input">
-                            <input type="email" id="emailOne" name="name" placeholder="Your Email *" required="" />
-                          </div>
-                        </div>
-                        <div className="col-lg-4">
-                          <div className="form-input">
-                            <input type="text" id="website" name="name" placeholder="Website" required="" />
-                          </div>
-                        </div>
-                        <div className="form-submit">
-                          <button className="tj-primary-btn" type="submit">
-                            <span className="btn-text"><span>Submit Now</span></span>
-                            <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            
+                
                 </div>
               </div>
-              <div className="col-lg-4">
-                <div className="tj-main-sidebar">
-                  <div className="tj-sidebar-widget widget-search">
-                    <h4 className="widget-title">Search here</h4>
-                    <div className="search-box">
-                      <form action="#">
-                        <input type="search" name="search" id="searchTwo" placeholder="Search here" />
-                        <button type="submit" value="search">
-                          <i className="tji-search"></i>
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div className="tj-sidebar-widget tj-recent-posts">
-                    <h4 className="widget-title">Related post</h4>
-                    <ul>
-                      <li>
-                        <div className="post-thumb">
-                          <Link to="/blog-details"> <img src="/assets/images/blog/post-1.webp" alt="Blog" /></Link>
-                        </div>
-                        <div className="post-content">
-                          <h6 className="post-title">
-                            <Link to="/blog-details">The Top 5 IT Challenges Faced by Enterprises</Link>
-                          </h6>
-                          <div className="blog-meta">
-                            <ul>
-                              <li>04 OCT 2025</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="post-thumb">
-                          <Link to="/blog-details"> <img src="/assets/images/blog/post-2.webp" alt="Blog" /></Link>
-                        </div>
-                        <div className="post-content">
-                          <h6 className="post-title">
-                            <Link to="/blog-details">Optimizing Your IT Budget: Tips and Strategies</Link>
-                          </h6>
-                          <div className="blog-meta">
-                            <ul>
-                              <li>02 JAN 2025</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="post-thumb">
-                          <Link to="/blog-details"> <img src="/assets/images/blog/post-3.webp" alt="Blog" /></Link>
-                        </div>
-                        <div className="post-content">
-                          <h6 className="post-title">
-                            <Link to="/blog-details">Driving Innovation and Efficient in Tech</Link>
-                          </h6>
-                          <div className="blog-meta">
-                            <ul>
-                              <li>24 FEB 2025</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="tj-sidebar-widget widget-categories">
-                    <h4 className="widget-title">Categories</h4>
-                    <ul>
-                      <li>
-                        <Link to="/blog-details">Development<span className="number">(03)</span></Link>
-                      </li>
-                      <li>
-                        <Link to="/blog-details">Cybersecurity<span className="number">(02)</span></Link>
-                      </li>
-                      <li>
-                        <Link to="/blog-details">Technology<span className="number">(03)</span></Link>
-                      </li>
-                      <li>
-                        <Link to="/blog-details">Innovation<span className="number">(06)</span></Link>
-                      </li>
-                      <li>
-                        <Link to="/blog-details">Automation<span className="number">(04)</span></Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="tj-sidebar-widget widget-tag-cloud">
-                    <h4 className="widget-title">Tags</h4>
-                    <nav>
-                      <div className="tagcloud">
-                        <Link to="/blog-details">Solution</Link>
-                        <Link to="/blog-details">Data</Link>
-                        <Link to="/blog-details">Software</Link>
-                        <Link to="/blog-details">Tech</Link>
-                        <Link to="/blog-details">Security</Link>
-                        <Link to="/blog-details">Focus</Link>
-                        <Link to="/blog-details">Tech</Link>
-                        <Link to="/blog-details">Optimize</Link>
-                        <Link to="/blog-details">Cloud</Link>
-                        <Link to="/blog-details">Drive</Link>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>

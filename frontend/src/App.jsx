@@ -42,7 +42,10 @@ import ShopDetails from './pages/ShopDetails';
 import Shop from './pages/Shop';
 import TeamDetails from './pages/TeamDetails';
 import Team from './pages/Team';
+import Brand from './pages/Brand';
+import Download from './pages/Download';
 import Wishlist from './pages/Wishlist';
+import PAMPage from './pages/Pampage';
 
 function AppContent() {
   // Initialize all template JS functionality
@@ -63,6 +66,7 @@ function AppContent() {
         <div id="smooth-content">
           <main id="primary" className="site-main">
             <Routes>
+              <Route path="/pamgram" element={<PAMPage />} />
               <Route path="/" element={<Index5 />} />
               <Route path="/about" element={<About />} />
               <Route path="/blogdetails" element={<BlogDetails />} />
@@ -88,10 +92,12 @@ function AppContent() {
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/projectdetails" element={<ProjectDetails />} />
                 <Route path="/project" element={<Project />} />
+                <Route path="/download" element={<Download />} />
                 <Route path="/servicedetails" element={<ServiceDetails />} />
                 <Route path="/service" element={<Service />} />
                 <Route path="/shopdetails" element={<ShopDetails />} />
                 <Route path="/shop" element={<Shop />} />
+                <Route path="/brand" element={<Brand />} />
                 <Route path="/teamdetails" element={<TeamDetails />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/wishlist" element={<Wishlist />} />
