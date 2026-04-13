@@ -4,63 +4,32 @@ import { Link } from 'react-router-dom';
 export default function Index3() {
   return (
     <>
+        {/*  start: Breadcrumb Section  */}
+        <section className="tj-page-header fix">
+          <div className="hero-bg" data-bg-image="/assets/images/hero/hero-bg.webp"></div>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="tj-page-header-content text-center">
+                  <h1 className="tj-page-title tj-split-text-2">Download</h1>
+                  <div className="tj-page-link tj-fade-anim" data-delay="0.3">
+                    <span><i className="tji-home"></i></span>
+                    <span>
+                      <Link to="/">Download</Link>
+                    </span>
+                    <span><i className="tji-arrow-right"></i></span>
+                    <span>
+                      <span>About Us</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*  end: Breadcrumb Section  */}
 
-
-       <div className="top-space-30"></div>
-			 {/*  start: Banner Section  */}
-			 <section className="tj-banner-section h6-hero fix zoom-on-scroll-wrapper">
-			   <div className="hero-bg" data-bg-image="/assets/images/hero/h6-hero-bg.webp"></div>
-			   <div className="hero-orbit tj-fade-anim" data-duration="0.4" data-delay="1">
-				 <img src="/assets/images/shapes/h6-orbit.svg" alt="" />
-				 <div className="hero-orbit-icon-wrapper">
-				   <div className="hero-orbit-icon"><img src="/assets/images/icons/h6-orbit-icon-1.svg" alt="" /></div>
-				   <div className="hero-orbit-icon"><img src="/assets/images/icons/h6-orbit-icon-2.svg" alt="" /></div>
-				   <div className="hero-orbit-icon"><img src="/assets/images/icons/h6-orbit-icon-3.svg" alt="" /></div>
-				   <div className="hero-orbit-icon"><img src="/assets/images/icons/h6-orbit-icon-4.svg" alt="" /></div>
-				 </div>
-			   </div>
-			   <div className="container">
-				 <div className="row">
-				   <div className="col-12">
-					 <div className="banner-content">
-					   <span className="sub-title tj-fade-anim" data-duration="0.5"><i className="tji-subtitle-5"></i>Secure,
-						 Scalable & Flexible</span>
-					   <h1 className="banner-title tj-split-text-4">
-						 Experience Seamless Digital Financial
-						 <span>
-						   <span><span className="tj-fade-anim" data-delay=".3"><span>
-								 <img src="/assets/images/testimonial/client-1.webp" alt="Image" />
-								 <img src="/assets/images/testimonial/client-2.webp" alt="Image" />
-								 <img src="/assets/images/testimonial/client-3.webp" alt="Image" /> </span></span></span>
-						 </span>
-						 Freedom
-					   </h1>
-					   <div className="btn-area tj-fade-anim" data-delay=".5">
-						 <Link className="tj-primary-btn" to="/service">
-						   <span className="btn-text"><span>Get Started</span></span>
-						   <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
-						 </Link>
-						 <a className="video-btn-2 video-popup" data-autoplay="true" data-vbtype="video" data-maxwidth="1200px"
-						   href="https://www.youtube.com/watch?v=MLpWrANjFbI&ab_channel=eidelchteinadvogados">
-						   <span className="btn-icon"><i className="tji-play"></i></span>
-						   <span className="btn-text"><span>Watch Video</span></span>
-						 </a>
-					   </div>
-					 </div>
-				   </div>
-				 </div>
-			   </div>
-			   <div className="hero-chart-wrapper">
-				 <div className="hero-chart-img"><img className="tj-fade-anim" data-delay=".5"
-					 src="/assets/images/hero/h6-chart-1.webp" alt="" /></div>
-				 <div className="hero-chart-img"><img className="tj-fade-anim" data-delay=".6"
-					 src="/assets/images/hero/h6-mockup.webp" alt="" /></div>
-				 <div className="hero-chart-img"><img className="tj-fade-anim" data-delay=".7"
-					 src="/assets/images/hero/h6-chart-2.webp" alt="" /></div>
-			   </div>
-			 </section>
-			 {/*  end: Banner Section  */}
-    
+	
 
       
 
@@ -80,16 +49,13 @@ export default function Index3() {
                     <div className="sec-heading-inner">
                       <h2 className="sec-title tj-split-text-3">Cybersecurity Solutions & Downloadable Resources</h2>
                       <div className="tj-fade-anim d-none d-md-inline-flex" data-delay=".3">
-                        <Link className="tj-primary-btn" to="/servics">
-                          <span className="btn-text"><span>Explore More</span></span>
-                          <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
-                        </Link>
+                     
                       </div>
                     </div>
                   </div>
 
                   <div className="h3_services_wrap">
-                    <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
+                    <div v className="service_list_item is-active tj-fade-anim" data-delay=".2">
                       <div className="item_count"><span>01</span></div>
                       <div className="item_content">
                         <div className="content_inner">
@@ -99,12 +65,12 @@ export default function Index3() {
                           <div className="desc">
                             Our comprehensive range of cybersecurity and IT solutions includes detailed resources and downloadable materials for various products. For Scopd DLP & UEBA, users can access the datasheet titled Scopd Data Sheet for in-depth information.
                           </div>
+                          <a href="https://panzerit.com/wp-content/uploads/2025/07/Scopd_Presentation.pdf">Scopd Data Sheet</a>
                         </div>
                         <Link className="tj-icon-btn" to="/service-details">
                           <i className="tji-arrow-long-right"></i>
                         </Link>
                       </div>
-                      <div className="service_reveal_img" data-bg-image="./assets/images/project/project-1.webp"></div>
                     </div>
                     <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
                       <div className="item_count"><span>02</span></div>
@@ -116,12 +82,12 @@ export default function Index3() {
                           <div className="desc">
                            The FalconGaze SecureTower solution provides a presentation on Workflows Control and Insider Threat Protection, offering valuable insights into employee monitoring and security management.
                           </div>
+                          <a href="https://panzerit.com/wp-content/uploads/2018/09/Falcongaze-SecureTower.-Workflows-control-and-Insider-Threat-Protection.pdf">	Workflows control and Insider Threat Protection</a>
                         </div>
                         <Link className="tj-icon-btn" to="/service-details">
                           <i className="tji-arrow-long-right"></i>
                         </Link>
                       </div>
-                      <div className="service_reveal_img" data-bg-image="./assets/images/project/project-2.webp"></div>
                     </div>
                     <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
                       <div className="item_count"><span>03</span></div>
@@ -133,12 +99,12 @@ export default function Index3() {
                           <div className="desc">
                            For endpoint protection, Emsisoft Anti Malware offers multiple resources including a datasheet (Flyer – Brochure), installer downloads, as well as additional tools like the Emsisoft Emergency Kit and Mobile Security application available via the Google Play Store.
                           </div>
+                          <a href="https://panzerit.com/wp-content/uploads/2018/09/EAM_Flyer.pdf">	Flyer – Brochure</a>
                         </div>
                         <Link className="tj-icon-btn" to="/service-details">
                           <i className="tji-arrow-long-right"></i>
                         </Link>
                       </div>
-                      <div className="service_reveal_img" data-bg-image="./assets/images/project/project-3.webp"></div>
                     </div>
                     
                         <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
@@ -151,17 +117,17 @@ export default function Index3() {
                           <div className="desc">
                           We provide advanced cybersecurity tools designed to ensure system protection and threat removal. For Emsisoft solutions, users can download installers and access mobile protection applications for enhanced security across devices.
                           </div>
+                          <a href="https://play.google.com/store/apps/details?id=com.emsisoft.security">	Download (Google Play Store)</a>
                         </div>
                         <Link className="tj-icon-btn" to="/service-details">
                           <i className="tji-arrow-long-right"></i>
                         </Link>
                       </div>
-                      <div className="service_reveal_img" data-bg-image="./assets/images/project/project-3.webp"></div>
                     </div>
 
 
                            <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
-                      <div className="item_count"><span>03</span></div>
+                      <div className="item_count"><span>04</span></div>
                       <div className="item_content">
                         <div className="content_inner">
                           <h3 className="title">
@@ -170,16 +136,16 @@ export default function Index3() {
                           <div className="desc">
                            Our comprehensive range of cybersecurity and IT management solutions includes detailed resources and downloadable materials for each product. For Netop Remote Control, users can access datasheets and presentations to explore features, functionality, and deployment insights.
                           </div>
+                          <a href="https://panzerit.com/wp-content/uploads/2018/09/Netop-Remote-Control-Datasheet-2.pdf">Netop Remote Control-Datasheet</a>
                         </div>
                         <Link className="tj-icon-btn" to="/service-details">
                           <i className="tji-arrow-long-right"></i>
                         </Link>
                       </div>
-                      <div className="service_reveal_img" data-bg-image="./assets/images/project/project-3.webp"></div>
                     </div>
 
                     <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
-                      <div className="item_count"><span>04</span></div>
+                      <div className="item_count"><span>05</span></div>
                       <div className="item_content">
                         <div className="content_inner">
                           <h3 className="title">
@@ -188,12 +154,12 @@ export default function Index3() {
                           <div className="desc">
                            In the backup and recovery segment, Acronis Backup Cloud provides a detailed datasheet covering its features and capabilities.
                           </div>
+                          <a href="https://panzerit.com/wp-content/uploads/2018/09/Acronis_Backup_Cloud_ABC_Features.pdf">Acronis_Backup_Cloud_ABC_Features</a>
                         </div>
                         <Link className="tj-icon-btn" to="/service-details">
                           <i className="tji-arrow-long-right"></i>
                         </Link>
                       </div>
-                      <div className="service_reveal_img" data-bg-image="./assets/images/project/project-4.webp"></div>
                     </div>
                   </div>
                 </div>

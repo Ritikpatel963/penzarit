@@ -92,17 +92,17 @@ export default function Header() {
             <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
           </Link>
         </div>
-        <button className="menu_btn menu_offcanvas d-none d-lg-block" onClick={handleOffcanvasClick}>
+        {/* <button className="menu_btn menu_offcanvas d-none d-lg-block" onClick={handleOffcanvasClick}>
           <span className="cubes">
             <span></span><span></span><span></span><span></span>
           </span>
-        </button>
+        </button> */}
       </div>
-      <button className="menu_btn mobile_menu_bar d-lg-none" onClick={handleMobileMenuClick}>
+      {/* <button className="menu_btn mobile_menu_bar d-lg-none" onClick={handleMobileMenuClick}>
         <span className="cubes">
           <span></span><span></span><span></span><span></span>
         </span>
-      </button>
+      </button> */}
     </>
   );
 
@@ -115,13 +115,13 @@ export default function Header() {
             <div className="row">
               <div className="col-12">
                 <div className="header-top-content">
-                  <p className="topbar-text"><i className="tji-spark"></i> Fast &amp; Reliable IT Solution Services. <Link to="/contact">Join Now</Link></p>
+                  <p className="topbar-text"><i className="tji-spark"></i> Fast &amp; Reliable IT Solution Services.</p>
                   <div className="header-info">
                     <div className="info-item">
                       <span><i className="tji-clock"></i></span>
                       <span>9 am to 6 pm [mon-sat]</span>
                     </div>
-                    <div className="info-item">
+                    {/* <div className="info-item">
                       <span><i className="tji-gear"></i></span>
                       <Link to="/contact">Support</Link>
                     </div>
@@ -135,7 +135,7 @@ export default function Header() {
                           <li>Spanish</li>
                         </ul>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

@@ -42,17 +42,17 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="row row-gap-4">
-              <div className="col-xl-3 col-lg-6 col-sm-6">
+            <div className="row row-gap-">
+              <div className="col-xl-4 col-lg-6 col-sm-6">
                 <div className="contact-item style-2 tj-fade-anim" data-delay="0.1">
                   <div className="contact-icon">
                     <i className="tji-location"></i>
                   </div>
                   <h3 className="contact-title">Our Location</h3>
-                  <p>NEW DELHI : F-398, Sector 63, Noida (NCR) 201307 +91 90046 55099 | Sales@PanzerIT.com</p>
+                  <p>NEW DELHI : F-398, Sector 63, Noida (NCR) 201307 <br />MUMBAI 203 : Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210  </p>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-6 col-sm-6">
+              <div className="col-xl-4 col-lg-6 col-sm-6">
                 <div className="contact-item style-2 tj-fade-anim" data-delay="0.3">
                   <div className="contact-icon">
                     <i className="tji-envelop"></i>
@@ -61,10 +61,11 @@ export default function Contact() {
                   <ul className="contact-list">
                     <li><a href="mailto:support@tekmino.com">support@tekmino.com</a></li>
                     <li><a href="mailto:info@tekmino.com">info@tekmino.com</a></li>
+                    <li><a href="mailto:sales@tekmino.com">sales@tekmino.com</a></li>
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-6 col-sm-6">
+              <div className="col-xl-4 col-lg-6 col-sm-6">
                 <div className="contact-item style-2 tj-fade-anim" data-delay="0.5">
                   <div className="contact-icon">
                     <i className="tji-phone"></i>
@@ -76,15 +77,15 @@ export default function Contact() {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-6 col-sm-6">
+              {/* <div className="col-xl-3 col-lg-6 col-sm-6">
                <div className="contact-item style-2 tj-fade-anim" data-delay="0.1">
                   <div className="contact-icon">
                     <i className="tji-location"></i>
                   </div>
                   <h3 className="contact-title">Our Location</h3>
-                  <p>MUMBAI 203 : Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210 +91 90046 55099 | Sales@PanzerIT.com</p>
+                  <p>MUMBAI 203 : Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210 </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

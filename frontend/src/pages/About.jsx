@@ -43,12 +43,12 @@ export default function About() {
                     <div className="tj-fade-anim">
                       <p className="desc">Our services are customized to meet your unique.</p>
                     </div>
-                    <div className="tj-fade-anim" data-delay="0.5">
+                    {/* <div className="tj-fade-anim" data-delay="0.5">
                       <Link className="tj-primary-btn d-none d-lg-inline-flex" to="/about">
                         <span className="btn-text"><span>Learn More</span></span>
                         <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -139,14 +139,7 @@ Panzer IT</h4>
                     <h2 className="sec-title tj-split-text-1">Panzer IT is a pioneer in IT security solutions with over 150 man-years of industry experience. </h2>
                   </div>
                   <div className="about-bottom">
-                    <div className="about-logo tj-fade-anim" data-delay="0.3">
-                      <div className="about-logo-icon">
-                        <img src="/assets/images/logos/logo-icon.webp" alt="" />
-                      </div>
-                      <div className="about-logo-text">
-                        <img src="/assets/images/logos/logo-text.webp" alt="" />
-                      </div>
-                    </div>
+                  
                     <div className="about-features-wrap tj-fade-anim" data-delay="0.5">
                       <div className="about-features">
                         <div className="about-features-item">
@@ -160,12 +153,12 @@ To ensure continuous, secure data accessibility for every business by delivering
 To become India's most trusted IT security provider by making advanced data security accessible to every reseller and end user at the best price with unmatched support.</p>
                         </div>
                       </div>
-                      <div className="tj-fade-anim" data-delay="0.3">
+                      {/* <div className="tj-fade-anim" data-delay="0.3">
                         <Link className="tj-primary-btn style-2 style-3 mt-15" to="/about">
                           <span className="btn-text"><span>Learn More</span></span>
                           <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

@@ -594,7 +594,7 @@ img {
 
 .gap,
 .section-gap {
-  padding-top: 120px;
+  padding-top: 102px;
   padding-bottom: 120px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6382,7 +6382,7 @@ START: Services CSS
 }
 
 .h3-service-section .sec-heading-inner .sec-title {
-  max-width: 510px;
+  max-width: 584px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .h3-service-section .sec-heading-inner .sec-title {
@@ -6497,7 +6497,7 @@ START: Services CSS
           margin-inline-start: auto;
 }
 .service_list_item .item_content .content_inner {
-  max-width: 510px;
+  max-width: 930px;
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

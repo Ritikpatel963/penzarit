@@ -8869,7 +8869,7 @@ START: Working process CSS
   font-weight: var(--tj-fw-sbold);
   position: absolute;
   top: -40px;
-  left: 50%;
+  left: 34%;
   transform: translateX(-50%);
 }
 .process-content .title {
