@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import Seo from './components/Seo';
 import useTemplateInit from './hooks/useTemplateInit';
 import useGsapAnimation from './hooks/useGsapAnimation';
 
@@ -10,42 +11,124 @@ import BackToTop from './components/layout/BackToTop';
 import SearchPopup from './components/layout/SearchPopup';
 import OffcanvasMenu from './components/layout/OffcanvasMenu';
 
-// Generated page imports
+// Page imports
 import About from './pages/About';
 import BlogDetails from './pages/BlogDetails';
 import Blog from './pages/Blog';
-import Cart from './pages/Cart';
-import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Faq from './pages/Faq';
-import Index10 from './pages/Index10';
-import Index2 from './pages/Index2';
-import Index3 from './pages/Index3';
-import Index4 from './pages/Index4';
-import Index5 from './pages/Index5';
-import Index6 from './pages/Index6';
-import Index7 from './pages/Index7';
-import Index8 from './pages/Index8';
-import Index9 from './pages/Index9';
-import IndexRtl from './pages/IndexRtl';
 import Index from './pages/Index';
 import Login from './pages/Login';
-import New from './pages/New';
-import Password from './pages/Password';
 import Pricing from './pages/Pricing';
-import ProjectDetails from './pages/ProjectDetails';
-import Project from './pages/Project';
 import ServiceDetails from './pages/ServiceDetails';
 import Service from './pages/Service';
-import ShopDetails from './pages/ShopDetails';
-import Shop from './pages/Shop';
 import TeamDetails from './pages/TeamDetails';
 import Team from './pages/Team';
 import Brand from './pages/Brand';
 import Download from './pages/Download';
-import Wishlist from './pages/Wishlist';
-import PAMPage from './pages/Pampage';
+import Solution from './pages/Solution';
+
+const routeSeo = {
+  '/': {
+    title: 'Home',
+    description: 'Panzer IT delivers trusted IT security, backup, DLP, compliance, and enterprise protection solutions for businesses across India.',
+    keywords: 'Panzer IT, IT security, cybersecurity, endpoint security, DLP, backup solutions, India',
+  },
+  '/home': {
+    title: 'Home',
+    description: 'Panzer IT delivers trusted IT security, backup, DLP, compliance, and enterprise protection solutions for businesses across India.',
+    keywords: 'Panzer IT, IT security, cybersecurity, endpoint security, DLP, backup solutions, India',
+  },
+  '/about': {
+    title: 'About Us',
+    description: 'Learn about Panzer IT, our mission, vision, experience, and commitment to secure data accessibility and availability for every business.',
+    keywords: 'about Panzer IT, IT security company, data security, cyber protection, India',
+  },
+  '/service': {
+    title: 'Services',
+    description: 'Explore Panzer IT services including endpoint security, DLP, anti-malware, vulnerability assessment, remote support, and insider threat protection.',
+    keywords: 'IT services, cybersecurity services, DLP, anti malware, vulnerability assessment, Panzer IT',
+  },
+  '/servicedetails': {
+    title: 'Service Details',
+    description: 'Detailed information about Panzer IT service offerings, enterprise protection solutions, and security-focused technology support.',
+    keywords: 'service details, enterprise security, IT solutions, Panzer IT',
+  },
+  '/contact': {
+    title: 'Contact Us',
+    description: 'Contact Panzer IT for cybersecurity solutions, product inquiries, reseller support, and enterprise technology consultation.',
+    keywords: 'contact Panzer IT, cybersecurity support, IT consultation, reseller network',
+  },
+  '/faq': {
+    title: 'FAQ',
+    description: 'Read answers to common questions about Panzer IT services, support, security solutions, and implementation process.',
+    keywords: 'FAQ, Panzer IT questions, IT support, cybersecurity help',
+  },
+  '/blog': {
+    title: 'Blog',
+    description: 'Read the Panzer IT blog for insights on cybersecurity, backup, data protection, compliance, and modern IT security trends.',
+    keywords: 'cybersecurity blog, IT blog, data protection blog, Panzer IT blog',
+  },
+  '/blogdetails': {
+    title: 'Blog Details',
+    description: 'Explore detailed articles and insights from Panzer IT on cybersecurity, IT operations, and business data protection.',
+    keywords: 'blog article, cybersecurity insights, IT security article, Panzer IT',
+  },
+  '/pricing': {
+    title: 'Pricing',
+    description: 'Review Panzer IT pricing information for modern security and business technology solutions.',
+    keywords: 'pricing, IT security pricing, solution pricing, Panzer IT',
+  },
+  '/team': {
+    title: 'Team',
+    description: 'Meet the Panzer IT team behind our cybersecurity, enterprise support, and trusted business technology services.',
+    keywords: 'Panzer IT team, cybersecurity experts, IT professionals',
+  },
+  '/teamdetails': {
+    title: 'Team Details',
+    description: 'Learn more about Panzer IT team members, leadership, and technical expertise.',
+    keywords: 'team details, IT experts, cybersecurity leadership, Panzer IT',
+  },
+  '/download': {
+    title: 'Downloads',
+    description: 'Access Panzer IT downloads, resources, and supporting material for security and business technology solutions.',
+    keywords: 'downloads, Panzer IT resources, software downloads, security resources',
+  },
+  '/solution': {
+    title: 'Solution',
+    description: 'Explore Panzer IT solution offerings including enterprise protection, backup, monitoring, and cybersecurity services.',
+    keywords: 'solution, IT solutions, cybersecurity solutions, Panzer IT',
+  },
+  '/brand': {
+    title: 'Brands',
+    description: 'Discover the trusted security and technology brands represented by Panzer IT.',
+    keywords: 'brands, security brands, technology partners, Panzer IT',
+  },
+  '/login': {
+    title: 'Login',
+    description: 'Sign in to access your Panzer IT account and services.',
+    keywords: 'login, account access, Panzer IT',
+    robots: 'noindex,nofollow',
+  },
+  '/error': {
+    title: 'Page Not Found',
+    description: 'The page you are looking for could not be found.',
+    keywords: '404, page not found, Panzer IT',
+    robots: 'noindex,nofollow',
+  },
+};
+
+function withSeo(path, element) {
+  const seo = routeSeo[path] || routeSeo['/error'];
+
+  return (
+    <>
+      <Seo path={path} {...seo} />
+      {element}
+    </>
+  );
+}
 
 function AppContent() {
   // Initialize all template JS functionality
@@ -66,44 +149,25 @@ function AppContent() {
         <div id="smooth-content">
           <main id="primary" className="site-main">
             <Routes>
-              <Route path="/pamgram" element={<PAMPage />} />
-              <Route path="/" element={<Index5 />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/blogdetails" element={<BlogDetails />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/error" element={<Error />} />
-              <Route path="/faq" element={<Faq />} />
-              <Route path="/index10" element={<Index10 />} />
-              <Route path="/index2" element={<Index2 />} />
-              <Route path="/index3" element={<Index3 />} />
-              <Route path="/index4" element={<Index4 />} />
-                <Route path="/index5" element={<Index5 />} />
-                <Route path="/index6" element={<Index6 />} />
-                <Route path="/index7" element={<Index7 />} />
-                <Route path="/index8" element={<Index8 />} />
-                <Route path="/index9" element={<Index9 />} />
-                <Route path="/indexrtl" element={<IndexRtl />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/new" element={<New />} />
-                <Route path="/password" element={<Password />} />
-                <Route path="/pricing" element={<Pricing />} />
-                <Route path="/projectdetails" element={<ProjectDetails />} />
-                <Route path="/project" element={<Project />} />
-                <Route path="/download" element={<Download />} />
-                <Route path="/servicedetails" element={<ServiceDetails />} />
-                <Route path="/service" element={<Service />} />
-                <Route path="/shopdetails" element={<ShopDetails />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/brand" element={<Brand />} />
-                <Route path="/teamdetails" element={<TeamDetails />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/wishlist" element={<Wishlist />} />
-                <Route path="/home" element={<Index5 />} />
-                <Route path="*" element={<Error />} />
-              </Routes>
+              <Route path="/" element={withSeo('/', <Index />)} />
+              <Route path="/home" element={withSeo('/home', <Index />)} />
+              <Route path="/about" element={withSeo('/about', <About />)} />
+              <Route path="/blogdetails" element={withSeo('/blogdetails', <BlogDetails />)} />
+              <Route path="/blog" element={withSeo('/blog', <Blog />)} />
+              <Route path="/contact" element={withSeo('/contact', <Contact />)} />
+              <Route path="/error" element={withSeo('/error', <Error />)} />
+              <Route path="/faq" element={withSeo('/faq', <Faq />)} />
+              <Route path="/login" element={withSeo('/login', <Login />)} />
+              <Route path="/pricing" element={withSeo('/pricing', <Pricing />)} />
+              <Route path="/download" element={withSeo('/download', <Download />)} />
+              <Route path="/solution" element={withSeo('/solution', <Solution />)} />
+              <Route path="/servicedetails" element={withSeo('/servicedetails', <ServiceDetails />)} />
+              <Route path="/service" element={withSeo('/service', <Service />)} />
+              <Route path="/brand" element={withSeo('/brand', <Brand />)} />
+              <Route path="/teamdetails" element={withSeo('/teamdetails', <TeamDetails />)} />
+              <Route path="/team" element={withSeo('/team', <Team />)} />
+              <Route path="*" element={withSeo('/error', <Error />)} />
+            </Routes>
           </main>
         </div>
       </div>

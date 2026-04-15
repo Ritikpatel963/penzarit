@@ -42,18 +42,27 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div className="row row-gap-">
-              <div className="col-xl-4 col-lg-6 col-sm-6">
-                <div className="contact-item style-2 tj-fade-anim" data-delay="0.1">
+            <div className="row row-gap-4 align-items-stretch">
+              <div className="col-xl-3 col-lg-6 col-sm-6 d-flex">
+                <div className="contact-item style-2 contact-card-equal tj-fade-anim" data-delay="0.1">
                   <div className="contact-icon">
                     <i className="tji-location"></i>
                   </div>
                   <h3 className="contact-title">Our Location</h3>
-                  <p>NEW DELHI : F-398, Sector 63, Noida (NCR) 201307 <br />MUMBAI 203 : Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210  </p>
+                  <p>NEW DELHI : F-398, Sector 63, Noida (NCR) 201307  </p>
+                </div>
+              </div>  
+              <div className="col-xl-3 col-lg-6 col-sm-6 d-flex">
+                <div className="contact-item style-2 contact-card-equal tj-fade-anim" data-delay="0.1">
+                  <div className="contact-icon">
+                    <i className="tji-location"></i>
+                  </div>
+                  <h3 className="contact-title">Our Location</h3>
+                  <p>MUMBAI 203 : Sai Jewel, Plot 26, Sector 35/I, Kharghar, Navi Mumbai, Maharashtra 410210  </p>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-6 col-sm-6">
-                <div className="contact-item style-2 tj-fade-anim" data-delay="0.3">
+              <div className="col-xl-3 col-lg-6 col-sm-6 d-flex">
+                <div className="contact-item style-2 contact-card-equal tj-fade-anim" data-delay="0.3">
                   <div className="contact-icon">
                     <i className="tji-envelop"></i>
                   </div>
@@ -65,8 +74,8 @@ export default function Contact() {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-4 col-lg-6 col-sm-6">
-                <div className="contact-item style-2 tj-fade-anim" data-delay="0.5">
+              <div className="col-xl-3 col-lg-6 col-sm-6 d-flex">
+                <div className="contact-item style-2 contact-card-equal tj-fade-anim" data-delay="0.5">
                   <div className="contact-icon">
                     <i className="tji-phone"></i>
                   </div>
@@ -151,7 +160,16 @@ export default function Contact() {
               </div>
               <div className="col-lg-6">
                 <div className="map-area tj-fade-anim" data-delay="0.5">
-                  <div id="map"></div>
+                  <iframe
+                    title="Panzer IT Mumbai Office Map"
+                    src="https://maps.google.com/maps?q=MUMBAI%20203%20Sai%20Jewel%20Plot%2026%20Sector%2035%2FI%20Kharghar%20Navi%20Mumbai%20Maharashtra%20410210&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, minHeight: '500px' }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
             </div>

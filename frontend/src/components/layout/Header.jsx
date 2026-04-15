@@ -36,7 +36,7 @@ export default function Header() {
       <li><Link to="/">Home</Link></li>
       <li><Link to="/about">About</Link></li>
       <li className="has-dropdown">
-        <Link to="/service">Solution</Link>
+        <Link to="/solution">Solution</Link>
         <ul className="sub-menu">
           <li id="menu-item-11716" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-11716"><a href="https://panzerit.com/solutions/mirobase-employee-monitoring/">Scopd DLP with UEBA</a></li>
           <li id="menu-item-4432" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-4432"><a href="https://panzerit.com/vulnerability-scanner-assessment-penetration-testing/">Vulnerability Scanner, Assessment &amp; Penetration Testing</a></li>
@@ -49,7 +49,7 @@ export default function Header() {
         </ul>
       </li>
       <li className="has-dropdown">
-        <Link to="/project">Brand</Link>
+        <Link to="/Brand">Brand</Link>
         <ul className="sub-menu">
           <li id="menu-item-9406" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-9406"><a href="https://panzerit.com/brands/netand-iam-pam/">Netand IAM PAM</a></li>
           <li id="menu-item-7794" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-7794"><a href="https://panzerit.com/brands/scopd-employee-monitoring/">Scopd DLP with UEBA</a></li>
@@ -73,7 +73,7 @@ export default function Header() {
           <li id="menu-item-1095" className="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1095"><a href="https://panzerit.com/category/news/">News</a></li>
         </ul>
       </li>
-      <li><Link to="/project">Downloads</Link></li>
+      <li><Link to="/Download">Downloads</Link></li>
       <li><Link to="/contact">Contact</Link></li>
     </ul>
   );
@@ -148,7 +148,7 @@ export default function Header() {
               <div className="col-12">
                 <div className="header-wrapper">
                   <div className="site_logo">
-                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo.png" alt="Logo" /></Link>
+                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo-new.png" alt="Logo" /></Link>
                   </div>
                   <div className="menu-area d-none d-lg-inline-flex align-items-center">
                     <nav id="mobile-menu" className="mainmenu">
@@ -171,7 +171,7 @@ export default function Header() {
               <div className="col-12">
                 <div className="header-wrapper">
                   <div className="site_logo">
-                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo.png" alt="Logo" /></Link>
+                    <Link className="logo" to="/"><img src="/assets/images/logos/primary-logo-new.png" alt="Logo" /></Link>
                   </div>
                   <div className="menu-area d-none d-lg-inline-flex align-items-center">
                     <nav className="mainmenu">

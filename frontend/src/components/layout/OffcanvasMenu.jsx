@@ -123,22 +123,36 @@ export default function OffcanvasMenu() {
             </div>
             <div className="hamburger_menu">
               <nav className="mobile_menu">
-                <ul>
+              <ul>
+                  <li><Link to="/" onClick={closeAll}>Home</Link></li>
+                  <li><Link to="/about" onClick={closeAll}>About</Link></li>
                   <li className="has-dropdown">
-                    <Link to="/" onClick={closeAll}>Home</Link>
+                    <Link to="/solution" onClick={closeAll}>Solution</Link>
                     <ul className="sub-menu">
-                      <li><Link to="/" onClick={closeAll}>IT Solution</Link></li>
-                      <li><Link to="/index2" onClick={closeAll}>IT Consulting</Link></li>
-                      <li><Link to="/index3" onClick={closeAll}>Managed IT</Link></li>
-                      <li><Link to="/index4" onClick={closeAll}>Cloud Solutions</Link></li>
-                      <li><Link to="/index5" onClick={closeAll}>Cyber Security</Link></li>
-                      <li><Link to="/index6" onClick={closeAll}>Fintech</Link></li>
-                      <li><Link to="/index7" onClick={closeAll}>Software Company</Link></li>
-                      <li><Link to="/index8" onClick={closeAll}>Tech Startup</Link></li>
-                      <li><Link to="/index9" onClick={closeAll}>Ai technology</Link></li>
-                      <li><Link to="/index10" onClick={closeAll}>Hosting</Link></li>
+                      <li><a href="https://panzerit.com/solutions/mirobase-employee-monitoring/">Scopd DLP with UEBA</a></li>
+                      <li><a href="https://panzerit.com/vulnerability-scanner-assessment-penetration-testing/">Vulnerability Scanner &amp; Penetration Testing</a></li>
+                      <li><a href="https://panzerit.com/solutions/advance-anti-malware/">Most Advance Anti-Malware</a></li>
+                      <li><a href="https://panzerit.com/backup-disaster-recovery/">Backup &amp; Disaster Recovery</a></li>
                     </ul>
                   </li>
+                  <li className="has-dropdown">
+                    <Link to="/brand" onClick={closeAll}>Brand</Link>
+                    <ul className="sub-menu">
+                      <li><a href="https://panzerit.com/brands/netand-iam-pam/">Netand IAM PAM</a></li>
+                      <li><a href="https://panzerit.com/brands/scopd-employee-monitoring/">Scopd DLP with UEBA</a></li>
+                      <li><a href="https://panzerit.com/brands/emsisoft-most-advance-malware-protection/">Emsisoft – Advance Malware Protection</a></li>
+                      <li><a href="https://panzerit.com/solutions/acronis-india/">Acronis Backup Solution</a></li>
+                    </ul>
+                  </li>
+                  <li><Link to="/service" onClick={closeAll}>Tech</Link></li>
+                  <li className="has-dropdown">
+                    <Link to="/blog" onClick={closeAll}>Blog</Link>
+                    <ul className="sub-menu">
+                      <li><Link to="/blog" onClick={closeAll}>Blog</Link></li>
+                      <li><Link to="/blogdetails" onClick={closeAll}>Blog Details</Link></li>
+                    </ul>
+                  </li>
+                  <li><Link to="/download" onClick={closeAll}>Downloads</Link></li>
                   <li className="has-dropdown">
                     <Link to="/about" onClick={closeAll}>Pages</Link>
                     <ul className="sub-menu">
@@ -147,35 +161,10 @@ export default function OffcanvasMenu() {
                       <li><Link to="/servicedetails" onClick={closeAll}>Service Details</Link></li>
                       <li><Link to="/team" onClick={closeAll}>Team</Link></li>
                       <li><Link to="/teamdetails" onClick={closeAll}>Team Details</Link></li>
-                      <li><Link to="/faq" onClick={closeAll}>Faq</Link></li>
-                      <li><Link to="/pricing" onClick={closeAll}>Pricing Page</Link></li>
-                      <li><Link to="/error" onClick={closeAll}>Error 404</Link></li>
-                    </ul>
-                  </li>
-                  <li className="has-dropdown">
-                    <Link to="/project" onClick={closeAll}>Projects</Link>
-                    <ul className="sub-menu">
-                      <li><Link to="/project" onClick={closeAll}>Projects</Link></li>
-                      <li><Link to="/projectdetails" onClick={closeAll}>Project Details</Link></li>
-                    </ul>
-                  </li>
-                  <li className="has-dropdown">
-                    <Link to="/shop" onClick={closeAll}>Shop</Link>
-                    <ul className="sub-menu">
-                      <li><Link to="/shop" onClick={closeAll}>Shop</Link></li>
-                      <li><Link to="/shopdetails" onClick={closeAll}>Shop Details</Link></li>
-                      <li><Link to="/cart" onClick={closeAll}>Cart</Link></li>
-                      <li><Link to="/wishlist" onClick={closeAll}>Wishlist</Link></li>
-                      <li><Link to="/checkout" onClick={closeAll}>Checkout</Link></li>
+                      <li><Link to="/faq" onClick={closeAll}>FAQ</Link></li>
+                      <li><Link to="/pricing" onClick={closeAll}>Pricing</Link></li>
                       <li><Link to="/login" onClick={closeAll}>Login</Link></li>
-                      <li><Link to="/password" onClick={closeAll}>Password</Link></li>
-                    </ul>
-                  </li>
-                  <li className="has-dropdown">
-                    <Link to="/blog" onClick={closeAll}>Blog</Link>
-                    <ul className="sub-menu">
-                      <li><Link to="/blog" onClick={closeAll}>Blog</Link></li>
-                      <li><Link to="/blogdetails" onClick={closeAll}>Blog Details</Link></li>
+                      <li><Link to="/error" onClick={closeAll}>Error 404</Link></li>
                     </ul>
                   </li>
                   <li><Link to="/contact" onClick={closeAll}>Contact</Link></li>

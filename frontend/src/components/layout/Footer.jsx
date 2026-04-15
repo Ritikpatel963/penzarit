@@ -28,7 +28,7 @@ export default function Footer() {
                 <div className="footer-widget footer-col-1">
                   <div className="footer-logo">
                     <Link to="/">
-                      <img src="/assets/images/logos/primary-logo.png" alt="Logo" />
+                      <img src="/assets/images/logos/primary-logo-new.png" alt="Logo" />
                     </Link>
                   </div>
                   <div className="footer-text">

@@ -291,12 +291,7 @@ export default function Service() {
                     <div className="pricing_header">
                       <h4 className="package_name">Basic Plan</h4>
                       <div className="package_desc">Essential Electrical Services</div>
-                      <div className="package_price">
-                        <span className="currency">$</span>
-                        <span className="price" data-year-price="199" data-month-price="99">99</span>
-                        <span className="period" data-year-period="/per year" data-month-period="/per month">/per
-                          month</span>
-                      </div>
+                    
                     </div>
 
                     <Link className="tj-primary-btn pricing_btn" to="/contact">
@@ -335,12 +330,7 @@ export default function Service() {
                     <div className="pricing_header">
                       <h4 className="package_name">Standard Plan</h4>
                       <div className="package_desc">Complete Electrical Solutions</div>
-                      <div className="package_price">
-                        <span className="currency">$</span>
-                        <span className="price" data-year-price="499" data-month-price="249">249</span>
-                        <span className="period" data-year-period="/per year" data-month-period="/per month">/per
-                          month</span>
-                      </div>
+                   
                     </div>
 
                     <Link className="tj-primary-btn pricing_btn" to="/contact">
@@ -379,12 +369,7 @@ export default function Service() {
                     <div className="pricing_header">
                       <h4 className="package_name">Premium Plan</h4>
                       <div className="package_desc">Advanced Electrical Services</div>
-                      <div className="package_price">
-                        <span className="currency">$</span>
-                        <span className="price" data-year-price="899" data-month-price="499">499</span>
-                        <span className="period" data-year-period="/per year" data-month-period="/per month">/per
-                          month</span>
-                      </div>
+                    
                     </div>
 
                     <Link className="tj-primary-btn pricing_btn" to="/contact">

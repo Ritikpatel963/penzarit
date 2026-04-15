@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Index3() {
+  const assetPath = (path) => `${import.meta.env.BASE_URL}assets/${path}`;
+
   return (
     <>
         {/*  start: Breadcrumb Section  */}
@@ -108,7 +110,7 @@ export default function Index3() {
                     </div>
                     
                         <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
-                      <div className="item_count"><span>03</span></div>
+                      <div className="item_count"><span>04</span></div>
                       <div className="item_content">
                         <div className="content_inner">
                           <h3 className="title">
@@ -127,7 +129,7 @@ export default function Index3() {
 
 
                            <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
-                      <div className="item_count"><span>04</span></div>
+                      <div className="item_count"><span>05</span></div>
                       <div className="item_content">
                         <div className="content_inner">
                           <h3 className="title">
@@ -145,7 +147,7 @@ export default function Index3() {
                     </div>
 
                     <div className="service_list_item is-active tj-fade-anim" data-delay=".2">
-                      <div className="item_count"><span>05</span></div>
+                      <div className="item_count"><span>06</span></div>
                       <div className="item_content">
                         <div className="content_inner">
                           <h3 className="title">
@@ -180,143 +182,769 @@ export default function Index3() {
         </section>
         {/*  end: Services Section  */}
 
-        {/*  start: Testimonial Section  */}
-        <section className="tj-testimonial-section-3 section-gap overflow-hidden">
-          <div className="container">
-            <div className="row">
-              <div className="col">
-                <div className="sec-heading style-3 sec-heading-centered">
-                  <span className="sub-title tj-fade-anim" data-delay="0.2" data-duration="0.5"><i
-                      className="tji-subtitle-2"></i>Success Stories</span>
-                  <h2 className="sec-title tj-split-text-3">Building Success with Client Feedback.</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="container-fluid gx-0">
-            <div className="row">
-              <div className="col">
-                <div className="h3_testimonial_slider swiper swiper-container tj-fade-anim" data-delay=".3">
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testimonial_item_2">
-                        <div className="testimonial_thumb">
-                          <img src="./assets/images/testimonial/h3-testimonial-1.webp" alt="" />
-
-                          <a className="video_btn video-popup" data-autoplay="true" data-vbtype="video"
-                            data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI">
-                            <i className="tji-play"></i>
-                          </a>
-                        </div>
-                        <div className="testimonial_content">
-                          <div className="star-ratings">
-                            <div className="fill-ratings" style={{"width":"90%"}}>
-                              <span>★★★★★</span>
-                            </div>
-                            <div className="empty-ratings">
-                              <span>★★★★★</span>
-                            </div>
-                          </div>
-
-                          <div className="desc">
-                            <p>
-                              Nexor truly exceeded our expectations. From the initial consultation to the final
-                              implementation, their team provided excellent service and unwavering support. Their
-                              ability to integrate advanced IT solutions into our operations has streamlined our
-                              processes.
-                            </p>
-                          </div>
-
-                          <div className="author_info">
-                            <h4 className="name">Mevon Lane</h4>
-                            <span className="designation">Co. Founder</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="testimonial_item_2">
-                        <div className="testimonial_thumb">
-                          <img src="./assets/images/testimonial/h3-testimonial-2.webp" alt="" />
-
-                          <a className="video_btn video-popup" data-autoplay="true" data-vbtype="video"
-                            data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI">
-                            <i className="tji-play"></i>
-                          </a>
-                        </div>
-                        <div className="testimonial_content">
-                          <div className="star-ratings">
-                            <div className="fill-ratings" style={{"width":"90%"}}>
-                              <span>★★★★★</span>
-                            </div>
-                            <div className="empty-ratings">
-                              <span>★★★★★</span>
-                            </div>
-                          </div>
-
-                          <div className="desc">
-                            <p>
-                              Partnering with Nexor has been an absolute game-changer for our company. Their team
-                              delivered a tailored IT solution that met our unique business needs, and their
-                              approach to problem-solving has saved us time and money. With Nexor’s cutting-edge
-                              technology.
-                            </p>
-                          </div>
-
-                          <div className="author_info">
-                            <h4 className="name">Mevon Lane</h4>
-                            <span className="designation">Co. Founder</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="testimonial_item_2">
-                        <div className="testimonial_thumb">
-                          <img src="./assets/images/testimonial/h3-testimonial-3.webp" alt="" />
-
-                          <a className="video_btn video-popup" data-autoplay="true" data-vbtype="video"
-                            data-maxwidth="1200px" href="https://www.youtube.com/watch?v=MLpWrANjFbI">
-                            <i className="tji-play"></i>
-                          </a>
-                        </div>
-                        <div className="testimonial_content">
-                          <div className="star-ratings">
-                            <div className="fill-ratings" style={{"width":"90%"}}>
-                              <span>★★★★★</span>
-                            </div>
-                            <div className="empty-ratings">
-                              <span>★★★★★</span>
-                            </div>
-                          </div>
-
-                          <div className="desc">
-                            <p>
-                              When we approached Nexor for help with our technology integration, we were looking for a
-                              partner who could not only provide expertise but also deliver tangible results.
-                              They did exactly that. Nexor helped us streamline our operations with innovative cloud
-                              solutions.
-                            </p>
-                          </div>
-
-                          <div className="author_info">
-                            <h4 className="name">Mevon Lane</h4>
-                            <span className="designation">Co. Founder</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="swiper-pagination-area"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/*  end: Testimonial Section  */}
-
+          {/*  start: Testimonial Section  */}
+             <div className="h5-testimonial-section section-gap section-gap-x">
+               <div className="container">
+                 <div className="row">
+                   <div className="col-12">
+                     <div
+                       className="sec-heading sec-heading-centered style-3 tj-fade-anim"
+                       data-delay=".1"
+                       data-direction="bottom"
+                     >
+                       <span className="sub-title tj-fade-anim">
+                         <i className="tji-subtitle-4"></i>Our Success Stories
+                       </span>
+                       <h2 className="sec-title tj-split-text-1">
+                         Trusted Experts in Cyber Threat <span>Protection.</span>
+                       </h2>
+                     </div>
+                   </div>
+                 </div>
+                 <div className="row">
+                   <div className="col-12">
+                     <div className="testimonial-wrapper-4 tj-fade-anim">
+                       <div className="scroll-slider">
+                         <div className="scroll-wrapper">
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-1.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Devon Lane</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Partnering with Tekmino has been an absolute
+                                   game-changer for our company. Their team delivered a
+                                   tailored IT solution that met our unique business
+                                   needs, and their proactive approach to problem.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-2.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Cameron Williamson</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Tekmino truly exceeded our expectations. From the
+                                   initial consultation to the final implementation,
+                                   their team provided excellent service and unwavering
+                                   support. Their ability to integrate.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-3.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Eleanor Pena</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   When we approached Nexor for help with our
+                                   technology integration, we were looking for a
+                                   partner who could not only provide expertise but
+                                   also deliver tangible results. They did exactly
+                                   that.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div className="scroll-wrapper">
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-1.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Devon Lane</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Partnering with Tekmino has been an absolute
+                                   game-changer for our company. Their team delivered a
+                                   tailored IT solution that met our unique business
+                                   needs, and their proactive approach to problem.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-2.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Cameron Williamson</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Tekmino truly exceeded our expectations. From the
+                                   initial consultation to the final implementation,
+                                   their team provided excellent service and unwavering
+                                   support. Their ability to integrate.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-3.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Eleanor Pena</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   When we approached Nexor for help with our
+                                   technology integration, we were looking for a
+                                   partner who could not only provide expertise but
+                                   also deliver tangible results. They did exactly
+                                   that.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div className="scroll-slider">
+                         <div className="scroll-wrapper">
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-1.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Devon Lane</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Partnering with Tekmino has been an absolute
+                                   game-changer for our company. Their team delivered a
+                                   tailored IT solution that met our unique business
+                                   needs, and their proactive approach to problem.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-2.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Cameron Williamson</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Tekmino truly exceeded our expectations. From the
+                                   initial consultation to the final implementation,
+                                   their team provided excellent service and unwavering
+                                   support. Their ability to integrate.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-3.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Eleanor Pena</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   When we approached Nexor for help with our
+                                   technology integration, we were looking for a
+                                   partner who could not only provide expertise but
+                                   also deliver tangible results. They did exactly
+                                   that.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div className="scroll-wrapper">
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-1.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Devon Lane</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Partnering with Tekmino has been an absolute
+                                   game-changer for our company. Their team delivered a
+                                   tailored IT solution that met our unique business
+                                   needs, and their proactive approach to problem.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-2.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Cameron Williamson</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Tekmino truly exceeded our expectations. From the
+                                   initial consultation to the final implementation,
+                                   their team provided excellent service and unwavering
+                                   support. Their ability to integrate.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-3.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Eleanor Pena</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   When we approached Nexor for help with our
+                                   technology integration, we were looking for a
+                                   partner who could not only provide expertise but
+                                   also deliver tangible results. They did exactly
+                                   that.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div className="scroll-slider">
+                         <div className="scroll-wrapper">
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-1.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Devon Lane</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Partnering with Tekmino has been an absolute
+                                   game-changer for our company. Their team delivered a
+                                   tailored IT solution that met our unique business
+                                   needs, and their proactive approach to problem.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-2.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Cameron Williamson</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Tekmino truly exceeded our expectations. From the
+                                   initial consultation to the final implementation,
+                                   their team provided excellent service and unwavering
+                                   support. Their ability to integrate.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-3.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Eleanor Pena</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   When we approached Nexor for help with our
+                                   technology integration, we were looking for a
+                                   partner who could not only provide expertise but
+                                   also deliver tangible results. They did exactly
+                                   that.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <div className="scroll-wrapper">
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-1.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Devon Lane</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Partnering with Tekmino has been an absolute
+                                   game-changer for our company. Their team delivered a
+                                   tailored IT solution that met our unique business
+                                   needs, and their proactive approach to problem.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-2.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Cameron Williamson</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   Tekmino truly exceeded our expectations. From the
+                                   initial consultation to the final implementation,
+                                   their team provided excellent service and unwavering
+                                   support. Their ability to integrate.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                           <div className="testimonial_item_3">
+                             <div className="testimonial_header">
+                               <div className="author_avatar_wrapper">
+                                 <div className="author_avatar">
+                                   <img
+                                     src={assetPath(
+                                       "images/testimonial/client-3.webp",
+                                     )}
+                                     alt=""
+                                   />
+                                 </div>
+                                 <div className="author_info">
+                                   <h5 className="name">Eleanor Pena</h5>
+                                   <span className="designation">Co. Founder</span>
+                                 </div>
+                               </div>
+                               <div className="star-ratings">
+                                 <div
+                                   className="fill-ratings"
+                                   style={{ width: "90%" }}
+                                 >
+                                   <span>★★★★★</span>
+                                 </div>
+                                 <div className="empty-ratings">
+                                   <span>★★★★★</span>
+                                 </div>
+                               </div>
+                             </div>
+                             <div className="testimonial_content">
+                               <div className="desc">
+                                 <p>
+                                   When we approached Nexor for help with our
+                                   technology integration, we were looking for a
+                                   partner who could not only provide expertise but
+                                   also deliver tangible results. They did exactly
+                                   that.
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div className="testimonial-btn tj-fade-anim">
+                       <Link className="tj-primary-btn" to="/about">
+                         <span className="btn-text">
+                           <span>Explore More</span>
+                         </span>
+                         <span className="btn-icon">
+                           <i className="tji-arrow-right-2"></i>
+                         </span>
+                       </Link>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
        
 
         {/*  start: FAQ Section  */}
@@ -406,120 +1034,49 @@ export default function Index3() {
         </section>
         {/*  end: FAQ Section  */}
 
-        {/*  start: Blog Section  */}
-        <section className="tj-blog-section section-gap">
+       {/*  start: Cta Section  */}
+        <section className="tj-cta-section">
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div
-                  className="sec-heading style-3 d-flex flex-wrap align-items-end justify-content-center justify-content-md-between gap-4">
-                  <div className="sec_heading_wrap d-flex flex-column align-items-center align-items-md-start">
-                    <span className="sub-title tj-fade-anim" data-delay="0.2" data-duration="0.5"><i
-                        className="tji-subtitle-2"></i> Explore Blogs</span>
-                    <h2 className="sec-title tj-split-text-3">Read Latest Blog & News.</h2>
+                <div className="cta-area tj-fade-anim">
+                  <div className="cta-content">
+                    <h2 className="title">Don’t Miss Out the Future!</h2>
                   </div>
-                  <div className="tj-fade-anim d-none d-md-inline-flex" data-delay="0.5">
-                    <Link className="tj-primary-btn" to="/blog">
-                      <span className="btn-text"><span>Explore More</span></span>
-                      <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col">
-                <div className="tj_blog_wrap tj-fade-anim">
-                  <div className="blog-item">
-                    <div className="blog-thumb img-reveal-2">
-                      <Link to="/blog-details"><img src="/assets/images/blog/blog-1.webp" alt="" /></Link>
+                  <div className="cta-right">
+                    <div className="subscribe-form cta-form">
+                      <form action="#">
+                        <input type="email" name="email" placeholder="Enter email here..." />
+                        <button className="tj-primary-btn style-2" type="submit">
+                          <span className="btn-text"><span>Subscribe Now</span></span>
+                          <span className="btn-icon"><i className="tji-bell"></i></span>
+                        </button>
+                      </form>
                     </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <span className="categories"><Link to="/blog-details">Solutions</Link></span>
-                        <span>By <Link to="/blog-details">Ellinien Loma</Link></span>
-                      </div>
-                      <h4 className="title">
-                        <Link to="/blog-details">How to Successfully Migrate Your Business to the Cloud</Link>
-                      </h4>
-                      <div className="excerpt">Managed IT Services provide businesses with proactive technology support,
-                        ensuring seamless operations and enhanced.</div>
-                      <Link className="tj-text-btn style-2" to="/blog-details">
-                        Read More
-                        <i className="tji-arrow-right-4"></i>
-                      </Link>
+                    <div className="social-links cta-social">
+                      <span className="title">Follow us:</span>
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com/" target="_blank"><i className="tji-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.instagram.com/" target="_blank"><i className="tji-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.x.com/" target="_blank"><i className="tji-x-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/" target="_blank"><i className="tji-linkedin"></i></a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                  <div className="blog-item">
-                    <div className="blog-thumb img-reveal-2">
-                      <Link to="/blog-details"><img src="/assets/images/blog/blog-2.webp" alt="" /></Link>
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <span className="categories"><Link to="/blog-details">Solutions</Link></span>
-                        <span>By <Link to="/blog-details">Ellinien Loma</Link></span>
-                      </div>
-                      <h4 className="title">
-                        <Link to="/blog-details">Building a Stronger Workforce with IT Training</Link>
-                      </h4>
-                      <Link className="tj-text-btn style-2" to="/blog-details">
-                        Read More
-                        <i className="tji-arrow-right-4"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="blog-item">
-                    <div className="blog-thumb img-reveal-2">
-                      <Link to="/blog-details"><img src="/assets/images/blog/blog-3.webp" alt="" /></Link>
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <span className="categories"><Link to="/blog-details">Solutions</Link></span>
-                        <span>By <Link to="/blog-details">Ellinien Loma</Link></span>
-                      </div>
-                      <h4 className="title">
-                        <Link to="/blog-details">Optimizing Your IT Budget: Tips and Strategies</Link>
-                      </h4>
-                      <Link className="tj-text-btn style-2" to="/blog-details">
-                        Read More
-                        <i className="tji-arrow-right-4"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="blog-item">
-                    <div className="blog-thumb img-reveal-2">
-                      <Link to="/blog-details"><img src="/assets/images/blog/blog-4.webp" alt="" /></Link>
-                    </div>
-                    <div className="blog-content">
-                      <div className="blog-meta">
-                        <span className="categories"><Link to="/blog-details">Solutions</Link></span>
-                        <span>By <Link to="/blog-details">Ellinien Loma</Link></span>
-                      </div>
-                      <h4 className="title">
-                        <Link to="/blog-details">The Top 5 IT Challenges Faced by Modern Enterprises</Link>
-                      </h4>
-                      <Link className="tj-text-btn style-2" to="/blog-details">
-                        Read More
-                        <i className="tji-arrow-right-4"></i>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row d-md-none mt-40">
-              <div className="col">
-                <div className="explore_more_btn text-center">
-                  <Link className="tj-primary-btn" to="/blog">
-                    <span className="btn-text"><span>Explore More</span></span>
-                    <span className="btn-icon"><i className="tji-arrow-right-2"></i></span>
-                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/*  end: Blog Section  */}
+        {/*  end: Cta Section  */}
       
     </>
   );
