@@ -9638,7 +9638,7 @@ START: CTA CSS
 .tj-cta-section {
   position: relative;
   z-index: 1;
-  margin-bottom: 0;
+  margin-bottom: -70px;
   padding-bottom: 30px;
 }
 
